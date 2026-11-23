@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232319';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232319';
-import { searchCovers } from './covers.js?v=202611232319';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232319';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232323';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232323';
+import { searchCovers } from './covers.js?v=202611232323';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232323';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -372,16 +372,38 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
   if (p === '/api/me') return { editor: !!(creds.gh && verified), vision: visionAvailable(), igdb: false, steamgriddb: false, repo: REPO };
   if (p === '/api/games' && method === 'GET') return games;
   if (p === '/api/retro' && method === 'GET') return retro;
-  const rm = p.match(/^\/api\/retro\/([\w-]+)\/games(?:\/(\d+))?$/);
+  const rm = p.match(/^\/api\/retro\/([\w-]+)\/games(?:\/(\d+))?(\/cover)?$/);
   if (rm) {
     const emu = retro.find(r => r.id === rm[1]);
     if (!emu) throw err('Emulador no encontrado', 404);
     emu.games ||= [];
     const idx = rm[2] !== undefined ? +rm[2] : null;
-    if (method === 'POST') {
+    if (rm[3] && method === 'POST' && idx !== null && emu.games[idx]) {
+      // imagen propia subida desde el dispositivo
+      const m = /^data:image\/(jpeg|png|webp);base64,(.+)$/.exec(body.image || '');
+      if (!m) throw err('Imagen no válida');
+      const path = `covers/retro/${emu.id}-${Date.now().toString(36)}.${m[1] === 'jpeg' ? 'jpg' : m[1]}`;
+      await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: imagen de ${emu.games[idx].title}`, content: m[2], branch: REPO.branch } });
+      emu.games[idx].cover = path;
+    } else if (method === 'POST' && idx === null) {
       const title = String(body.title || '').trim();
       if (!title) throw err('Falta el nombre del juego');
-      emu.games.push({ title, hours: Math.max(0, parseHours(body.hours) ?? 0), notes: body.notes || null });
+      const game = { title, hours: Math.max(0, parseHours(body.hours) ?? 0), notes: body.notes || null, cover: null };
+      try { // miniatura automática (Wikipedia), copiada al repo para que no se rompa
+        const found = await searchCovers(title, emu.platform);
+        const best = found.find(c => c.score >= 0.6);
+        if (best) {
+          const r = await fetch(best.thumb || best.cover);
+          const type = r.headers.get('content-type') || '';
+          if (r.ok && type.startsWith('image/')) {
+            const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
+            const path = `covers/retro/${emu.id}-${Date.now().toString(36)}.${ext}`;
+            await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: imagen de ${title}`, content: await blobToB64(await r.blob()), branch: REPO.branch } });
+            game.cover = path;
+          }
+        }
+      } catch (e) { console.warn('Sin miniatura automática para', title, e.message); }
+      emu.games.push(game);
     } else if (method === 'PATCH' && idx !== null && emu.games[idx]) {
       if (body.title !== undefined) emu.games[idx].title = String(body.title).trim() || emu.games[idx].title;
       if (body.hours !== undefined) emu.games[idx].hours = Math.max(0, parseHours(body.hours) ?? 0);

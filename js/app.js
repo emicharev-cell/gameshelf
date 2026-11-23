@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232319';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232319';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232319';
-import { parseHours } from './util.js?v=202611232319';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232323';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232323';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232323';
+import { parseHours } from './util.js?v=202611232323';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -341,14 +341,14 @@ function renderRetro() {
       const pct = r.hours ? Math.min(100, Math.round(detailed / r.hours * 100)) : 0;
       return `<details class="retro-emu" data-rid="${r.id}" ${state.retroOpen.has(r.id) ? 'open' : ''} style="--c:${ps.c}">
         <summary>
-          <span class="retro-badge">${esc(ps.short)}</span>
+          ${r.icon ? `<img class="retro-icon" src="${esc(r.icon)}" alt="${esc(r.platform)}" loading="lazy">` : `<span class="retro-badge">${esc(ps.short)}</span>`}
           <span class="retro-title"><b>${esc(r.title)}</b><small>${r.last_played ? 'Última partida: ' + new Date(r.last_played + 'T12:00:00').toLocaleDateString('es-ES') : 'Sin partidas registradas'} · ${games.length} ${games.length === 1 ? 'juego detallado' : 'juegos detallados'}</small></span>
           <span class="retro-hours"><b>${fmtH(r.hours)}</b><span class="retro-bar" title="${pct}% de las horas detallado por juego"><i style="width:${pct}%"></i></span></span>
           <span class="retro-chev">▾</span>
         </summary>
         <div class="retro-body">
           ${games.length ? `<table class="tbl retro-tbl"><thead><tr><th>Juego</th><th class="num">Horas</th>${ed ? '<th></th>' : ''}</tr></thead><tbody>
-            ${games.map(x => `<tr><td>${esc(x.title)}</td><td class="num">${ed ? `<input type="text" class="rg-h" data-i="${x.i}" value="${fmtHM(x.hours)}" placeholder="h:mm">` : fmtH(x.hours)}</td>${ed ? `<td class="num"><button class="btn sm ghost danger rg-del" data-i="${x.i}" title="Quitar">✕</button></td>` : ''}</tr>`).join('')}
+            ${games.map(x => `<tr><td class="rg-game">${ed ? `<label class="rg-thumb" title="Cambiar imagen"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}><input type="file" accept="image/*" hidden class="rg-file" data-i="${x.i}"><span>📷</span></label>` : `<span class="rg-thumb"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}></span>`}<span>${esc(x.title)}</span></td><td class="num">${ed ? `<input type="text" class="rg-h" data-i="${x.i}" value="${fmtHM(x.hours)}" placeholder="h:mm">` : fmtH(x.hours)}</td>${ed ? `<td class="num"><button class="btn sm ghost danger rg-del" data-i="${x.i}" title="Quitar">✕</button></td>` : ''}</tr>`).join('')}
             </tbody></table>` : '<p class="retro-empty">Todavía no has detallado ningún juego de esta consola.</p>'}
           ${r.hours > detailed + 0.01 ? `<p class="retro-rest">Sin asignar a ningún juego: <b>${fmtH(r.hours - detailed)}</b></p>` : ''}
           ${ed ? `<form class="retro-add"><input type="text" name="title" placeholder="Juego (p. ej. Super Mario 64)" required><input type="text" name="hours" placeholder="h:mm"><button class="btn sm primary">＋ Añadir</button></form>` : ''}
@@ -376,9 +376,16 @@ function wireRetro(root) {
     d.querySelector('.retro-add')?.addEventListener('submit', e => {
       e.preventDefault();
       const f = e.target;
+      const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Buscando imagen…';
       call('', 'POST', { title: f.title.value, hours: f.hours.value || '0' }, `✔ ${f.title.value} añadido`);
     });
     d.querySelectorAll('.rg-h').forEach(inp => inp.addEventListener('change', () => call(`/${inp.dataset.i}`, 'PATCH', { hours: inp.value }, 'Horas guardadas')));
+    d.querySelectorAll('.rg-file').forEach(inp => inp.addEventListener('change', async () => {
+      const f = inp.files[0];
+      if (!f) return;
+      try { await call(`/${inp.dataset.i}/cover`, 'POST', { image: await fileToDataUrl(f, 400) }, 'Imagen guardada'); }
+      catch { toast('No pude leer esa imagen', 'err'); }
+    }));
     d.querySelectorAll('.rg-del').forEach(b => b.addEventListener('click', () => { if (confirm('¿Quitar este juego?')) call(`/${b.dataset.i}`, 'DELETE', {}, 'Quitado'); }));
   });
 }

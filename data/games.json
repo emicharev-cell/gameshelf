@@ -5023,7 +5023,8 @@
    "hours": 143.85,
    "last_played": "2026-10-18",
    "games": [],
-   "exophase_id": "522768+684663+523575"
+   "exophase_id": "522768+684663+523575",
+   "icon": "covers/retro/nso-n64.jpg"
   },
   {
    "id": "nso-gba",
@@ -5036,7 +5037,8 @@
    "hours": 67.2167,
    "last_played": "2026-11-15",
    "games": [],
-   "exophase_id": "574486+574487+574488+523576+523589"
+   "exophase_id": "574486+574487+574488+523576+523589",
+   "icon": "covers/retro/nso-gba.jpg"
   },
   {
    "id": "nso-snes",
@@ -5049,7 +5051,8 @@
    "hours": 60.1667,
    "last_played": "2026-11-15",
    "games": [],
-   "exophase_id": "522756+574487+574488+523576+523589"
+   "exophase_id": "522756+574487+574488+523576+523589",
+   "icon": "covers/retro/nso-snes.jpg"
   },
   {
    "id": "nso-gb",
@@ -5062,7 +5065,8 @@
    "hours": 28.5167,
    "last_played": "2026-10-27",
    "games": [],
-   "exophase_id": "574485+574487+574488+523576+523589"
+   "exophase_id": "574485+574487+574488+523576+523589",
+   "icon": "covers/retro/nso-gb.jpg"
   },
   {
    "id": "nso-gc",
@@ -5074,7 +5078,8 @@
    "hours": 25.3667,
    "last_played": "2026-09-12",
    "games": [],
-   "exophase_id": "817351"
+   "exophase_id": "817351",
+   "icon": "covers/retro/nso-gc.jpg"
   },
   {
    "id": "nso-nes",
@@ -5087,7 +5092,8 @@
    "hours": 23.7667,
    "last_played": "2026-10-11",
    "games": [],
-   "exophase_id": "522745+574487+574488+523576+523589"
+   "exophase_id": "522745+574487+574488+523576+523589",
+   "icon": "covers/retro/nso-nes.jpg"
   },
   {
    "id": "nso-md",
@@ -5099,7 +5105,8 @@
    "hours": 0.65,
    "last_played": "2025-01-14",
    "games": [],
-   "exophase_id": "522985"
+   "exophase_id": "522985",
+   "icon": "covers/retro/nso-md.jpg"
   },
   {
    "id": "nso-vb",
@@ -5111,7 +5118,8 @@
    "hours": 0.05,
    "last_played": "2026-05-25",
    "games": [],
-   "exophase_id": "910281"
+   "exophase_id": "910281",
+   "icon": "covers/retro/nso-vb.jpg"
   }
  ]
 }
