@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:27:29.560Z",
+ "updated_at": "2026-11-23T22:29:10.752Z",
  "games": [
   {
    "id": 1,
@@ -1309,16 +1309,17 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://art.gametdb.com/switch/coverHQ/EN/ALZYA.jpg",
-   "cover_local": "covers/43-tdbhq-ALZYA.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000053972/1.1_ProductTile_Switch_PokemonViolet_KeyArt_ES_NOE",
+   "cover_local": "covers/43-mwtu8i2k.jpg",
    "exophase_id": "555789",
    "last_played": "2026-09-09",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:29:10",
    "in_exophase": true,
    "exophase_title": "Pokémon Violet",
    "gametdb_id": "ALZYA",
-   "release_eu": "2022-11-18"
+   "release_eu": "2022-11-18",
+   "cover_locked": true
   },
   {
    "id": 44,
