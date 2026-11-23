@@ -274,7 +274,6 @@ function cardHTML(g, i) {
       ${g.format === 'especial' ? '<span class="special-tag" title="Edición especial">✨</span>' : g.format === 'digital' ? '<span class="special-tag" title="Digital">☁️</span>' : ''}
       <span class="status-pill st-${g.status}">${esc(STATUS[g.status].short || STATUS[g.status].label)}</span>
       ${g.hours > 0 ? `<span class="badge-hours">${fmtH(g.hours)}</span>` : ''}
-      ${editor() ? `<div class="quick"><button data-q="-1" title="Restar 1 hora">−1h</button><button data-q="1" title="Sumar 1 hora">+1h</button><button data-q="status" title="Siguiente estado">⟳</button></div>` : ''}
     </div>
     <div class="card-title">${esc(g.title)}</div>
     <div class="card-sub">${fmtDate(g)}${g.developer ? ' · ' + esc(g.developer) : ''}${hint ? ` · <b>${esc(hint)}</b>` : ''}</div>
@@ -327,9 +326,7 @@ function renderList(list) {
 function wireCatalog(root) {
   root.querySelectorAll('[data-id]').forEach(el => {
     el.addEventListener('click', e => {
-      const q = e.target.closest('[data-q]');
       const g = state.games.find(x => x.id === +el.dataset.id);
-      if (q) { e.stopPropagation(); return quickAction(g, q.dataset.q); }
       openDetail(g);
     });
     el.addEventListener('keydown', e => { if (e.key === 'Enter') el.click(); });
@@ -352,7 +349,7 @@ function wireCatalog(root) {
   });
 }
 
-// ---------------------------------------------------------------- Acciones rápidas
+// ---------------------------------------------------------------- Guardado de cambios
 async function patchGame(id, body, msg) {
   const updated = await api(`/api/games/${id}`, { method: 'PATCH', body });
   replaceGame(updated);
@@ -363,20 +360,6 @@ function replaceGame(g) {
   const i = state.games.findIndex(x => x.id === g.id);
   if (i >= 0) state.games[i] = g; else state.games.push(g);
   render(true);
-}
-
-async function quickAction(g, q) {
-  try {
-    if (q === 'status') {
-      const keys = Object.keys(STATUS);
-      const next = keys[(keys.indexOf(g.status) + 1) % keys.length];
-      await patchGame(g.id, { status: next }, `${g.title.split(':')[0]} → ${STATUS[next].label}`);
-    } else {
-      const u = await api(`/api/games/${g.id}/hours`, { method: 'POST', body: { delta: +q } });
-      replaceGame(u);
-      toast(`${fmtH(u.hours)} en ${g.title.split(':')[0]}`);
-    }
-  } catch (e) { toast(e.message, 'err'); }
 }
 
 // ---------------------------------------------------------------- Modal genérico

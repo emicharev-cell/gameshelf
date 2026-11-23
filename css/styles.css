@@ -186,13 +186,6 @@ select:focus, input:focus, textarea:focus { border-color: var(--accent); }
 .st-jugando { background: #22d3ee; } .st-pendiente { background: #fbbf24; } .st-completado { background: #34d399; } .st-masterizado { background: linear-gradient(90deg, #fde68a, #f59e0b); }
 .card-title { font-weight: 600; font-size: 14px; margin: 10px 2px 2px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card-sub { color: var(--muted); font-size: 12px; margin: 0 2px; }
-.quick {
-  position: absolute; inset: auto 6px 38px 6px; z-index: 3;
-  display: flex; gap: 4px; justify-content: center; opacity: 0; transform: translateY(6px); transition: .2s;
-}
-.card:hover .quick, .card:focus-within .quick { opacity: 1; transform: none; }
-.quick button { flex: 1; height: 28px; border-radius: 7px; border: 0; background: rgba(8,10,20,.82); color: #fff; font-weight: 700; font-size: 12px; cursor: pointer; backdrop-filter: blur(6px); }
-.quick button:hover { background: var(--accent); }
 .special-tag { position: absolute; top: 28px; right: 8px; z-index: 2; font-size: 15px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.6)); }
 
 /* ---------- Shelf view ---------- */
@@ -378,7 +371,6 @@ body:not(.is-editor) .editor-only { display: none !important; }
   .det { grid-template-columns: 26px 1fr; }
   .det > :nth-child(n+3) { grid-column: 2; }
   .hbar { grid-template-columns: 100px 1fr 60px; }
-  .quick { opacity: 1; transform: none; }
   .modal-inner { padding: 18px; }
   .mobilebar {
     display: flex; position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 25;
