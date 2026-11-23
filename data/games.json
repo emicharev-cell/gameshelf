@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:37:55.286Z",
+ "updated_at": "2026-11-23T22:37:56.969Z",
  "games": [
   {
    "id": 1,
@@ -1135,12 +1135,12 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Wii_U_Console_and_Gamepad.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/37-mwtujq8t.png",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/rngllvztbxa5iwogqh1e",
+   "cover_local": "covers/37-mwtujrlb.jpg",
    "exophase_id": "526981",
    "last_played": "2026-09-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:37:55",
+   "updated_at": "2026-11-23 22:37:56",
    "in_exophase": true,
    "exophase_title": "Pikmin 3 Deluxe",
    "release_eu": "2020-10-30",
