@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:50:19.724Z",
+ "updated_at": "2026-11-23T22:50:28.808Z",
  "games": [
   {
    "id": 1,
@@ -1654,15 +1654,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Super_Mario_Party.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/53-super-mario-party.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000014063/SQ_NSwitch_SuperMarioParty",
+   "cover_local": "covers/53-mwtuzw7f.jpg",
    "exophase_id": "522769",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:50:28",
    "in_exophase": true,
    "exophase_title": "Super Mario Party",
-   "release_eu": "2018-10-05"
+   "release_eu": "2018-10-05",
+   "cover_locked": true
   },
   {
    "id": 54,
