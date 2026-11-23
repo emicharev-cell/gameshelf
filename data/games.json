@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:24:51.129Z",
+ "updated_at": "2026-11-23T22:25:12.036Z",
  "games": [
   {
    "id": 1,
@@ -144,15 +144,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/48/Metroid_Prime_4_Beyond_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/5-metroid-prime-4-beyond-nintendo-switch-2.png",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/xzmsvbzguccan4kzwc4q",
+   "cover_local": "covers/5-mwtu3dtm.jpg",
    "exophase_id": "881908",
    "last_played": "2026-09-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:25:12",
    "in_exophase": true,
    "exophase_title": "Metroid Prime 4: Beyond",
-   "release_eu": "2025-12-04"
+   "release_eu": "2025-12-04",
+   "cover_locked": true
   },
   {
    "id": 6,
