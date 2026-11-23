@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:35:32.740Z",
+ "updated_at": "2026-11-23T22:36:16.186Z",
  "games": [
   {
    "id": 1,
@@ -268,15 +268,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/9-super-smash-bros-ultimate.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000012331/SQ_NSwitch_SuperSmashBrosUltimate",
+   "cover_local": "covers/9-mwtuhluk.jpg",
    "exophase_id": "522857",
    "last_played": "2026-06-08",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:36:16",
    "in_exophase": true,
    "exophase_title": "Super Smash Bros. Ultimate",
-   "release_eu": "2018-12-07"
+   "release_eu": "2018-12-07",
+   "cover_locked": true
   },
   {
    "id": 10,
