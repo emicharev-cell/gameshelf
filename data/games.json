@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:40:54.494Z",
+ "updated_at": "2026-11-23T22:42:22.852Z",
  "games": [
   {
    "id": 1,
@@ -394,15 +394,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/99/Legend_of_Zelda_Skyward_Sword_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/13-legend-of-zelda-skyward-sword.png",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000038613/1.1_ProductTile_Switch_TheLegendOfZeldaSkywardSwordHD_KeyArt_enNOE",
+   "cover_local": "covers/13-mwtuph58.jpg",
    "exophase_id": "524323",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:42:22",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Skyward Sword HD",
-   "release_eu": "2021-07-16"
+   "release_eu": "2021-07-16",
+   "cover_locked": true
   },
   {
    "id": 14,
