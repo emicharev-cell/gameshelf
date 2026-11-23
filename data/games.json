@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:07:26.543Z",
+ "updated_at": "2026-11-23T22:14:57.966Z",
  "games": [
   {
    "id": 1,
@@ -3237,13 +3237,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://art.gametdb.com/ds/coverHQ/DE/B2BX.jpg",
-   "cover_local": "covers/110-tdbhq-B2BX.jpg",
+   "cover_url": null,
+   "cover_local": "covers/110-user-mwttq83y.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "B2BX"
+   "updated_at": "2026-11-23 22:14:57",
+   "gametdb_id": "B2BX",
+   "cover_locked": true
   },
   {
    "id": 111,
