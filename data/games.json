@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:12:27.568Z",
+ "updated_at": "2026-11-23T23:16:25.584Z",
  "games": [
   {
    "id": 1,
@@ -1524,10 +1524,10 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "completado",
+   "status": "masterizado",
    "rating": null,
    "hours": 39.0167,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000034440/SQ_NSwitch_SuperMario3DLandAndBowsersFury",
@@ -1535,7 +1535,7 @@
    "exophase_id": "522997",
    "last_played": "2026-01-03",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:30:37",
+   "updated_at": "2026-11-23 23:16:24",
    "in_exophase": true,
    "exophase_title": "Super Mario 3D World + Bowser’s Fury",
    "release_eu": "2021-02-12",
