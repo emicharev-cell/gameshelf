@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:48:46.335Z",
+ "updated_at": "2026-11-23T22:49:06.334Z",
  "games": [
   {
    "id": 1,
@@ -488,12 +488,12 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": null,
-   "cover_local": "covers/16-user-mariorpg.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/cy8wur42yx7whppsn4tt",
+   "cover_local": "covers/16-mwtuy4s0.jpg",
    "exophase_id": "631856",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:49:06",
    "in_exophase": true,
    "exophase_title": "Super Mario RPG",
    "cover_locked": true,
