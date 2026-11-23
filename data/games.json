@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:25:56.560Z",
+ "updated_at": "2026-11-23T22:26:13.315Z",
  "games": [
   {
    "id": 1,
@@ -4766,13 +4766,13 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": null,
-   "cover_local": "covers/163-user-mkworld.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/tdoenmqedzdfrfpcpsdh",
+   "cover_local": "covers/163-mwtu4oyb.jpg",
    "cover_locked": true,
    "exophase_id": "817353",
    "last_played": "2026-09-12",
    "added_at": "2026-11-23 22:07:26",
-   "updated_at": "2026-11-23 22:07:26",
+   "updated_at": "2026-11-23 22:26:13",
    "in_exophase": true,
    "exophase_title": "Mario Kart World"
   }
