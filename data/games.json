@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:26:13.315Z",
+ "updated_at": "2026-11-23T22:26:34.687Z",
  "games": [
   {
    "id": 1,
@@ -4734,13 +4734,13 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": null,
-   "cover_local": "covers/162-user-acnh.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/vsu66oemdeikf8cwjrtq",
+   "cover_local": "covers/162-mwtu55ky.jpg",
    "cover_locked": true,
    "exophase_id": "522737",
    "last_played": "2026-10-11",
    "added_at": "2026-11-23 21:42:08",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:26:34",
    "in_exophase": true,
    "exophase_title": "Animal Crossing: New Horizons",
    "release_eu": "2020-03-20"
