@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232209';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232209';
-import { searchCovers } from './covers.js?v=202611232209';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232209';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232215';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232215';
+import { searchCovers } from './covers.js?v=202611232215';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232215';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -58,7 +58,13 @@ async function gh(path, { method = 'GET', body, token = creds.gh } = {}) {
     cache: 'no-store',
   });
   const data = await r.json().catch(() => ({}));
-  if (!r.ok) throw err(r.status === 401 ? 'El token de GitHub no es válido o ha caducado.' : data.message || `GitHub ${r.status}`, r.status);
+  if (!r.ok) {
+    const noWrite = r.status === 403 || (r.status === 404 && method !== 'GET');
+    const msg = r.status === 401 ? 'El token de GitHub no es válido o ha caducado.'
+      : noWrite ? `Tu token de GitHub no tiene permiso de escritura en "${REPO.repo}". Crea uno nuevo con Repository access → ${REPO.repo} y Permissions → Contents: Read and write, y pégalo en 🔑 Configuración.`
+      : data.message || `GitHub ${r.status}`;
+    throw err(msg, r.status);
+  }
   return data;
 }
 
@@ -70,7 +76,16 @@ export const getCreds = () => ({ ...creds });
 export async function verifyToken(token) {
   const repo = await gh('', { token });
   if (!repo.permissions?.push) throw err('Ese token no tiene permiso de escritura en el repositorio.', 403);
+  // "permissions" refleja tu usuario, no el token: probamos de verdad que el token puede escribir.
+  await gh('/git/blobs', { method: 'POST', body: { content: 'gameshelf write check', encoding: 'utf-8' }, token });
   return true;
+}
+
+let writeChecked = null;
+/** Comprueba (una vez por sesión) que el token guardado puede escribir. */
+export function checkWrite() {
+  if (!creds.gh) return Promise.resolve(false);
+  return (writeChecked ??= verifyToken(creds.gh));
 }
 
 export async function saveCreds({ gh: token, ak }) {
@@ -130,6 +145,15 @@ let saveTimer = null, saving = Promise.resolve(), pendingMsg = new Set();
 export let onSaveState = () => {};
 export function setSaveListener(fn) { onSaveState = fn; }
 
+/** Guarda inmediatamente y devuelve la promesa del commit (lanza si falla). */
+function saveNow(msg) {
+  pendingMsg.add(msg);
+  clearTimeout(saveTimer);
+  const p = saving.catch(() => {}).then(flush);
+  saving = p.catch(() => {});
+  return p;
+}
+
 /** Agrupa cambios seguidos (p. ej. varios +1h) en un solo commit. */
 function scheduleSave(msg) {
   pendingMsg.add(msg);
@@ -168,7 +192,7 @@ async function flush() {
 // ---------------------------------------------------------------- Modelo
 function clean(input) {
   const out = {};
-  const F = ['title', 'platform', 'year', 'release_eu', 'genres', 'developer', 'publisher', 'format', 'edition', 'region', 'status', 'rating', 'hours', 'hours_source', 'notes', 'cover_url', 'cover_local', 'exophase_id', 'last_played', 'added_at'];
+  const F = ['cover_locked', 'title', 'platform', 'year', 'release_eu', 'genres', 'developer', 'publisher', 'format', 'edition', 'region', 'status', 'rating', 'hours', 'hours_source', 'notes', 'cover_url', 'cover_local', 'exophase_id', 'last_played', 'added_at'];
   for (const f of F) if (input[f] !== undefined) out[f] = input[f];
   if (out.title !== undefined) out.title = String(out.title).trim();
   if (out.platform !== undefined) out.platform = normalizePlatform(out.platform);
@@ -216,24 +240,38 @@ function findDuplicate(title, platform) {
 
 // ---------------------------------------------------------------- Carátulas
 /** Guarda la carátula: intenta subir una copia al repo (covers/) para que nunca se rompa; si no, deja la URL. */
-async function setCover(id, url) {
-  const g = update(id, { cover_url: url || null, cover_local: null });
+async function setCover(id, url, { lock = true } = {}) {
+  const g = get(id);
+  if (!g) throw err('No encontrado', 404);
+  let blob = null, type = '';
   if (url) {
-    try {
+    try { // muchas webs no dejan descargar sus imágenes desde otra página (CORS): entonces se guarda solo la URL
       const r = await fetch(url);
-      const type = r.headers.get('content-type') || '';
-      if (r.ok && type.startsWith('image/')) {
-        const blob = await r.blob();
-        if (blob.size < 8 * 1024 * 1024) {
-          const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
-          const path = `covers/${id}-${Date.now().toString(36)}.${ext}`;
-          await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: carátula de ${g.title}`, content: await blobToB64(blob), branch: REPO.branch } });
-          g.cover_local = path;
-        }
-      }
-    } catch (e) { console.warn('No se pudo copiar la carátula, se usará la URL:', e.message); }
+      type = r.headers.get('content-type') || '';
+      if (r.ok && type.startsWith('image/')) blob = await r.blob();
+    } catch (e) { console.warn('No se pudo descargar la imagen, se usará la URL:', e.message); }
   }
-  await scheduleSave(`carátula de ${g.title}`);
+  let path = null;
+  if (blob && blob.size < 8 * 1024 * 1024) {
+    const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
+    path = `covers/${id}-${Date.now().toString(36)}.${ext}`;
+    await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: carátula de ${g.title}`, content: await blobToB64(blob), branch: REPO.branch } });
+  }
+  update(id, { cover_url: url || null, cover_local: path, cover_locked: lock });
+  await saveNow(`carátula de ${g.title}`);
+  return g;
+}
+
+/** Sube una imagen elegida desde el dispositivo (data URL JPEG/PNG) como carátula. */
+async function uploadCover(id, dataUrl) {
+  const g = get(id);
+  if (!g) throw err('No encontrado', 404);
+  const m = /^data:image\/(jpeg|png|webp);base64,(.+)$/.exec(dataUrl || '');
+  if (!m) throw err('Imagen no válida');
+  const path = `covers/${id}-user-${Date.now().toString(36)}.${m[1] === 'jpeg' ? 'jpg' : m[1]}`;
+  await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: carátula de ${g.title} (subida)`, content: m[2], branch: REPO.branch } });
+  update(id, { cover_url: null, cover_local: path, cover_locked: true });
+  await saveNow(`carátula de ${g.title}`);
   return g;
 }
 
@@ -243,7 +281,7 @@ async function autoCovers(list) {
     try {
       const found = await searchCovers(g.title, g.platform);
       const best = found.find(c => c.score >= 0.6);
-      if (best) await setCover(g.id, best.cover);
+      if (best) await setCover(g.id, best.cover, { lock: false });
     } catch { /* sin carátula: se usa la generada */ }
   }
   window.dispatchEvent(new CustomEvent('gs-games-changed'));
@@ -313,6 +351,7 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
     scheduleSave(`horas de ${g.title}: ${round1(g.hours)}`);
     return g;
   }
+  if (id && p.endsWith('/cover-upload')) return uploadCover(id, body.image);
   if (id && p.endsWith('/cover')) return setCover(id, body.url);
   if (id && method === 'PATCH') {
     const b = { ...body };

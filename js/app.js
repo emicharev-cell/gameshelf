@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232209';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, REPO } from './backend.js?v=202611232209';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232209';
-import { parseHours } from './util.js?v=202611232209';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232215';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232215';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232215';
+import { parseHours } from './util.js?v=202611232215';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -133,6 +133,15 @@ async function boot() {
   applyMode();
   render();
   if (hasCreds() && !state.me.editor) toast('Tu token de GitHub ya no es válido: vuelve a configurarlo en 🔑', 'err');
+  if (state.me.editor) checkWrite().catch(e => {
+    const b = $('#modeBadge');
+    b.textContent = 'Editor · sin permiso para guardar';
+    b.classList.remove('editor');
+    b.style.color = 'var(--bad)';
+    openModal(`<h2>⚠️ No se pueden guardar cambios</h2><div class="callout" style="border-left-color:var(--bad)">${esc(e.message)}</div>
+      <div class="row end" style="margin-top:16px"><button class="btn ghost" data-close>Cerrar</button><button class="btn primary" id="fixTok">🔑 Cambiar token</button></div>`);
+    $('#fixTok').onclick = () => openSetup();
+  });
   if (location.hash === '#setup') openSetup();
   window.addEventListener('gs-games-changed', async () => { state.games = await api('/api/games'); render(true); });
   setSaveListener((st, msg) => {
@@ -447,6 +456,7 @@ async function openCoverPicker(g) {
     <div class="row" style="margin-bottom:12px"><input type="text" id="cpQ" value="${esc(g.title)}" style="flex:1"><button class="btn" id="cpSearch">Buscar</button></div>
     <div id="cpRes"><div class="loading"><span class="spinner"></span> Buscando portadas…</div></div>
     <div class="row" style="margin-top:14px"><input type="text" id="cpUrl" placeholder="…o pega la URL de una imagen" style="flex:1"><button class="btn" id="cpUseUrl">Usar URL</button></div>
+    <div class="row" style="margin-top:10px"><label class="btn" style="cursor:pointer">📁 Subir imagen desde este dispositivo<input type="file" id="cpFile" accept="image/*" hidden></label><small style="color:var(--muted)">JPG, PNG, WebP o AVIF</small></div>
     <div class="row end" style="margin-top:14px"><button class="btn ghost" id="cpBack">← Volver a la ficha</button></div>`);
   const search = async () => {
     body.querySelector('#cpRes').innerHTML = '<div class="loading"><span class="spinner"></span> Buscando portadas…</div>';
@@ -456,10 +466,23 @@ async function openCoverPicker(g) {
       : '<p class="empty">Sin resultados. Prueba otro término o pega una URL.</p>';
     body.querySelectorAll('.cover-opt').forEach(b => b.onclick = () => choose(b.dataset.url));
   };
-  const choose = async url => {
-    body.querySelector('#cpRes').innerHTML = '<div class="loading"><span class="spinner"></span> Guardando carátula…</div>';
-    const u = await api(`/api/games/${g.id}/cover`, { method: 'POST', body: { url } });
-    replaceGame(u); toast('Carátula actualizada', 'ok'); openDetail(u);
+  const saveWith = async (path, payload) => {
+    const box = body.querySelector('#cpRes');
+    box.innerHTML = '<div class="loading"><span class="spinner"></span> Guardando carátula en GitHub…</div>';
+    try {
+      const u = await api(`/api/games/${g.id}/${path}`, { method: 'POST', body: payload });
+      replaceGame(u); toast('Carátula actualizada (la web pública la mostrará en ~1 min)', 'ok'); openDetail(u);
+    } catch (e) {
+      box.innerHTML = `<div class="callout" style="border-left-color:var(--bad)">❌ No se pudo guardar: ${esc(e.message)}</div>`;
+      toast('No se pudo guardar la carátula', 'err');
+    }
+  };
+  const choose = url => url && saveWith('cover', { url });
+  body.querySelector('#cpFile').onchange = async e => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try { saveWith('cover-upload', { image: await fileToDataUrl(f, 900) }); }
+    catch { toast('No pude leer esa imagen', 'err'); }
   };
   body.querySelector('#cpSearch').onclick = search;
   body.querySelector('#cpUseUrl').onclick = () => choose(body.querySelector('#cpUrl').value.trim());
