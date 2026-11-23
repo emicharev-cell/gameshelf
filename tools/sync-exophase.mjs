@@ -71,12 +71,27 @@ for (const g of catalog.games) {
   }
 }
 
+// ---- Retro: apps de Nintendo Switch Online / Nintendo Classics (no son juegos del catálogo, pero suman horas)
+for (const r of catalog.retro || []) {
+  // todas las entradas distintas de Exophase cuyo título coincide (p. ej. la app occidental y la japonesa)
+  const wanted = new Set((r.exophase_titles || []).map(clean));
+  const m = exo.filter(e => wanted.has(clean(e.title)));
+  if (!m.length) continue;
+  const hours = Math.round(m.reduce((a, e) => a + e.hours, 0) * 10000) / 10000;
+  const last = m.map(e => e.last_played).filter(Boolean).sort().pop() || null;
+  const ids = m.map(e => String(e.id)).join('+');
+  if (r.hours !== hours || r.last_played !== last || r.exophase_id !== ids) {
+    changes.push(`[Retro] ${r.title}: ${r.hours || 0} h → ${hours} h`);
+    Object.assign(r, { hours, last_played: last, exophase_id: ids });
+  }
+}
+
 fs.writeFileSync(SNAPSHOT, JSON.stringify({ synced_at: new Date().toISOString(), games: exo.map(({ hours, ...e }) => e) }, null, 1));
 if (changes.length) {
   catalog.updated_at = new Date().toISOString();
   fs.writeFileSync(CATALOG, JSON.stringify(catalog, null, 1));
 }
-const linked = new Set(catalog.games.flatMap(g => String(g.exophase_id || '').split('+')).filter(Boolean));
+const linked = new Set([...catalog.games, ...(catalog.retro || [])].flatMap(g => String(g.exophase_id || '').split('+')).filter(Boolean));
 const exoOnly = exo.filter(e => !linked.has(String(e.id)) && e.hours >= 1);
 console.log(`Exophase: ${exo.length} juegos · catálogo: ${catalog.games.length}`);
 console.log(`Cambios (${changes.length}):${changes.length ? '\n  ' + changes.join('\n  ') : ' ninguno'}`);

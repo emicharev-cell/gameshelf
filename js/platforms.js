@@ -1,4 +1,4 @@
-import { esc } from './lib.js?v=202611232304';
+import { esc } from './lib.js?v=202611232317';
 
 // Color de marca, abreviatura, color de lomo y altura relativa de la caja (las de 3DS/DS son más bajas).
 export const PLAT = {
@@ -29,6 +29,7 @@ export const PLAT = {
   'Mega Drive': { c: '#111', short: 'MD', h: 240 },
   'Dreamcast': { c: '#e66a00', short: 'DC', spine: '#f2f2f2', t: '#1a1a1a', h: 230 },
   'Saturn': { c: '#30305a', short: 'Saturn', h: 240 },
+  'Virtual Boy': { c: '#b91c1c', short: 'VB', h: 200 },
 };
 
 export function platStyle(p) {

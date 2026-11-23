@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232304';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232304';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232304';
-import { parseHours } from './util.js?v=202611232304';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232317';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232317';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232317';
+import { parseHours } from './util.js?v=202611232317';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -129,6 +129,7 @@ async function boot() {
   await load();
   state.me = await api('/api/me');
   state.games = await api('/api/games');
+  state.retro = await api('/api/retro');
   setupUI();
   applyMode();
   render();
@@ -143,7 +144,7 @@ async function boot() {
     $('#fixTok').onclick = () => openSetup();
   });
   if (location.hash === '#setup') openSetup();
-  window.addEventListener('gs-games-changed', async () => { state.games = await api('/api/games'); render(true); });
+  window.addEventListener('gs-games-changed', async () => { state.games = await api('/api/games'); state.retro = await api('/api/retro'); render(true); });
   setSaveListener((st, msg) => {
     if (!editor()) return;
     $('#modeBadge').textContent = {
@@ -244,6 +245,16 @@ function render(soft = false) {
   $('#empty').hidden = list.length > 0;
   const root = $('#catalog');
   const scroll = window.scrollY;
+  document.body.classList.toggle('view-retro', state.view === 'retro');
+  if (state.view === 'retro') {
+    root.innerHTML = renderRetro();
+    $('#empty').hidden = true;
+    const rh = (state.retro || []).reduce((a, r) => a + (r.hours || 0), 0);
+    $('#resultCount').textContent = `${(state.retro || []).length} consolas retro · ${fmtH(rh)}`;
+    wireCovers(root);
+    wireRetro(root);
+    return;
+  }
   if (state.view === 'shelf') root.innerHTML = renderShelf(list);
   else if (state.view === 'list') root.innerHTML = renderList(list);
   else root.innerHTML = renderGrid(list, soft);
@@ -270,7 +281,8 @@ function renderFilters() {
 
 function renderStatStrip() {
   const g = state.games;
-  const hours = g.reduce((a, x) => a + (x.hours || 0), 0);
+  const retroH = (state.retro || []).reduce((a, r) => a + (r.hours || 0), 0);
+  const hours = g.reduce((a, x) => a + (x.hours || 0), 0) + retroH;
   const done = g.filter(x => x.status === 'completado' || x.status === 'masterizado');
   const mastered = g.filter(x => x.status === 'masterizado').length;
   const pending = g.filter(x => x.status === 'pendiente').length;
@@ -287,7 +299,7 @@ function renderStatStrip() {
     </button>
     <div class="hs hs-hours" title="Horas registradas (Exophase + manuales)">
       <span class="hs-ico">⏱️</span>
-      <span class="hs-txt"><b>${String(Math.round(hours)).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} h</b><small>jugadas · ≈ ${Math.round(hours / 24)} días seguidos</small></span>
+      <span class="hs-txt"><b>${String(Math.round(hours)).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} h</b><small>jugadas · ≈ ${Math.round(hours / 24)} días${retroH ? ` · ${Math.round(retroH)} h retro` : ''}</small></span>
     </div>
     <button class="hs hs-done${on('done')}" data-stat="done" title="Ver completados">
       <span class="hs-ring" style="--p:${pct}"><span>${pct}%</span></span>
@@ -309,6 +321,65 @@ function renderStatStrip() {
     if (!wasOn && k === 'done') ['completado', 'masterizado'].forEach(x => st.add(x));
     else if (!wasOn && k !== 'all') st.add(k);
     render();
+  });
+}
+
+// ---------------------------------------------------------------- Retro (apps de Nintendo Switch Online)
+state.retroOpen = new Set(JSON.parse(localStorage.getItem('gs_retro_open') || '[]'));
+function renderRetro() {
+  const list = [...(state.retro || [])].sort((a, b) => (b.hours || 0) - (a.hours || 0));
+  const total = list.reduce((a, r) => a + (r.hours || 0), 0);
+  const ed = editor();
+  return `<section class="retro">
+    <div class="retro-head">
+      <div><h2>🕹 Retro</h2><p>Apps de <b>Nintendo Switch Online</b> y <b>Nintendo Classics</b>. Sus horas vienen de Exophase y suman a tu total (${fmtH(total)}), pero no cuentan como juegos del catálogo. Despliega cada consola para ver ${ed ? 'y apuntar ' : ''}las horas de cada juego.</p></div>
+    </div>
+    ${list.map(r => {
+      const ps = platStyle(r.platform);
+      const games = [...(r.games || [])].map((x, i) => ({ ...x, i })).sort((a, b) => (b.hours || 0) - (a.hours || 0));
+      const detailed = games.reduce((a, x) => a + (x.hours || 0), 0);
+      const pct = r.hours ? Math.min(100, Math.round(detailed / r.hours * 100)) : 0;
+      return `<details class="retro-emu" data-rid="${r.id}" ${state.retroOpen.has(r.id) ? 'open' : ''} style="--c:${ps.c}">
+        <summary>
+          <span class="retro-badge">${esc(ps.short)}</span>
+          <span class="retro-title"><b>${esc(r.title)}</b><small>${r.last_played ? 'Última partida: ' + new Date(r.last_played + 'T12:00:00').toLocaleDateString('es-ES') : 'Sin partidas registradas'} · ${games.length} ${games.length === 1 ? 'juego detallado' : 'juegos detallados'}</small></span>
+          <span class="retro-hours"><b>${fmtH(r.hours)}</b><span class="retro-bar" title="${pct}% de las horas detallado por juego"><i style="width:${pct}%"></i></span></span>
+          <span class="retro-chev">▾</span>
+        </summary>
+        <div class="retro-body">
+          ${games.length ? `<table class="tbl retro-tbl"><thead><tr><th>Juego</th><th class="num">Horas</th>${ed ? '<th></th>' : ''}</tr></thead><tbody>
+            ${games.map(x => `<tr><td>${esc(x.title)}</td><td class="num">${ed ? `<input type="text" class="rg-h" data-i="${x.i}" value="${fmtHM(x.hours)}" placeholder="h:mm">` : fmtH(x.hours)}</td>${ed ? `<td class="num"><button class="btn sm ghost danger rg-del" data-i="${x.i}" title="Quitar">✕</button></td>` : ''}</tr>`).join('')}
+            </tbody></table>` : '<p class="retro-empty">Todavía no has detallado ningún juego de esta consola.</p>'}
+          ${r.hours > detailed + 0.01 ? `<p class="retro-rest">Sin asignar a ningún juego: <b>${fmtH(r.hours - detailed)}</b></p>` : ''}
+          ${ed ? `<form class="retro-add"><input type="text" name="title" placeholder="Juego (p. ej. Super Mario 64)" required><input type="text" name="hours" placeholder="h:mm"><button class="btn sm primary">＋ Añadir</button></form>` : ''}
+        </div>
+      </details>`;
+    }).join('')}
+  </section>`;
+}
+
+function wireRetro(root) {
+  root.querySelectorAll('.retro-emu').forEach(d => {
+    const rid = d.dataset.rid;
+    d.addEventListener('toggle', () => {
+      d.open ? state.retroOpen.add(rid) : state.retroOpen.delete(rid);
+      localStorage.setItem('gs_retro_open', JSON.stringify([...state.retroOpen]));
+    });
+    const call = async (path, method, body, msg) => {
+      try {
+        await api(`/api/retro/${rid}/games${path}`, { method, body });
+        state.retro = await api('/api/retro');
+        render(true);
+        if (msg) toast(msg, 'ok');
+      } catch (e) { toast(e.message, 'err'); }
+    };
+    d.querySelector('.retro-add')?.addEventListener('submit', e => {
+      e.preventDefault();
+      const f = e.target;
+      call('', 'POST', { title: f.title.value, hours: f.hours.value || '0' }, `✔ ${f.title.value} añadido`);
+    });
+    d.querySelectorAll('.rg-h').forEach(inp => inp.addEventListener('change', () => call(`/${inp.dataset.i}`, 'PATCH', { hours: inp.value }, 'Horas guardadas')));
+    d.querySelectorAll('.rg-del').forEach(b => b.addEventListener('click', () => { if (confirm('¿Quitar este juego?')) call(`/${b.dataset.i}`, 'DELETE', {}, 'Quitado'); }));
   });
 }
 

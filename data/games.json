@@ -1,6 +1,10 @@
 {
  "version": 1,
+<<<<<<< Updated upstream
  "updated_at": "2026-11-23T23:16:25.584Z",
+=======
+ "updated_at": "2026-11-23T23:17:10.985Z",
+>>>>>>> Stashed changes
  "games": [
   {
    "id": 1,
@@ -334,7 +338,7 @@
    "status": "masterizado",
    "rating": null,
    "hours": 31.8667,
-   "hours_source": "manual",
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/awkoqneedtzqxgjzf8ti",
@@ -342,7 +346,7 @@
    "exophase_id": "711528",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:12:19",
+   "updated_at": "2026-11-23 23:16:57",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Echoes of Wisdom",
    "release_eu": "2024-09-26",
@@ -365,7 +369,7 @@
    "status": "masterizado",
    "rating": null,
    "hours": 26,
-   "hours_source": "manual",
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000020034/1.1_ProductTile_Switch_TheLegendOfZeldaLinksAwakening",
@@ -373,7 +377,7 @@
    "exophase_id": "522771",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:12:26",
+   "updated_at": "2026-11-23 23:16:57",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Link’s Awakening",
    "release_eu": "2019-09-20",
@@ -645,7 +649,7 @@
    "status": "masterizado",
    "rating": null,
    "hours": 39.3,
-   "hours_source": "manual",
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000046406/SQ_NSW~1",
@@ -653,7 +657,7 @@
    "exophase_id": "523029",
    "last_played": "2026-07-30",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:12:07",
+   "updated_at": "2026-11-23 23:16:57",
    "in_exophase": true,
    "exophase_title": "Kirby and the Forgotten Land",
    "release_eu": "2022-03-25",
@@ -1084,7 +1088,7 @@
    "status": "masterizado",
    "rating": null,
    "hours": 44.7667,
-   "hours_source": "manual",
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000029727/1.1_2000x2000_ProductTile_Switch_PaperMarioTheOrigamiKing_KeyArt_enGB_v1_100q",
@@ -1092,7 +1096,7 @@
    "exophase_id": "522986",
    "last_played": "2024-09-25",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:11:54",
+   "updated_at": "2026-11-23 23:16:57",
    "in_exophase": true,
    "exophase_title": "Paper Mario: The Origami King",
    "release_eu": "2020-07-17",
@@ -1625,7 +1629,7 @@
    "status": "masterizado",
    "rating": null,
    "hours": 108.6667,
-   "hours_source": "manual",
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000127/SQ_NSwitch_SuperMarioOdyssey_HomepageWithOverlay",
@@ -1633,7 +1637,7 @@
    "exophase_id": "522751",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:11:39",
+   "updated_at": "2026-11-23 23:16:57",
    "in_exophase": true,
    "exophase_title": "Super Mario Odyssey",
    "release_eu": "2017-11-28",
@@ -5008,6 +5012,110 @@
    "updated_at": "2026-11-23 23:06:03",
    "release_eu": "2019-04-18",
    "in_exophase": false
+  }
+ ],
+ "retro": [
+  {
+   "id": "nso-n64",
+   "title": "Nintendo 64 – Nintendo Switch Online",
+   "platform": "Nintendo 64",
+   "exophase_titles": [
+    "Nintendo 64 – Nintendo Switch Online",
+    "NINTENDO 64 Nintendo Switch Online",
+    "Nintendo 64 – Nintendo Switch Online: MATURE 17+"
+   ],
+   "hours": 143.85,
+   "last_played": "2026-10-18",
+   "games": [],
+   "exophase_id": "522768+684663+523575"
+  },
+  {
+   "id": "nso-gba",
+   "title": "Game Boy Advance – Nintendo Switch Online",
+   "platform": "Game Boy Advance",
+   "exophase_titles": [
+    "Game Boy Advance - Nintendo Switch Online",
+    "ゲームボーイアドバンス Nintendo Switch Online"
+   ],
+   "hours": 67.2167,
+   "last_played": "2026-11-15",
+   "games": [],
+   "exophase_id": "574486+574487+574488+523576+523589"
+  },
+  {
+   "id": "nso-snes",
+   "title": "Super Nintendo – Nintendo Switch Online",
+   "platform": "SNES",
+   "exophase_titles": [
+    "Super Nintendo Entertainment System - Nintendo Switch Online",
+    "スーパーファミコン Nintendo Switch Online"
+   ],
+   "hours": 60.1667,
+   "last_played": "2026-11-15",
+   "games": [],
+   "exophase_id": "522756+574487+574488+523576+523589"
+  },
+  {
+   "id": "nso-gb",
+   "title": "Game Boy – Nintendo Switch Online",
+   "platform": "Game Boy",
+   "exophase_titles": [
+    "Game Boy - Nintendo Switch Online",
+    "ゲームボーイ Nintendo Switch Online"
+   ],
+   "hours": 28.5167,
+   "last_played": "2026-10-27",
+   "games": [],
+   "exophase_id": "574485+574487+574488+523576+523589"
+  },
+  {
+   "id": "nso-gc",
+   "title": "Nintendo GameCube – Nintendo Classics",
+   "platform": "GameCube",
+   "exophase_titles": [
+    "Nintendo GameCube – Nintendo Classics"
+   ],
+   "hours": 25.3667,
+   "last_played": "2026-09-12",
+   "games": [],
+   "exophase_id": "817351"
+  },
+  {
+   "id": "nso-nes",
+   "title": "NES – Nintendo Switch Online",
+   "platform": "NES",
+   "exophase_titles": [
+    "Nintendo Entertainment System - Nintendo Switch Online",
+    "ファミリーコンピュータ Nintendo Switch Online"
+   ],
+   "hours": 23.7667,
+   "last_played": "2026-10-11",
+   "games": [],
+   "exophase_id": "522745+574487+574488+523576+523589"
+  },
+  {
+   "id": "nso-md",
+   "title": "SEGA Mega Drive – Nintendo Switch Online",
+   "platform": "Mega Drive",
+   "exophase_titles": [
+    "SEGA Genesis – Nintendo Switch Online"
+   ],
+   "hours": 0.65,
+   "last_played": "2025-01-14",
+   "games": [],
+   "exophase_id": "522985"
+  },
+  {
+   "id": "nso-vb",
+   "title": "Virtual Boy – Nintendo Classics",
+   "platform": "Virtual Boy",
+   "exophase_titles": [
+    "Virtual Boy – Nintendo Classics"
+   ],
+   "hours": 0.05,
+   "last_played": "2026-05-25",
+   "games": [],
+   "exophase_id": "910281"
   }
  ]
 }

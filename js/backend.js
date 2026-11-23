@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232304';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232304';
-import { searchCovers } from './covers.js?v=202611232304';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232304';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232317';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232317';
+import { searchCovers } from './covers.js?v=202611232317';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232317';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -24,6 +24,8 @@ let creds = JSON.parse(localStorage.getItem('gs_creds') || '{}'); // { gh, ak }
 setVisionKey(creds.ak);
 let verified = false;
 let games = [];
+let retro = [];          // apps retro (NSO / Nintendo Classics) con sus juegos detallados
+let retroDirty = false;
 let sha = null;
 
 const STATUSES = ['jugando', 'pendiente', 'completado', 'masterizado'];
@@ -127,7 +129,9 @@ export async function load() {
       const f = await gh(`/contents/${DATA_PATH}?ref=${REPO.branch}`);
       sha = f.sha;
       const text = f.content ? b64decode(f.content) : await (await fetch(f.download_url, { cache: 'no-store' })).text();
-      games = JSON.parse(text).games || [];
+      const parsed = JSON.parse(text);
+      games = parsed.games || [];
+      retro = parsed.retro || [];
       verified = true;
       return games;
     } catch (e) {
@@ -137,7 +141,9 @@ export async function load() {
   }
   // Invitado (o token inválido): copia publicada en GitHub Pages
   const r = await fetch(`${DATA_PATH}?t=${Date.now()}`, { cache: 'no-store' });
-  games = (await r.json()).games || [];
+  const parsed = await r.json();
+  games = parsed.games || [];
+  retro = parsed.retro || [];
   return games;
 }
 
@@ -194,12 +200,12 @@ async function flush() {
   const message = msgs.length === 1 ? msgs[0] : `${msgs.length} cambios: ${msgs.slice(0, 3).join(' · ')}${msgs.length > 3 ? '…' : ''}`;
   const body = () => ({
     message: `GameShelf: ${message}`.slice(0, 200),
-    content: b64encode(JSON.stringify({ version: 1, updated_at: new Date().toISOString(), games }, null, 1)),
+    content: b64encode(JSON.stringify({ version: 1, updated_at: new Date().toISOString(), games, retro }, null, 1)),
     sha, branch: REPO.branch,
   });
   onSaveState('saving');
-  const snap = { dirty: new Map([...dirty].map(([k, v]) => [k, new Set(v)])), created: new Set(created), deleted: new Set(deleted) };
-  dirty.clear(); created.clear(); deleted.clear();
+  const snap = { dirty: new Map([...dirty].map(([k, v]) => [k, new Set(v)])), created: new Set(created), deleted: new Set(deleted), retro: retroDirty };
+  dirty.clear(); created.clear(); deleted.clear(); retroDirty = false;
   try {
     let res;
     for (let attempt = 0; ; attempt++) {
@@ -208,8 +214,9 @@ async function flush() {
         if ((e.status !== 409 && e.status !== 422) || attempt >= 3) throw e;
         // Otro dispositivo (o un script) guardó antes: traemos lo último y aplicamos encima SOLO nuestros cambios.
         const f = await gh(`/contents/${DATA_PATH}?ref=${REPO.branch}`);
-        const remote = JSON.parse(f.content ? b64decode(f.content) : await (await fetch(f.download_url, { cache: 'no-store' })).text()).games || [];
-        games = mergeInto(remote, snap, games);
+        const remoteAll = JSON.parse(f.content ? b64decode(f.content) : await (await fetch(f.download_url, { cache: 'no-store' })).text());
+        games = mergeInto(remoteAll.games || [], snap, games);
+        if (!snap.retro) retro = remoteAll.retro || retro; // si no tocamos retro, nos quedamos con lo remoto (p. ej. horas de Exophase)
         sha = f.sha;
       }
     }
@@ -220,6 +227,7 @@ async function flush() {
     // devolvemos los cambios a la cola para el siguiente intento
     for (const [k, v] of snap.dirty) markDirty(k, v);
     snap.created.forEach(x => created.add(x)); snap.deleted.forEach(x => deleted.add(x));
+    if (snap.retro) retroDirty = true;
     onSaveState('error', e.message);
     throw e;
   }
@@ -363,6 +371,27 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
 
   if (p === '/api/me') return { editor: !!(creds.gh && verified), vision: visionAvailable(), igdb: false, steamgriddb: false, repo: REPO };
   if (p === '/api/games' && method === 'GET') return games;
+  if (p === '/api/retro' && method === 'GET') return retro;
+  const rm = p.match(/^\/api\/retro\/([\w-]+)\/games(?:\/(\d+))?$/);
+  if (rm) {
+    const emu = retro.find(r => r.id === rm[1]);
+    if (!emu) throw err('Emulador no encontrado', 404);
+    emu.games ||= [];
+    const idx = rm[2] !== undefined ? +rm[2] : null;
+    if (method === 'POST') {
+      const title = String(body.title || '').trim();
+      if (!title) throw err('Falta el nombre del juego');
+      emu.games.push({ title, hours: Math.max(0, parseHours(body.hours) ?? 0), notes: body.notes || null });
+    } else if (method === 'PATCH' && idx !== null && emu.games[idx]) {
+      if (body.title !== undefined) emu.games[idx].title = String(body.title).trim() || emu.games[idx].title;
+      if (body.hours !== undefined) emu.games[idx].hours = Math.max(0, parseHours(body.hours) ?? 0);
+    } else if (method === 'DELETE' && idx !== null && emu.games[idx]) {
+      emu.games.splice(idx, 1);
+    } else throw err('Petición no válida');
+    retroDirty = true;
+    await saveNow(`retro: ${emu.title}`);
+    return emu;
+  }
   if (p === '/api/covers/search') return searchCovers(q.title || '', q.platform || '');
 
   if (p === '/api/games' && method === 'POST') {
