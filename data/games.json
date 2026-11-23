@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:19:04.168Z",
+ "updated_at": "2026-11-23T23:19:05.614Z",
  "games": [
   {
    "id": 1,
@@ -5110,13 +5110,7 @@
    ],
    "hours": 0.05,
    "last_played": "2026-05-25",
-   "games": [
-    {
-     "title": "Prueba (borrar)",
-     "hours": 0.05,
-     "notes": null
-    }
-   ],
+   "games": [],
    "exophase_id": "910281"
   }
  ]
