@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:33:05.835Z",
+ "updated_at": "2026-11-23T22:33:15.778Z",
  "games": [
   {
    "id": 1,
@@ -1530,15 +1530,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a3/Mariowonder.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/50-super-mario-bros-wonder.png",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/ladj8aje04zoil1bhwrg",
+   "cover_local": "covers/50-mwtudr2s.jpg",
    "exophase_id": "625749",
    "last_played": "2026-03-23",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:33:15",
    "in_exophase": true,
    "exophase_title": "Super Mario Bros. Wonder",
-   "release_eu": "2023-10-20"
+   "release_eu": "2023-10-20",
+   "cover_locked": true
   },
   {
    "id": 51,
