@@ -1,15 +1,16 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:50:38.480Z",
+ "updated_at": "2026-11-23T22:53:56.622Z",
  "games": [
   {
    "id": 1,
-   "title": "Wii Sports Resort",
+   "title": "Wii Sports + Wii Sports Resort",
    "platform": "Wii",
-   "year": 2009,
+   "year": 2011,
    "genres": [
     "Deportes",
-    "Party"
+    "Party",
+    "Recopilatorio"
    ],
    "developer": "Nintendo EAD",
    "publisher": "Nintendo",
@@ -20,15 +21,18 @@
    "rating": null,
    "hours": 0,
    "hours_source": "manual",
-   "notes": null,
+   "notes": "Recopilatorio (disco del pack de Wii): incluye Wii Sports y Wii Sports Resort. La caja que tengo es la de Wii Sports Resort.",
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Wii_Sports_Resort_boxart.png",
    "cover_local": "covers/1-wii-sports-resort.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 19:50:09",
-   "updated_at": "2026-11-23 19:50:09",
+   "updated_at": "2026-11-23 22:53:56",
    "in_exophase": false,
-   "release_eu": "2009-07-24"
+   "release_eu": null,
+   "alt_title": "Wii Sports + Wii Sports Resort",
+   "gametdb_id": "SP2P01",
+   "cover_locked": true
   },
   {
    "id": 2,

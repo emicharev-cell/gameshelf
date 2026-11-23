@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232215';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232215';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232215';
-import { parseHours } from './util.js?v=202611232215';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232254';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232254';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232254';
+import { parseHours } from './util.js?v=202611232254';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -59,7 +59,7 @@ const SAGAS = [
   ['Xenoblade', /xenoblade/],
   ['Fire Emblem', /fire emblem/],
   ['Kid Icarus', /kid icarus/],
-  ['Serie Wii / Nintendo Land', /\bwii (sports|play|party|fit)|nintendo land/],
+  ['Serie Wii (Sports, Party, Play…)', /\bwii (sports|play|party|fit)|nintendo land|switch sports/],
   ['Puyo Puyo / Tetris', /puyo|tetris/],
 ];
 const OTHER_SAGA = 'Otros';
