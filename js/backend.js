@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232254';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232254';
-import { searchCovers } from './covers.js?v=202611232254';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232254';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232259';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232259';
+import { searchCovers } from './covers.js?v=202611232259';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232259';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -142,6 +142,32 @@ export async function load() {
 }
 
 let saveTimer = null, saving = Promise.resolve(), pendingMsg = new Set();
+// Cambios locales pendientes de subir, campo a campo, para poder fusionarlos si otra persona/dispositivo
+// (o un script) ha guardado mientras tanto: así nunca se pisan cambios ajenos.
+const dirty = new Map();      // id → Set(campos modificados)
+const created = new Set();    // ids creados aquí
+const deleted = new Set();    // ids borrados aquí
+const markDirty = (id, fields) => { if (!dirty.has(id)) dirty.set(id, new Set()); fields.forEach(f => dirty.get(id).add(f)); };
+
+/** Aplica los cambios locales (snapshot) sobre la versión remota más reciente. */
+function mergeInto(remoteGames, snap, local) {
+  const out = remoteGames.filter(r => !snap.deleted.has(r.id)).map(r => ({ ...r }));
+  for (const [id, fields] of snap.dirty) {
+    if (snap.created.has(id)) continue;
+    const l = local.find(x => x.id === id), r = out.find(x => x.id === id);
+    if (!l || !r) continue;                       // borrado en remoto: respetamos el borrado
+    for (const f of fields) r[f] = l[f];
+    r.updated_at = l.updated_at;
+  }
+  for (const id of snap.created) {
+    const l = local.find(x => x.id === id);
+    if (!l) continue;
+    const g = { ...l };
+    if (out.some(x => x.id === g.id)) g.id = out.reduce((m, x) => Math.max(m, x.id), 0) + 1; // id ocupado en remoto
+    out.push(g);
+  }
+  return out;
+}
 export let onSaveState = () => {};
 export function setSaveListener(fn) { onSaveState = fn; }
 
@@ -172,18 +198,28 @@ async function flush() {
     sha, branch: REPO.branch,
   });
   onSaveState('saving');
+  const snap = { dirty: new Map([...dirty].map(([k, v]) => [k, new Set(v)])), created: new Set(created), deleted: new Set(deleted) };
+  dirty.clear(); created.clear(); deleted.clear();
   try {
     let res;
-    try { res = await gh(`/contents/${DATA_PATH}`, { method: 'PUT', body: body() }); }
-    catch (e) {
-      if (e.status !== 409 && e.status !== 422) throw e;
-      // Alguien guardó desde otro dispositivo: tomamos el sha nuevo y gana la última escritura.
-      sha = (await gh(`/contents/${DATA_PATH}?ref=${REPO.branch}`)).sha;
-      res = await gh(`/contents/${DATA_PATH}`, { method: 'PUT', body: body() });
+    for (let attempt = 0; ; attempt++) {
+      try { res = await gh(`/contents/${DATA_PATH}`, { method: 'PUT', body: body() }); break; }
+      catch (e) {
+        if ((e.status !== 409 && e.status !== 422) || attempt >= 3) throw e;
+        // Otro dispositivo (o un script) guardó antes: traemos lo último y aplicamos encima SOLO nuestros cambios.
+        const f = await gh(`/contents/${DATA_PATH}?ref=${REPO.branch}`);
+        const remote = JSON.parse(f.content ? b64decode(f.content) : await (await fetch(f.download_url, { cache: 'no-store' })).text()).games || [];
+        games = mergeInto(remote, snap, games);
+        sha = f.sha;
+      }
     }
     sha = res.content.sha;
     onSaveState('saved');
+    window.dispatchEvent?.(new CustomEvent('gs-games-changed'));
   } catch (e) {
+    // devolvemos los cambios a la cola para el siguiente intento
+    for (const [k, v] of snap.dirty) markDirty(k, v);
+    snap.created.forEach(x => created.add(x)); snap.deleted.forEach(x => deleted.add(x));
     onSaveState('error', e.message);
     throw e;
   }
@@ -220,13 +256,16 @@ function create(input) {
     ...g,
   };
   games.push(game);
+  created.add(game.id);
   return game;
 }
 
 function update(id, input) {
   const g = get(id);
   if (!g) throw err('No encontrado', 404);
-  Object.assign(g, clean(input), { updated_at: now() });
+  const ch = clean(input);
+  Object.assign(g, ch, { updated_at: now() });
+  markDirty(id, Object.keys(ch));
   return g;
 }
 
@@ -363,6 +402,8 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
   if (id && method === 'DELETE') {
     const g = get(id); if (!g) throw err('No encontrado', 404);
     games = games.filter(x => x.id !== id);
+    if (created.has(id)) created.delete(id); else deleted.add(id);
+    dirty.delete(id);
     scheduleSave(`borrado ${g.title}`);
     return { ok: true };
   }
