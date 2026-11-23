@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:34:42.955Z",
+ "updated_at": "2026-11-23T22:34:51.902Z",
  "games": [
   {
    "id": 1,
@@ -1287,15 +1287,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Pok%C3%A9mon_Mystery_Dungeon_Rescue_Team_DX.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/42-pokemon-mundo-misterioso-equipo-de-rescate-dx.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000012521/1.1_ProductTile_Switch_Poke%CC%81monMysteryDungeonRescueTeamDX_KeyArt_ESP_NOE",
+   "cover_local": "covers/42-mwtuftfw.jpg",
    "exophase_id": "533563",
    "last_played": "2026-03-25",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:34:51",
    "in_exophase": true,
    "exophase_title": "Pokémon Mystery Dungeon Rescue Team DX",
-   "release_eu": "2020-03-06"
+   "release_eu": "2020-03-06",
+   "cover_locked": true
   },
   {
    "id": 43,
