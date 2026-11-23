@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T21:23:50.486Z",
+ "updated_at": "2026-11-23T21:42:08.840Z",
  "games": [
   {
    "id": 1,
@@ -21,13 +21,14 @@
    "hours": 0,
    "hours_source": "manual",
    "notes": null,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Wii_Sports_Resort_boxart.png",
-   "cover_local": "covers/1-wii-sports-resort.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RZTP01.png",
+   "cover_local": "covers/1-tdb-RZTP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 19:50:09",
    "updated_at": "2026-11-23 19:50:09",
-   "in_exophase": false
+   "in_exophase": false,
+   "gametdb_id": "RZTP01"
   },
   {
    "id": 2,
@@ -78,14 +79,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/2d/Pokemon_Legends_Z-A_Key_Art_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/3-leyendas-pokemon-z-a-nintendo-switch-2.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/ALZLA.jpg",
+   "cover_local": "covers/3-tdb-ALZLA.jpg",
    "exophase_id": "864961",
    "last_played": "2026-11-15",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Legends: Z-A"
+   "exophase_title": "Pokémon Legends: Z-A",
+   "gametdb_id": "ALZLA"
   },
   {
    "id": 4,
@@ -138,14 +140,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/48/Metroid_Prime_4_Beyond_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/5-metroid-prime-4-beyond-nintendo-switch-2.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BGW5A.jpg",
+   "cover_local": "covers/5-tdb-BGW5A.jpg",
    "exophase_id": "881908",
    "last_played": "2026-09-29",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Metroid Prime 4: Beyond"
+   "exophase_title": "Metroid Prime 4: Beyond",
+   "gametdb_id": "BGW5A"
   },
   {
    "id": 6,
@@ -255,14 +258,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/9-super-smash-bros-ultimate.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AAABA.jpg",
+   "cover_local": "covers/9-tdb-AAABA.jpg",
    "exophase_id": "522857",
    "last_played": "2026-06-08",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Smash Bros. Ultimate"
+   "exophase_title": "Super Smash Bros. Ultimate",
+   "gametdb_id": "AAABA"
   },
   {
    "id": 10,
@@ -285,14 +289,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/10-legend-of-zelda-breath-of-wild.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AAAAA.jpg",
+   "cover_local": "covers/10-tdb-AAAAA.jpg",
    "exophase_id": "522774",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Breath of the Wild"
+   "exophase_title": "The Legend of Zelda: Breath of the Wild",
+   "gametdb_id": "AAAAA"
   },
   {
    "id": 11,
@@ -315,14 +320,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/The_Legend_of_Zelda_%E2%80%93_Echoes_of_Wisdom.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/11-legend-of-zelda-echoes-of-wisdom.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BDGEA.jpg",
+   "cover_local": "covers/11-tdb-BDGEA.jpg",
    "exophase_id": "711528",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Echoes of Wisdom"
+   "exophase_title": "The Legend of Zelda: Echoes of Wisdom",
+   "gametdb_id": "BDGEA"
   },
   {
    "id": 12,
@@ -344,14 +350,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/7/74/The_Legend_of_Zelda_Link%27s_Awakening_%282019_video_game%29.jpg",
-   "cover_local": "covers/12-fix.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AR3NA.jpg",
+   "cover_local": "covers/12-tdb-AR3NA.jpg",
    "exophase_id": "522771",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Link’s Awakening"
+   "exophase_title": "The Legend of Zelda: Link’s Awakening",
+   "gametdb_id": "AR3NA"
   },
   {
    "id": 13,
@@ -373,14 +380,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/99/Legend_of_Zelda_Skyward_Sword_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/13-legend-of-zelda-skyward-sword.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AZ89A.jpg",
+   "cover_local": "covers/13-tdb-AZ89A.jpg",
    "exophase_id": "524323",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Skyward Sword HD"
+   "exophase_title": "The Legend of Zelda: Skyward Sword HD",
+   "gametdb_id": "AZ89A"
   },
   {
    "id": 14,
@@ -403,14 +411,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/14-legend-of-zelda-tears-of-kingdom.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AXN7A.jpg",
+   "cover_local": "covers/14-tdb-AXN7A.jpg",
    "exophase_id": "592580",
    "last_played": "2026-09-15",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Tears of the Kingdom"
+   "exophase_title": "The Legend of Zelda: Tears of the Kingdom",
+   "gametdb_id": "AXN7A"
   },
   {
    "id": 15,
@@ -432,14 +441,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d7/Tomodachi_Life_-_Living_The_Dream.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/15-tomodachi-life-una-vida-de-ensueno.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/BLFGA.jpg",
+   "cover_local": "covers/15-tdb-BLFGA.jpg",
    "exophase_id": "952185",
    "last_played": "2026-10-23",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Tomodachi Life: Living the Dream"
+   "exophase_title": "Tomodachi Life: Living the Dream",
+   "gametdb_id": "BLFGA"
   },
   {
    "id": 16,
@@ -461,14 +471,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/89/SuperMarioRPGSNESCoverArtUS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/16-super-mario-rpg.jpg",
+   "cover_url": null,
+   "cover_local": "covers/16-user-mariorpg.jpg",
    "exophase_id": "631856",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario RPG"
+   "exophase_title": "Super Mario RPG",
+   "cover_locked": true
   },
   {
    "id": 17,
@@ -490,13 +501,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/21/1-2-Switch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/17-1-2-switch.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AACCA.jpg",
+   "cover_local": "covers/17-tdb-AACCA.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "in_exophase": false
+   "in_exophase": false,
+   "gametdb_id": "AACCA"
   },
   {
    "id": 18,
@@ -518,14 +530,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Arms_%28video_game%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/18-arms.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AABQA.jpg",
+   "cover_local": "covers/18-tdb-AABQA.jpg",
    "exophase_id": "527031",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "ARMS"
+   "exophase_title": "ARMS",
+   "gametdb_id": "AABQA"
   },
   {
    "id": 19,
@@ -547,14 +560,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/DKC5_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/19-donkey-kong-country-tropical-freeze.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AFWTA.jpg",
+   "cover_local": "covers/19-tdb-AFWTA.jpg",
    "exophase_id": "522959",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Donkey Kong Country: Tropical Freeze"
+   "exophase_title": "Donkey Kong Country: Tropical Freeze",
+   "gametdb_id": "AFWTA"
   },
   {
    "id": 20,
@@ -577,14 +591,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/e1/Hyrule_Warriors_Age_Of_Calamity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/20-hyrule-warriors-age-of-calamity.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AXEAB.jpg",
+   "cover_local": "covers/20-tdb-AXEAB.jpg",
    "exophase_id": "523703",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Hyrule Warriors: Age of Calamity"
+   "exophase_title": "Hyrule Warriors: Age of Calamity",
+   "gametdb_id": "AXEAB"
   },
   {
    "id": 21,
@@ -606,14 +621,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Kirby_and_The_Forgotten_Land_Icon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/21-kirby-and-forgotten-land.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/ARZGA.jpg",
+   "cover_local": "covers/21-tdb-ARZGA.jpg",
    "exophase_id": "523029",
    "last_played": "2026-07-30",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Kirby and the Forgotten Land"
+   "exophase_title": "Kirby and the Forgotten Land",
+   "gametdb_id": "ARZGA"
   },
   {
    "id": 22,
@@ -635,14 +651,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Kirbys_return_to_dreamland_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/22-kirby-s-return-to-dream-land.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/A2JYA.jpg",
+   "cover_local": "covers/22-tdb-A2JYA.jpg",
    "exophase_id": "577681",
    "last_played": "2026-07-23",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Kirby’s Return to Dream Land Deluxe"
+   "exophase_title": "Kirby’s Return to Dream Land Deluxe",
+   "gametdb_id": "A2JYA"
   },
   {
    "id": 23,
@@ -693,14 +710,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Pokemon_Legends_Arceus_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/24-leyendas-pokemon-arceus.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AW7KA.jpg",
+   "cover_local": "covers/24-tdb-AW7KA.jpg",
    "exophase_id": "522896",
    "last_played": "2025-03-20",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Legends: Arceus"
+   "exophase_title": "Pokémon Legends: Arceus",
+   "gametdb_id": "AW7KA"
   },
   {
    "id": 25,
@@ -723,14 +741,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/38/Luigi%27s_Mansion_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/25-luigi-s-mansion-3.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AG3JA.jpg",
+   "cover_local": "covers/25-tdb-AG3JA.jpg",
    "exophase_id": "522773",
    "last_played": "2025-03-08",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Luigi’s Mansion 3"
+   "exophase_title": "Luigi’s Mansion 3",
+   "gametdb_id": "AG3JA"
   },
   {
    "id": 26,
@@ -752,14 +771,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/26-mario-kart-8.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AABPA.jpg",
+   "cover_local": "covers/26-tdb-AABPA.jpg",
    "exophase_id": "522744",
    "last_played": "2026-09-02",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Mario Kart 8 Deluxe"
+   "exophase_title": "Mario Kart 8 Deluxe",
+   "gametdb_id": "AABPA"
   },
   {
    "id": 27,
@@ -781,14 +801,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f5/Mario_%2B_Rabbids_Kingdom_Battle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/27-mario-rabbids-kingdom-battle.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BAANA.jpg",
+   "cover_local": "covers/27-tdb-BAANA.jpg",
    "exophase_id": "522888",
    "last_played": "2025-04-15",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Mario + Rabbids Kingdom Battle"
+   "exophase_title": "Mario + Rabbids Kingdom Battle",
+   "gametdb_id": "BAANA"
   },
   {
    "id": 28,
@@ -810,14 +831,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0f/Mario_%26_Luigi_-_Brothership_%28cover_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/28-mario-and-luigi-brothership.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/A8E6A.jpg",
+   "cover_local": "covers/28-tdb-A8E6A.jpg",
    "exophase_id": "736670",
    "last_played": "2025-01-07",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Mario & Luigi: Brothership"
+   "exophase_title": "Mario & Luigi: Brothership",
+   "gametdb_id": "A8E6A"
   },
   {
    "id": 29,
@@ -839,14 +861,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/29-metroid-dread.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AYL8A.jpg",
+   "cover_local": "covers/29-tdb-AYL8A.jpg",
    "exophase_id": "522738",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Metroid Dread"
+   "exophase_title": "Metroid Dread",
+   "gametdb_id": "AYL8A"
   },
   {
    "id": 30,
@@ -869,14 +892,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/MetroidPrimebox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/30-metroid-prime.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/A3SDA.jpg",
+   "cover_local": "covers/30-tdb-A3SDA.jpg",
    "exophase_id": "574407",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Metroid Prime Remastered"
+   "exophase_title": "Metroid Prime Remastered",
+   "gametdb_id": "A3SDA"
   },
   {
    "id": 31,
@@ -898,14 +922,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/03/New_Super_Mario_Bros._U_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/31-new-super-mario-bros-u.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/ADALA.jpg",
+   "cover_local": "covers/31-tdb-ADALA.jpg",
    "exophase_id": "522739",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "New Super Mario Bros. U Deluxe"
+   "exophase_title": "New Super Mario Bros. U Deluxe",
+   "gametdb_id": "ADALA"
   },
   {
    "id": 32,
@@ -927,14 +952,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Nintendo_Switch_Sports_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/32-nintendo-switch-sports.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AS8SA.jpg",
+   "cover_local": "covers/32-tdb-AS8SA.jpg",
    "exophase_id": "523026",
    "last_played": "2026-06-17",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Nintendo Switch Sports"
+   "exophase_title": "Nintendo Switch Sports",
+   "gametdb_id": "AS8SA"
   },
   {
    "id": 33,
@@ -986,14 +1012,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/18/Paper_Mario_The_Thousand-Year_Door_%28artwork%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/34-paper-mario-la-puerta-milenaria.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/A9QDA.jpg",
+   "cover_local": "covers/34-tdb-A9QDA.jpg",
    "exophase_id": "677345",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Paper Mario: The Thousand-Year Door"
+   "exophase_title": "Paper Mario: The Thousand-Year Door",
+   "gametdb_id": "A9QDA"
   },
   {
    "id": 35,
@@ -1015,14 +1042,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/59/Paper_Mario_The_Origami_King.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/35-paper-mario-origami-king.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/ARUUA.jpg",
+   "cover_local": "covers/35-tdb-ARUUA.jpg",
    "exophase_id": "522986",
    "last_played": "2024-09-25",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Paper Mario: The Origami King"
+   "exophase_title": "Paper Mario: The Origami King",
+   "gametdb_id": "ARUUA"
   },
   {
    "id": 36,
@@ -1044,8 +1072,8 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/13/Pikmin_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/36-pikmin-1-2.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BAMEA.jpg",
+   "cover_local": "covers/36-tdb-BAMEA.jpg",
    "exophase_id": "602941+602940",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
@@ -1055,7 +1083,8 @@
     "Pikmin 2"
    ],
    "in_exophase": true,
-   "exophase_title": "Pikmin 1 + Pikmin 2"
+   "exophase_title": "Pikmin 1 + Pikmin 2",
+   "gametdb_id": "BAMEA"
   },
   {
    "id": 37,
@@ -1077,14 +1106,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/53/Pikmin_3_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/37-pikmin-3.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AMPNA.jpg",
+   "cover_local": "covers/37-tdb-AMPNA.jpg",
    "exophase_id": "526981",
    "last_played": "2026-09-01",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pikmin 3 Deluxe"
+   "exophase_title": "Pikmin 3 Deluxe",
+   "gametdb_id": "AMPNA"
   },
   {
    "id": 38,
@@ -1106,14 +1136,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Pikmin_icon_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/38-pikmin-4.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AMPYA.jpg",
+   "cover_local": "covers/38-tdb-AMPYA.jpg",
    "exophase_id": "608387",
    "last_played": "2025-11-30",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pikmin 4"
+   "exophase_title": "Pikmin 4",
+   "gametdb_id": "AMPYA"
   },
   {
    "id": 39,
@@ -1135,14 +1166,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Pokemon_Brilliant_Diamond_Shining_Pearl.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/39-pokemon-diamante-brillante.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AX7QA.jpg",
+   "cover_local": "covers/39-tdb-AX7QA.jpg",
    "exophase_id": "522743",
    "last_played": "2025-03-20",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Brilliant Diamond"
+   "exophase_title": "Pokémon Brilliant Diamond",
+   "gametdb_id": "AX7QA"
   },
   {
    "id": 40,
@@ -1164,14 +1196,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fa/Pok%C3%A9mon_Sword_and_Shield.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/40-pokemon-espada.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/ALZAA.jpg",
+   "cover_local": "covers/40-tdb-ALZAA.jpg",
    "exophase_id": "522900",
    "last_played": "2026-09-01",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Sword"
+   "exophase_title": "Pokémon Sword",
+   "gametdb_id": "ALZAA"
   },
   {
    "id": 41,
@@ -1193,14 +1226,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/47/Pok%C3%A9mon_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/41-pokemon-let-s-go-pikachu.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/ADW2A.jpg",
+   "cover_local": "covers/41-tdb-ADW2A.jpg",
    "exophase_id": "522901",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon: Let’s Go, Pikachu!"
+   "exophase_title": "Pokémon: Let’s Go, Pikachu!",
+   "gametdb_id": "ADW2A"
   },
   {
    "id": 42,
@@ -1223,14 +1257,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Pok%C3%A9mon_Mystery_Dungeon_Rescue_Team_DX.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/42-pokemon-mundo-misterioso-equipo-de-rescate-dx.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/ES/AQ42A.jpg",
+   "cover_local": "covers/42-tdb-AQ42A.jpg",
    "exophase_id": "533563",
    "last_played": "2026-03-25",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Mystery Dungeon Rescue Team DX"
+   "exophase_title": "Pokémon Mystery Dungeon Rescue Team DX",
+   "gametdb_id": "AQ42A"
   },
   {
    "id": 43,
@@ -1253,14 +1288,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/00/Pok%C3%A9mon_Scarlet_and_Violet_banner.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/43-pokemon-purpura.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/ALZYA.jpg",
+   "cover_local": "covers/43-tdb-ALZYA.jpg",
    "exophase_id": "555789",
    "last_played": "2026-09-09",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Violet"
+   "exophase_title": "Pokémon Violet",
+   "gametdb_id": "ALZYA"
   },
   {
    "id": 44,
@@ -1282,14 +1318,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Puyo_Puyo_Tetris_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/44-puyo-puyo-tetris.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BAACC.jpg",
+   "cover_local": "covers/44-tdb-BAACC.jpg",
    "exophase_id": "528461",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Puyo Puyo Tetris"
+   "exophase_title": "Puyo Puyo Tetris",
+   "gametdb_id": "BAACC"
   },
   {
    "id": 45,
@@ -1311,14 +1348,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/90/Rhythm_Heaven_Groove.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/45-rhythm-paradise-groove.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/BFLTA.jpg",
+   "cover_local": "covers/45-tdb-BFLTA.jpg",
    "exophase_id": "990525",
    "last_played": "2026-11-16",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Rhythm Heaven Groove"
+   "exophase_title": "Rhythm Heaven Groove",
+   "gametdb_id": "BFLTA"
   },
   {
    "id": 46,
@@ -1340,14 +1378,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/49/Splatoon_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/46-splatoon-2.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AAB6C.jpg",
+   "cover_local": "covers/46-tdb-AAB6C.jpg",
    "exophase_id": "526411",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Splatoon 2"
+   "exophase_title": "Splatoon 2",
+   "gametdb_id": "AAB6C"
   },
   {
    "id": 47,
@@ -1369,14 +1408,15 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Splatoon.3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/47-splatoon-3.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AV5JA.jpg",
+   "cover_local": "covers/47-tdb-AV5JA.jpg",
    "exophase_id": "530908",
    "last_played": "2026-01-07",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Splatoon 3"
+   "exophase_title": "Splatoon 3",
+   "gametdb_id": "AV5JA"
   },
   {
    "id": 48,
@@ -1399,14 +1439,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/01/Super_Mario_3D_All_Stars.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/48-super-mario-3d-all-stars.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AVP3A.jpg",
+   "cover_local": "covers/48-tdb-AVP3A.jpg",
    "exophase_id": "522970",
    "last_played": "2025-09-17",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario 3D All-Stars"
+   "exophase_title": "Super Mario 3D All-Stars",
+   "gametdb_id": "AVP3A"
   },
   {
    "id": 49,
@@ -1428,14 +1469,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Super_Mario_3D_World_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/49-super-mario-3d-world-bowser-s-fury.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AUZPA.jpg",
+   "cover_local": "covers/49-tdb-AUZPA.jpg",
    "exophase_id": "522997",
    "last_played": "2026-01-03",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario 3D World + Bowser’s Fury"
+   "exophase_title": "Super Mario 3D World + Bowser’s Fury",
+   "gametdb_id": "AUZPA"
   },
   {
    "id": 50,
@@ -1457,14 +1499,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a3/Mariowonder.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/50-super-mario-bros-wonder.png",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AQMXA.jpg",
+   "cover_local": "covers/50-tdb-AQMXA.jpg",
    "exophase_id": "625749",
    "last_played": "2026-03-23",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario Bros. Wonder"
+   "exophase_title": "Super Mario Bros. Wonder",
+   "gametdb_id": "AQMXA"
   },
   {
    "id": 51,
@@ -1487,8 +1530,8 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/bf/The_Super_Mario_Galaxy_Movie_poster.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/51-super-mario-galaxy-super-mario-galaxy-2.jpg",
+   "cover_url": null,
+   "cover_local": "covers/51-user-galaxy12.jpg",
    "exophase_id": "860760+860957",
    "last_played": "2026-04-30",
    "added_at": "2026-11-23 20:59:19",
@@ -1498,7 +1541,8 @@
     "Super Mario Galaxy 2"
    ],
    "in_exophase": true,
-   "exophase_title": "Super Mario Galaxy + Super Mario Galaxy 2"
+   "exophase_title": "Super Mario Galaxy + Super Mario Galaxy 2",
+   "cover_locked": true
   },
   {
    "id": 52,
@@ -1520,14 +1564,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/52-super-mario-odyssey.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/AAACA.jpg",
+   "cover_local": "covers/52-tdb-AAACA.jpg",
    "exophase_id": "522751",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario Odyssey"
+   "exophase_title": "Super Mario Odyssey",
+   "gametdb_id": "AAACA"
   },
   {
    "id": 53,
@@ -1549,14 +1594,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Super_Mario_Party.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/53-super-mario-party.jpg",
+   "cover_url": "https://art.gametdb.com/switch/coverM/EN/ADFJA.jpg",
+   "cover_local": "covers/53-tdb-ADFJA.jpg",
    "exophase_id": "522769",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario Party"
+   "exophase_title": "Super Mario Party",
+   "gametdb_id": "ADFJA"
   },
   {
    "id": 54,
@@ -1578,12 +1624,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f1/AlphaSapphire.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/54-pokemon-zafiro-alfa.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/ECLP.jpg",
+   "cover_local": "covers/54-tdb-ECLP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ECLP"
   },
   {
    "id": 55,
@@ -1605,12 +1652,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f1/AlphaSapphire.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/55-pokemon-rubi-omega.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/ECRP.jpg",
+   "cover_local": "covers/55-tdb-ECRP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ECRP"
   },
   {
    "id": 56,
@@ -1632,12 +1680,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/dc/Pokemon_X_and_Y_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/56-pokemon-10.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/EKJP.jpg",
+   "cover_local": "covers/56-tdb-EKJP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EKJP"
   },
   {
    "id": 57,
@@ -1659,12 +1708,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/dc/Pokemon_X_and_Y_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/57-pokemon-y.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/EK2P.jpg",
+   "cover_local": "covers/57-tdb-EK2P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EK2P"
   },
   {
    "id": 58,
@@ -1686,12 +1736,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Pokemon_Sun_Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/58-pokemon-sol.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BNDP.jpg",
+   "cover_local": "covers/58-tdb-BNDP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BNDP"
   },
   {
    "id": 59,
@@ -1713,12 +1764,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Pokemon_Sun_Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/59-pokemon-luna.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BNEP.jpg",
+   "cover_local": "covers/59-tdb-BNEP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BNEP"
   },
   {
    "id": 60,
@@ -1740,12 +1792,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Pokemon_Ultra_Sun_and_Ultra_Moon_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/60-pokemon-ultrasol.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/A2AP.jpg",
+   "cover_local": "covers/60-tdb-A2AP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "A2AP"
   },
   {
    "id": 61,
@@ -1767,12 +1820,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/18/Pokeblast3d.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/61-super-pokemon-rumble.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/ACCP.jpg",
+   "cover_local": "covers/61-tdb-ACCP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ACCP"
   },
   {
    "id": 62,
@@ -1795,12 +1849,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/55/PMD_MIL_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/62-pokemon-mystery-dungeon-gates-to-infinity.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/APDP.jpg",
+   "cover_local": "covers/62-tdb-APDP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "APDP"
   },
   {
    "id": 63,
@@ -1823,12 +1878,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5c/Pokemon_Super_Mystery_Dungeon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/63-pokemon-mundo-megamisterioso.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BPXP.jpg",
+   "cover_local": "covers/63-tdb-BPXP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BPXP"
   },
   {
    "id": 64,
@@ -1850,12 +1906,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/7/70/ChibiRoboZipLash3DSboxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/64-chibi-robo-zip-lash.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BXLP.jpg",
+   "cover_local": "covers/64-tdb-BXLP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BXLP"
   },
   {
    "id": 65,
@@ -1877,12 +1934,13 @@
    "hours_source": "manual",
    "notes": "Tengo 3 copias.",
    "copies": 3,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/04/AnimalCrossingNewLeafNABoxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/65-animal-crossing-new-leaf.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/EGDP.jpg",
+   "cover_local": "covers/65-tdb-EGDP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EGDP"
   },
   {
    "id": 66,
@@ -1905,12 +1963,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0c/AnimalCrossing_HappyHomeDJapan3DS.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/66-animal-crossing-happy-home-designer.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/EDHP.jpg",
+   "cover_local": "covers/66-tdb-EDHP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EDHP"
   },
   {
    "id": 67,
@@ -1933,12 +1992,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Hey_Pikmin_3DS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/67-hey-pikmin.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BRCP.jpg",
+   "cover_local": "covers/67-tdb-BRCP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BRCP"
   },
   {
    "id": 68,
@@ -1961,12 +2021,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Kid_Icarus-Uprising_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/68-kid-icarus-uprising.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AKDP.jpg",
+   "cover_local": "covers/68-tdb-AKDP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AKDP"
   },
   {
    "id": 69,
@@ -1988,12 +2049,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Rhythm_Heaven_Megamix_Cover_Art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/69-rhythm-paradise-megamix.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BPJP.jpg",
+   "cover_local": "covers/69-tdb-BPJP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BPJP"
   },
   {
    "id": 70,
@@ -2015,12 +2077,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Nintendogs%2Bcats_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/70-nintendogs-cats-golden-retriever-y-nuevos-amigos.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/ADAP.jpg",
+   "cover_local": "covers/70-tdb-ADAP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ADAP"
   },
   {
    "id": 71,
@@ -2042,12 +2105,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Tomodachi_Life_series_logo_2026.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/71-tomodachi-life.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/EC6P.jpg",
+   "cover_local": "covers/71-tdb-EC6P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EC6P"
   },
   {
    "id": 72,
@@ -2069,12 +2133,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d8/Pilotwings_Resort_NA_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/72-pilotwings-resort.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AWAP.jpg",
+   "cover_local": "covers/72-tdb-AWAP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AWAP"
   },
   {
    "id": 73,
@@ -2097,12 +2162,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/98/Dillon%27s_Dead-Heat_Breakers.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/73-dillon-s-dead-heat-breakers.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/A9EP.jpg",
+   "cover_local": "covers/73-tdb-A9EP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "A9EP"
   },
   {
    "id": 74,
@@ -2124,12 +2190,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/74-super-smash-bros-for-nintendo-3ds.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AXCP.jpg",
+   "cover_local": "covers/74-tdb-AXCP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AXCP"
   },
   {
    "id": 75,
@@ -2152,12 +2219,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/Lego_Pirates_of_the_Caribbean.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/75-lego-piratas-del-caribe-el-videojuego.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/APCP.jpg",
+   "cover_local": "covers/75-tdb-APCP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "APCP"
   },
   {
    "id": 76,
@@ -2180,12 +2248,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/90/Mask_of_Miracles_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/76-el-profesor-layton-y-la-mascara-de-los-prodigios.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AKKS.jpg",
+   "cover_local": "covers/76-tdb-AKKS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AKKS"
   },
   {
    "id": 77,
@@ -2207,12 +2276,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/15/Dragonwarrior7cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/77-dragon-quest-7-fragmentos-de-un-mundo-olvidado.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AD7P.jpg",
+   "cover_local": "covers/77-tdb-AD7P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AD7P"
   },
   {
    "id": 78,
@@ -2234,12 +2304,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d7/DisneyMWboxartusa.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/78-disney-magical-world.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AMQP.jpg",
+   "cover_local": "covers/78-tdb-AMQP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AMQP"
   },
   {
    "id": 79,
@@ -2262,12 +2333,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/da/Super_Mario_Maker_Artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/79-super-mario-maker-for-nintendo-3ds.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AJHP.jpg",
+   "cover_local": "covers/79-tdb-AJHP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AJHP"
   },
   {
    "id": 80,
@@ -2289,12 +2361,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/35/New_Super_Mario_Bros._2_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/80-new-super-mario-bros-2.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/ABEP.jpg",
+   "cover_local": "covers/80-tdb-ABEP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ABEP"
   },
   {
    "id": 81,
@@ -2316,12 +2389,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/42/Super-Mario-3D-Land-Logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/81-super-mario-3d-land.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AREP.jpg",
+   "cover_local": "covers/81-tdb-AREP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AREP"
   },
   {
    "id": 82,
@@ -2343,12 +2417,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/Mario_Kart_7_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/82-mario-kart-7.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AMKP.jpg",
+   "cover_local": "covers/82-tdb-AMKP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AMKP"
   },
   {
    "id": 83,
@@ -2370,12 +2445,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Mario_Party_Star_Rush_generic_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/83-mario-party-star-rush.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BAAP.jpg",
+   "cover_local": "covers/83-tdb-BAAP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BAAP"
   },
   {
    "id": 84,
@@ -2397,12 +2473,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/40/Mariotennis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/84-mario-tennis-open.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AGAP.jpg",
+   "cover_local": "covers/84-tdb-AGAP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AGAP"
   },
   {
    "id": 85,
@@ -2424,12 +2501,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a6/PaperMarioStickerStarCover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/85-paper-mario-sticker-star.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AG5P.jpg",
+   "cover_local": "covers/85-tdb-AG5P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AG5P"
   },
   {
    "id": 86,
@@ -2451,12 +2529,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/63/MarioAndLuigiSuperstarSagaGBACoverArtUS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/86-mario-and-luigi-superstar-saga-secuaces-de-bowser.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BRMP.jpg",
+   "cover_local": "covers/86-tdb-BRMP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BRMP"
   },
   {
    "id": 87,
@@ -2478,12 +2557,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/69/Mario_%26_Luigi_3_NA_Cover.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/87-mario-and-luigi-viaje-al-centro-de-bowser-las-peri.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/A3RP.jpg",
+   "cover_local": "covers/87-tdb-A3RP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "A3RP"
   },
   {
    "id": 88,
@@ -2505,12 +2585,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/bc/MarioLuigiDreamTeam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/88-mario-and-luigi-dream-team-bros.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AYMP.jpg",
+   "cover_local": "covers/88-tdb-AYMP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AYMP"
   },
   {
    "id": 89,
@@ -2532,12 +2613,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5d/MarioandLuigiPaperJambros_BoxartPAL.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/89-mario-and-luigi-paper-jam-bros.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AYNP.jpg",
+   "cover_local": "covers/89-tdb-AYNP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AYNP"
   },
   {
    "id": 90,
@@ -2560,12 +2642,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Lmbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/90-luigi-s-mansion.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BGNP.jpg",
+   "cover_local": "covers/90-tdb-BGNP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BGNP"
   },
   {
    "id": 91,
@@ -2588,12 +2671,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Luigi%27s_Mansion_Dark_Moon_%28Boxart%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/91-luigi-s-mansion-2.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AGGP.jpg",
+   "cover_local": "covers/91-tdb-AGGP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AGGP"
   },
   {
    "id": 92,
@@ -2616,12 +2700,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/04/WarioWare_Gold_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/92-warioware-gold.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AWXP.jpg",
+   "cover_local": "covers/92-tdb-AWXP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AWXP"
   },
   {
    "id": 93,
@@ -2643,12 +2728,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/1b/The_Legend_of_Zelda_A_Link_Between_Worlds_NA_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/93-legend-of-zelda-a-link-between-worlds.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/BZLP.jpg",
+   "cover_local": "covers/93-tdb-BZLP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BZLP"
   },
   {
    "id": 94,
@@ -2670,12 +2756,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/30/The_Legend_of_Zelda_Ocarina_of_Time_3D_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/94-legend-of-zelda-ocarina-of-time-3d.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/AQEP.jpg",
+   "cover_local": "covers/94-tdb-AQEP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AQEP"
   },
   {
    "id": 95,
@@ -2697,12 +2784,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d1/Majora%27s_Mask_3D_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/95-legend-of-zelda-majora-s-mask-3d.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AJRP.jpg",
+   "cover_local": "covers/95-tdb-AJRP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AJRP"
   },
   {
    "id": 96,
@@ -2725,12 +2813,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Legend_of_Zelda_Tri_Force_Heroes_Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/96-legend-of-zelda-tri-force-heroes.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/EA3P.jpg",
+   "cover_local": "covers/96-tdb-EA3P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "EA3P"
   },
   {
    "id": 97,
@@ -2753,12 +2842,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/Hyrule_Warriors_NA_game_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/97-hyrule-warriors-legends.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BZHP.jpg",
+   "cover_local": "covers/97-tdb-BZHP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BZHP"
   },
   {
    "id": 98,
@@ -2780,12 +2870,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Metroid_Samus_Returns.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/98-metroid-samus-returns.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/A9AP.jpg",
+   "cover_local": "covers/98-tdb-A9AP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "A9AP"
   },
   {
    "id": 99,
@@ -2807,12 +2898,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Kirbytstest.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/99-kirby-triple.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/BALP.jpg",
+   "cover_local": "covers/99-tdb-BALP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BALP"
   },
   {
    "id": 100,
@@ -2834,12 +2926,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Robobotboxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/100-kirby-planet-robobot.png",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/ES/AT3P.jpg",
+   "cover_local": "covers/100-tdb-AT3P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AT3P"
   },
   {
    "id": 101,
@@ -2861,12 +2954,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/00/Star_Fox_64_3D_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/101-star-fox-64-3d.jpg",
+   "cover_url": "https://art.gametdb.com/3ds/coverM/EN/ANRP.jpg",
+   "cover_local": "covers/101-tdb-ANRP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ANRP"
   },
   {
    "id": 102,
@@ -2888,12 +2982,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/69/Mario_%26_Luigi_3_NA_Cover.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/102-mario-and-luigi-viaje-al-centro-de-bowser.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/CLJP.jpg",
+   "cover_local": "covers/102-tdb-CLJP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "CLJP"
   },
   {
    "id": 103,
@@ -2915,12 +3010,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Pokemon_Platinum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/103-pokemon-platino.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/CPUS.jpg",
+   "cover_local": "covers/103-tdb-CPUS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "CPUS"
   },
   {
    "id": 104,
@@ -2942,12 +3038,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/86/Mario_Kart_DS_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/104-mario-kart-ds.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/AMCP.jpg",
+   "cover_local": "covers/104-tdb-AMCP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AMCP"
   },
   {
    "id": 105,
@@ -2969,12 +3066,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/12/Super_Mario_64_DS_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/105-super-mario-64-ds.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/ASMP.jpg",
+   "cover_local": "covers/105-tdb-ASMP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ASMP"
   },
   {
    "id": 106,
@@ -2996,12 +3094,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/db/NewSuperMarioBrothers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/106-new-super-mario-bros.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/A2DP.jpg",
+   "cover_local": "covers/106-tdb-A2DP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "A2DP"
   },
   {
    "id": 107,
@@ -3023,12 +3122,13 @@
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/e1/Pokemon_Black_Box_Artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/107-pokemon-blanca.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/IRAS.jpg",
+   "cover_local": "covers/107-tdb-IRAS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "IRAS"
   },
   {
    "id": 108,
@@ -3050,12 +3150,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/dd/Pokemon_White_2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/108-pokemon-negra-2.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/IRES.jpg",
+   "cover_local": "covers/108-tdb-IRES.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "IRES"
   },
   {
    "id": 109,
@@ -3077,12 +3178,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/dd/Pokemon_White_2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/109-pokemon-blanca-2.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/IRDS.jpg",
+   "cover_local": "covers/109-tdb-IRDS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "IRDS"
   },
   {
    "id": 110,
@@ -3105,12 +3207,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": null,
-   "cover_local": null,
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/B2BX.jpg",
+   "cover_local": "covers/110-tdb-B2BX.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "B2BX"
   },
   {
    "id": 111,
@@ -3133,12 +3236,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f5/Fifa11_Game_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/111-fifa-11.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/VELV.jpg",
+   "cover_local": "covers/111-tdb-VELV.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "VELV"
   },
   {
    "id": 112,
@@ -3161,12 +3265,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Inazuma_Eleven.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/112-inazuma-eleven.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/YEES.jpg",
+   "cover_local": "covers/112-tdb-YEES.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "YEES"
   },
   {
    "id": 113,
@@ -3189,12 +3294,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Inazuma2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/113-inazuma-eleven-2-tormenta-de-fuego.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/BEES.jpg",
+   "cover_local": "covers/113-tdb-BEES.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BEES"
   },
   {
    "id": 114,
@@ -3217,12 +3323,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Inazuma2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/114-inazuma-eleven-2-ventisca-eterna.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/BEBS.jpg",
+   "cover_local": "covers/114-tdb-BEBS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BEBS"
   },
   {
    "id": 115,
@@ -3245,12 +3352,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/85/Pok%C3%A9mon_Ranger_Guardian_Signs_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/115-pokemon-ranger-guardian-signs.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/B3RP.jpg",
+   "cover_local": "covers/115-tdb-B3RP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "B3RP"
   },
   {
    "id": 116,
@@ -3273,12 +3381,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Pokemon_Ranger_Shadows_of_Almia_Box_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/116-pokemon-ranger-sombras-de-almia.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/YP2P.jpg",
+   "cover_local": "covers/116-tdb-YP2P.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "YP2P"
   },
   {
    "id": 117,
@@ -3301,12 +3410,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/de/Pok%C3%A9mon_Ranger_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/117-pokemon-ranger.png",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/ARGP.jpg",
+   "cover_local": "covers/117-tdb-ARGP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ARGP"
   },
   {
    "id": 118,
@@ -3329,12 +3439,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/63/Explorers_of_Sky_Cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/118-pokemon-mundo-misterioso-exploradores-del-cielo.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/C2SP.jpg",
+   "cover_local": "covers/118-tdb-C2SP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "C2SP"
   },
   {
    "id": 119,
@@ -3357,19 +3468,20 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Pok%C3%A9mon_Mystery_Dungeon_Explorers_of_Time_and_Darkness_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/119-pokemon-mundo-misterioso-exploradores-de-la-oscuri.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/ES/YFYP.jpg",
+   "cover_local": "covers/119-tdb-YFYP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "YFYP"
   },
   {
    "id": 120,
    "title": "Drawn to Life: Reinventa tu mundo",
-   "alt_title": "Drawn to Life",
+   "alt_title": "Drawn to Life: The Next Chapter",
    "platform": "Nintendo DS",
-   "year": 2007,
+   "year": 2009,
    "genres": [
     "Plataformas",
     "Creación"
@@ -3385,12 +3497,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/ec/Drawn_to_Life_coverart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/120-drawn-to-life-reinventa-tu-mundo.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/BDRP.jpg",
+   "cover_local": "covers/120-tdb-BDRP.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BDRP"
   },
   {
    "id": 121,
@@ -3412,12 +3525,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cb/PokemonHGSSBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/121-pokemon-plata-soulsilver.jpg",
+   "cover_url": "https://art.gametdb.com/ds/cover/EN/IPGS.jpg",
+   "cover_local": "covers/121-tdb-IPGS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "IPGS"
   },
   {
    "id": 122,
@@ -3439,12 +3553,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cb/PokemonHGSSBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/122-pokemon-oro-heartgold.jpg",
+   "cover_url": "https://art.gametdb.com/ds/coverM/EN/IPKS.jpg",
+   "cover_local": "covers/122-tdb-IPKS.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "IPKS"
   },
   {
    "id": 123,
@@ -3468,12 +3583,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Skylanders-spyros-adventure-cover-okladka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/123-skylanders-spyro-s-adventure.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/EN/SSPP52.png",
+   "cover_local": "covers/123-tdb-SSPP52.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SSPP52"
   },
   {
    "id": 124,
@@ -3497,12 +3613,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0d/Skylanders_Giants_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/124-skylanders-giants.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SKYZ52.png",
+   "cover_local": "covers/124-tdb-SKYZ52.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SKYZ52"
   },
   {
    "id": 125,
@@ -3526,12 +3643,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/7/77/Skylanders_Swap_Force.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/125-skylanders-swap-force.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/EN/SVXI52.png",
+   "cover_local": "covers/125-tdb-SVXI52.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SVXI52"
   },
   {
    "id": 126,
@@ -3554,12 +3672,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Endless_Ocean_Blue_World.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/126-endless-ocean-2-aventuras-bajo-el-mar.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/R4EP01.png",
+   "cover_local": "covers/126-tdb-R4EP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "R4EP01"
   },
   {
    "id": 127,
@@ -3582,12 +3701,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Wii_Play_Motion_US_box.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/127-wii-play-motion.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SC8P01.png",
+   "cover_local": "covers/127-tdb-SC8P01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SC8P01"
   },
   {
    "id": 128,
@@ -3610,12 +3730,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Mariosonic2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/128-mario-and-sonic-en-los-juegos-olimpicos-london-201.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SIIP8P.png",
+   "cover_local": "covers/128-tdb-SIIP8P.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SIIP8P"
   },
   {
    "id": 129,
@@ -3638,12 +3759,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Pok%C3%A9Park_2_-_Wonders_Beyond_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/129-pokepark-2-wonders-beyond.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/S2LP01.png",
+   "cover_local": "covers/129-tdb-S2LP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "S2LP01"
   },
   {
    "id": 130,
@@ -3666,12 +3788,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/14/Pok%C3%A9Park_Wii_NA_Cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/130-pokepark-wii-pikachu-s-adventure.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/R8AP01.png",
+   "cover_local": "covers/130-tdb-R8AP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "R8AP01"
   },
   {
    "id": 131,
@@ -3693,12 +3816,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/89/Cityfolkbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/131-animal-crossing-let-s-go-to-city.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RUUP01.png",
+   "cover_local": "covers/131-tdb-RUUP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "RUUP01"
   },
   {
    "id": 132,
@@ -3720,12 +3844,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Kirbys_return_to_dreamland_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/132-kirby-s-adventure-wii.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SUKP01.png",
+   "cover_local": "covers/132-tdb-SUKP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SUKP01"
   },
   {
    "id": 133,
@@ -3747,12 +3872,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/99/Legend_of_Zelda_Skyward_Sword_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/133-legend-of-zelda-skyward-sword.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SOUP01.png",
+   "cover_local": "covers/133-tdb-SOUP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SOUP01"
   },
   {
    "id": 134,
@@ -3774,12 +3900,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/134-legend-of-zelda-twilight-princess.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RZDP01.png",
+   "cover_local": "covers/134-tdb-RZDP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "RZDP01"
   },
   {
    "id": 135,
@@ -3801,12 +3928,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/1f/Donkeykongcountryreturns.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/135-donkey-kong-country-returns.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SF8P01.png",
+   "cover_local": "covers/135-tdb-SF8P01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SF8P01"
   },
   {
    "id": 136,
@@ -3829,12 +3957,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/Super_Paper_Mario_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/136-super-paper-mario.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/R8PP01.png",
+   "cover_local": "covers/136-tdb-R8PP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "R8PP01"
   },
   {
    "id": 137,
@@ -3856,12 +3985,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Mario_Kart_Wii.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/137-mario-kart-wii.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RMCP01.png",
+   "cover_local": "covers/137-tdb-RMCP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "RMCP01"
   },
   {
    "id": 138,
@@ -3883,12 +4013,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/8f/NewSuperMarioBrosWiiBoxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/138-new-super-mario-bros-wii.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SMNP01.png",
+   "cover_local": "covers/138-tdb-SMNP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SMNP01"
   },
   {
    "id": 139,
@@ -3910,12 +4041,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f3/SSBB_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/139-super-smash-bros-brawl.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RSBP01.png",
+   "cover_local": "covers/139-tdb-RSBP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "RSBP01"
   },
   {
    "id": 140,
@@ -3937,12 +4069,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/65/Super_Mario_Galaxy_2_Box_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/140-super-mario-galaxy-2.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/SB4P01.png",
+   "cover_local": "covers/140-tdb-SB4P01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "SB4P01"
   },
   {
    "id": 141,
@@ -3964,12 +4097,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/7/76/SuperMarioGalaxy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/141-super-mario-galaxy.jpg",
+   "cover_url": "https://art.gametdb.com/wii/cover/ES/RMGP01.png",
+   "cover_local": "covers/141-tdb-RMGP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "RMGP01"
   },
   {
    "id": 142,
@@ -3991,12 +4125,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/05/Super_Mario_Sunshine_Box_Art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/142-super-mario-sunshine.png",
+   "cover_url": "https://art.gametdb.com/wii/cover/EN/GMSP01.png",
+   "cover_local": "covers/142-tdb-GMSP01.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "GMSP01"
   },
   {
    "id": 143,
@@ -4019,12 +4154,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/90/CaptainToadtreasuretracker.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/143-captain-toad-treasure-tracker.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AKBP01.jpg",
+   "cover_local": "covers/143-tdb-AKBP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AKBP01"
   },
   {
    "id": 144,
@@ -4046,12 +4182,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b9/UK_box_art_of_Yoshi%27s_Woolly_World.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/144-yoshi-s-woolly-world.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AYCP01.jpg",
+   "cover_local": "covers/144-tdb-AYCP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AYCP01"
   },
   {
    "id": 145,
@@ -4073,12 +4210,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/DKC5_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/145-donkey-kong-country-tropical-freeze-wii-u.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/ARKP01.jpg",
+   "cover_local": "covers/145-tdb-ARKP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ARKP01"
   },
   {
    "id": 146,
@@ -4100,12 +4238,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Wii_Party_U_Box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/146-wii-party-u.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/ANXP01.jpg",
+   "cover_local": "covers/146-tdb-ANXP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ANXP01"
   },
   {
    "id": 147,
@@ -4127,12 +4266,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0a/Star_Fox_Zero.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/147-star-fox-zero.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AFXP01.jpg",
+   "cover_local": "covers/147-tdb-AFXP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AFXP01"
   },
   {
    "id": 148,
@@ -4155,12 +4295,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Nintendo_Land_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/148-nintendo-land.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/ALCP01.jpg",
+   "cover_local": "covers/148-tdb-ALCP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ALCP01"
   },
   {
    "id": 149,
@@ -4182,12 +4323,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/19/Mario_Tennis_Ultra_Smash.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/149-mario-tennis-ultra-smash.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/AVXP01.jpg",
+   "cover_local": "covers/149-tdb-AVXP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AVXP01"
   },
   {
    "id": 150,
@@ -4210,12 +4352,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/be/Paper_Mario_Color_Splash.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/150-paper-mario-color-splash.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/CNFP01.jpg",
+   "cover_local": "covers/150-tdb-CNFP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "CNFP01"
   },
   {
    "id": 151,
@@ -4237,12 +4380,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/it/3/32/Wind_waker_hd.png",
-   "cover_local": "covers/151-fix.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/BCZP01.jpg",
+   "cover_local": "covers/151-tdb-BCZP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BCZP01"
   },
   {
    "id": 152,
@@ -4264,12 +4408,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/ae/Twilight_Princess_HD.jpg",
-   "cover_local": "covers/152-fix.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AZAP01.jpg",
+   "cover_local": "covers/152-tdb-AZAP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AZAP01"
   },
   {
    "id": 153,
@@ -4292,12 +4437,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/Hyrule_Warriors_NA_game_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/153-hyrule-warriors.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/BWPP01.jpg",
+   "cover_local": "covers/153-tdb-BWPP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "BWPP01"
   },
   {
    "id": 154,
@@ -4319,12 +4465,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/53/Pikmin_3_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/154-pikmin-3.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AC3P01.jpg",
+   "cover_local": "covers/154-tdb-AC3P01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AC3P01"
   },
   {
    "id": 155,
@@ -4346,12 +4493,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/155-super-smash-bros-for-wii-u.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AXFP01.jpg",
+   "cover_local": "covers/155-tdb-AXFP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AXFP01"
   },
   {
    "id": 156,
@@ -4373,12 +4521,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Splatoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/156-splatoon.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AGMP01.jpg",
+   "cover_local": "covers/156-tdb-AGMP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AGMP01"
   },
   {
    "id": 157,
@@ -4400,12 +4549,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Animal_Crossing_amiibo_Festival.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/157-animal-crossing-amiibo-festival.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AALP01.jpg",
+   "cover_local": "covers/157-tdb-AALP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AALP01"
   },
   {
    "id": 158,
@@ -4427,12 +4577,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/158-mario-kart-8.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AMKP01.jpg",
+   "cover_local": "covers/158-tdb-AMKP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AMKP01"
   },
   {
    "id": 159,
@@ -4455,12 +4606,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/da/Super_Mario_Maker_Artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/159-super-mario-maker.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/EN/AMAP01.jpg",
+   "cover_local": "covers/159-tdb-AMAP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "AMAP01"
   },
   {
    "id": 160,
@@ -4482,12 +4634,13 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/03/New_Super_Mario_Bros._U_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/160-new-super-mario-bros-u.png",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/ARPP01.jpg",
+   "cover_local": "covers/160-tdb-ARPP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ARPP01"
   },
   {
    "id": 161,
@@ -4509,12 +4662,43 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Super_Mario_3D_World_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/161-super-mario-3d-world.jpg",
+   "cover_url": "https://art.gametdb.com/wiiu/coverM/ES/ARDP01.jpg",
+   "cover_local": "covers/161-tdb-ARDP01.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "gametdb_id": "ARDP01"
+  },
+  {
+   "id": 162,
+   "title": "Animal Crossing: New Horizons",
+   "alt_title": "Animal Crossing: New Horizons",
+   "platform": "Nintendo Switch",
+   "year": 2020,
+   "genres": [
+    "Simulación social"
+   ],
+   "developer": "Nintendo EPD",
+   "publisher": "Nintendo",
+   "format": "digital",
+   "edition": "Nintendo Switch 2 Edition",
+   "region": null,
+   "status": "completado",
+   "rating": null,
+   "hours": 382.1,
+   "hours_source": "exophase",
+   "notes": null,
+   "copies": 1,
+   "cover_url": null,
+   "cover_local": "covers/162-user-acnh.jpg",
+   "cover_locked": true,
+   "exophase_id": "522737",
+   "last_played": "2026-10-11",
+   "added_at": "2026-11-23 21:42:08",
+   "updated_at": "2026-11-23 21:42:08",
+   "in_exophase": true,
+   "exophase_title": "Animal Crossing: New Horizons"
   }
  ]
 }

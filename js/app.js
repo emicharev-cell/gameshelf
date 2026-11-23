@@ -20,12 +20,58 @@ const SORTS = {
   hours: { label: 'Horas jugadas', dir: -1, cmp: (a, b) => (a.hours || 0) - (b.hours || 0) },
   platform: { label: 'Plataforma (agrupado)', dir: 1, group: g => g.platform, cmp: (a, b) => platOrder(a.platform) - platOrder(b.platform) || a.platform.localeCompare(b.platform) },
   status: { label: 'Estado de progreso', dir: 1, group: g => STATUS[g.status].label, cmp: (a, b) => STATUS[a.status].order - STATUS[b.status].order },
+  saga: { label: 'Saga / franquicia (agrupado)', dir: 1, group: g => saga(g), cmp: (a, b) => sagaOrder(a, b) || (a.year || 9999) - (b.year || 9999) },
   added: { label: 'Añadidos recientemente', dir: -1, cmp: (a, b) => a.added_at.localeCompare(b.added_at) },
   rating: { label: 'Mi valoración', dir: -1, cmp: (a, b) => (a.rating ?? -1) - (b.rating ?? -1) },
   played: { label: 'Última partida', dir: -1, cmp: (a, b) => (a.last_played || '').localeCompare(b.last_played || '') },
   veteran: { label: '🧓 Veterano (horas por año de vida)', dir: -1, cmp: (a, b) => veteran(a) - veteran(b), hint: g => `${veteran(g).toFixed(1)} h/año` },
   gems: { label: '💎 Gemas olvidadas (backlog más antiguo)', dir: 1, cmp: (a, b) => gem(a) - gem(b), hint: g => g.status === 'pendiente' ? `en la estantería ${ago(g.added_at)}` : '' },
   marathon: { label: '🏃 Maratón (horas vs. media de su consola)', dir: -1, cmp: (a, b) => marathon(a) - marathon(b), hint: g => `${marathon(g) >= 1 ? '×' + marathon(g).toFixed(1) : ''}` },
+};
+// Sagas: se detectan por el título (español o inglés). El orden de la lista decide qué gana si encaja en varias
+// (p. ej. "Mario & Sonic" → Mario, "Hyrule Warriors" → Zelda). Dentro de cada saga, por año de lanzamiento.
+const SAGAS = [
+  ['The Legend of Zelda', /zelda|hyrule warriors/],
+  ['Pokémon', /pok[eé]mon|pok[eé]park/],
+  ['Super Smash Bros.', /smash bros/],
+  ['Mario Kart', /mario ?kart/],
+  ['Mario Party', /mario party|super mario party/],
+  ['Paper Mario', /paper mario/],
+  ['Mario & Luigi', /mario (&|and) luigi/],
+  ['Mario', /mario|captain toad|bowser/],
+  ['Luigi\'s Mansion', /luigi'?s mansion/],
+  ['Donkey Kong', /donkey kong/],
+  ['Kirby', /kirby/],
+  ['Yoshi', /yoshi/],
+  ['Metroid', /metroid/],
+  ['Pikmin', /pikmin/],
+  ['Animal Crossing', /animal crossing/],
+  ['Splatoon', /splatoon/],
+  ['Star Fox', /star ?fox/],
+  ['Tomodachi Life', /tomodachi/],
+  ['Rhythm Paradise', /rhythm (paradise|heaven)/],
+  ['Wario', /wario/],
+  ['Inazuma Eleven', /inazuma/],
+  ['Skylanders', /skylanders/],
+  ['Profesor Layton', /layton/],
+  ['Dragon Quest', /dragon quest/],
+  ['Xenoblade', /xenoblade/],
+  ['Fire Emblem', /fire emblem/],
+  ['Kid Icarus', /kid icarus/],
+  ['Serie Wii / Nintendo Land', /\bwii (sports|play|party|fit)|nintendo land/],
+  ['Puyo Puyo / Tetris', /puyo|tetris/],
+];
+const OTHER_SAGA = 'Otros';
+const saga = g => {
+  const t = `${g.title} ${g.alt_title || ''}`.toLowerCase();
+  return (SAGAS.find(([, re]) => re.test(t)) || [OTHER_SAGA])[0];
+};
+const sagaOrder = (a, b) => {
+  const x = saga(a), y = saga(b);
+  if (x === y) return 0;
+  if (x === OTHER_SAGA) return 1;
+  if (y === OTHER_SAGA) return -1;
+  return x.localeCompare(y, 'es');
 };
 const veteran = g => (g.hours || 0) / Math.max(1, YEAR - (g.year || YEAR) + 1);
 const gem = g => g.status === 'pendiente' ? Date.parse(g.added_at.replace(' ', 'T')) : 9e15;
@@ -147,7 +193,7 @@ function sorted(list) {
     for (const g of state.games) if (g.hours > 0) { (acc[g.platform] ||= []).push(g.hours); }
     platAvg = Object.fromEntries(Object.entries(acc).map(([p, a]) => [p, a.reduce((x, y) => x + y, 0) / a.length]));
   }
-  return [...list].sort((a, b) => (s.group ? s.cmp(a, b) * (state.sort === 'platform' || state.sort === 'status' ? state.dir : 1) : s.cmp(a, b) * state.dir) || byTitle(a, b));
+  return [...list].sort((a, b) => s.cmp(a, b) * state.dir || byTitle(a, b));
 }
 
 // ---------------------------------------------------------------- Render principal
@@ -229,7 +275,7 @@ function grouped(list) {
 function renderGrid(list) {
   let i = 0;
   return grouped(list).map(([name, games]) => `
-    ${name ? `<div class="group-title"><span class="swatch" style="background:${state.sort === 'platform' ? platStyle(name).c : Object.values(STATUS).find(s => s.label === name)?.color}"></span>${esc(name)} <small>${games.length} juegos · ${fmtH(games.reduce((a, g) => a + g.hours, 0))}</small></div>` : ''}
+    ${name ? `<div class="group-title"><span class="swatch" style="background:${state.sort === 'status' ? Object.values(STATUS).find(s => s.label === name)?.color : platStyle(name).c}"></span>${esc(name)} <small>${games.length} ${games.length === 1 ? "juego" : "juegos"} · ${fmtH(games.reduce((a, g) => a + g.hours, 0))}</small></div>` : ''}
     <div class="grid">${games.map(g => cardHTML(g, i++)).join('')}</div>`).join('');
 }
 
