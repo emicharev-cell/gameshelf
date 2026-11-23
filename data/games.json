@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:11:55.898Z",
+ "updated_at": "2026-11-23T23:12:08.397Z",
  "games": [
   {
    "id": 1,
@@ -642,10 +642,10 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "completado",
+   "status": "masterizado",
    "rating": null,
    "hours": 39.3,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000046406/SQ_NSW~1",
@@ -653,7 +653,7 @@
    "exophase_id": "523029",
    "last_played": "2026-07-30",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:32:43",
+   "updated_at": "2026-11-23 23:12:07",
    "in_exophase": true,
    "exophase_title": "Kirby and the Forgotten Land",
    "release_eu": "2022-03-25",
