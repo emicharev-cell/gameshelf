@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:33:15.778Z",
+ "updated_at": "2026-11-23T22:33:27.877Z",
  "games": [
   {
    "id": 1,
@@ -546,15 +546,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Arms_%28video_game%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/18-arms.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000152/SQ_NSwitch_Arms",
+   "cover_local": "covers/18-mwtue0hp.jpg",
    "exophase_id": "527031",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:33:27",
    "in_exophase": true,
    "exophase_title": "ARMS",
-   "release_eu": "2017-06-16"
+   "release_eu": "2017-06-16",
+   "cover_locked": true
   },
   {
    "id": 19,
