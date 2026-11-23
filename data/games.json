@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:36:16.186Z",
+ "updated_at": "2026-11-23T22:36:56.429Z",
  "games": [
   {
    "id": 1,
@@ -792,15 +792,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/26-mario-kart-8.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000126/SQ_NSwitch_MarioKart8Deluxe",
+   "cover_local": "covers/26-mwtuiham.jpg",
    "exophase_id": "522744",
    "last_played": "2026-09-02",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:36:56",
    "in_exophase": true,
    "exophase_title": "Mario Kart 8 Deluxe",
-   "release_eu": "2017-04-28"
+   "release_eu": "2017-04-28",
+   "cover_locked": true
   },
   {
    "id": 27,
