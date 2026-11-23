@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:35:03.795Z",
+ "updated_at": "2026-11-23T22:35:13.155Z",
  "games": [
   {
    "id": 1,
@@ -1256,16 +1256,17 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://art.gametdb.com/switch/coverHQ/EN/ADW2A.jpg",
-   "cover_local": "covers/41-tdbhq-ADW2A.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000446/SQ_NSwitch_PokemonLetsGoPikachu_enGB",
+   "cover_local": "covers/41-mwtug9kk.jpg",
    "exophase_id": "522901",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:35:13",
    "in_exophase": true,
    "exophase_title": "Pokémon: Let’s Go, Pikachu!",
    "gametdb_id": "ADW2A",
-   "release_eu": "2018-11-16"
+   "release_eu": "2018-11-16",
+   "cover_locked": true
   },
   {
    "id": 42,
