@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js';
-import { searchCovers } from './covers.js';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232209';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232209';
+import { searchCovers } from './covers.js?v=202611232209';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232209';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };

@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, REPO } from './backend.js';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js';
-import { parseHours } from './util.js';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232209';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, REPO } from './backend.js?v=202611232209';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232209';
+import { parseHours } from './util.js?v=202611232209';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -110,6 +110,16 @@ const $ = s => document.querySelector(s);
 // ---------------------------------------------------------------- Arranque
 async function boot() {
   document.documentElement.dataset.theme = state.theme;
+  // Si hay una versión publicada más nueva que la que tiene el navegador en caché, recarga con ?v=nueva
+  // (una URL distinta obliga al navegador a pedir el HTML y los JS/CSS nuevos).
+  try {
+    const { version } = await (await fetch('version.json?t=' + Date.now(), { cache: 'no-store' })).json();
+    if (version && version !== window.APP_VERSION && sessionStorage.getItem('gs_reloaded') !== version) {
+      sessionStorage.setItem('gs_reloaded', version);
+      location.replace(location.pathname + '?v=' + version + location.hash);
+      return;
+    }
+  } catch { /* sin conexión o en local: seguimos */ }
   if (location.hash.startsWith('#k=')) {
     // QR de editor: el token viaja en el fragmento (#), que nunca se envía a ningún servidor.
     // Se guarda en este dispositivo y se borra de la barra de direcciones.
