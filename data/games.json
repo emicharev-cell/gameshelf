@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:08:04.823Z",
+ "updated_at": "2026-11-23T23:08:18.207Z",
  "games": [
   {
    "id": 1,
@@ -4936,15 +4936,16 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/66/Mario_%2B_Rabbids_Sparks_of_Hope_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/167-mario-rabbids-sparks-of-hope.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/000000000010011112/1.1_ProductTile_Switch_MarioRabbidsSparksOfHope_KeyArt_EN_NOE",
+   "cover_local": "covers/167-mwtvmsvn.jpg",
    "exophase_id": "550103",
    "last_played": "2026-01-07",
    "added_at": "2026-11-23 23:06:03",
-   "updated_at": "2026-11-23 23:06:06",
+   "updated_at": "2026-11-23 23:08:18",
    "release_eu": "2022-10-20",
    "in_exophase": true,
-   "exophase_title": "Mario + Rabbids Sparks of Hope"
+   "exophase_title": "Mario + Rabbids Sparks of Hope",
+   "cover_locked": true
   },
   {
    "id": 168,
