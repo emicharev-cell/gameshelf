@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:23:02.218Z",
+ "updated_at": "2026-11-23T22:23:36.223Z",
  "games": [
   {
    "id": 1,
@@ -293,15 +293,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/10-legend-of-zelda-breath-of-wild.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/wqmrq2helvjxlzyraxnh",
+   "cover_local": "covers/10-mwtu1auz.jpg",
    "exophase_id": "522774",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:23:36",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Breath of the Wild",
-   "release_eu": "2017-03-03"
+   "release_eu": "2017-03-03",
+   "cover_locked": true
   },
   {
    "id": 11,
