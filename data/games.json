@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:29:10.752Z",
+ "updated_at": "2026-11-23T22:29:27.320Z",
  "games": [
   {
    "id": 1,
@@ -937,15 +937,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/03/New_Super_Mario_Bros._U_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/31-new-super-mario-bros-u.png",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000006412/SQ_NSwitch_NewSuperMarioBrosUDeluxe",
+   "cover_local": "covers/31-mwtu8utd.jpg",
    "exophase_id": "522739",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:29:27",
    "in_exophase": true,
    "exophase_title": "New Super Mario Bros. U Deluxe",
-   "release_eu": "2019-01-11"
+   "release_eu": "2019-01-11",
+   "cover_locked": true
   },
   {
    "id": 32,
