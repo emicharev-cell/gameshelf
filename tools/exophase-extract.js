@@ -18,6 +18,8 @@
       platform: (g.meta?.platforms || []).map(x => x.name).join('/'),
       playtime: g.playtime,
       last_played: g.lastplayed ? new Date(g.lastplayed * 1000).toISOString().slice(0, 10) : null,
+      status: g.status,
+      percent: g.percent,
     })),
   });
 })();

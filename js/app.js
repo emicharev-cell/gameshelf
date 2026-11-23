@@ -134,7 +134,7 @@ function filtered() {
     if (status.size && !status.has(g.status)) return false;
     if (format.size && !format.has(g.format)) return false;
     if (!q) return true;
-    const hay = [g.title, g.platform, g.developer, g.publisher, g.notes, g.edition, g.year, ...(g.genres || [])].join(' ').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const hay = [g.title, g.alt_title, g.platform, g.developer, g.publisher, g.notes, g.edition, g.year, ...(g.genres || [])].join(' ').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
     return q.split(/\s+/).every(w => hay.includes(w));
   });
 }
