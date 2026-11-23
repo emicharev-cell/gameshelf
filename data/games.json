@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:30:51.555Z",
+ "updated_at": "2026-11-23T22:31:03.443Z",
  "games": [
   {
    "id": 1,
@@ -455,15 +455,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d7/Tomodachi_Life_-_Living_The_Dream.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/15-tomodachi-life-una-vida-de-ensueno.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/tmqccy1fwdeh8btfdmyl",
+   "cover_local": "covers/15-mwtuawzg.jpg",
    "exophase_id": "952185",
    "last_played": "2026-10-23",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:31:03",
    "in_exophase": true,
    "exophase_title": "Tomodachi Life: Living the Dream",
-   "release_eu": "2026-04-16"
+   "release_eu": "2026-04-16",
+   "cover_locked": true
   },
   {
    "id": 16,
