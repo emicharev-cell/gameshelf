@@ -1,5 +1,33 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T19:37:53.204Z",
- "games": []
+ "updated_at": "2026-11-23T19:50:09.429Z",
+ "games": [
+  {
+   "id": 1,
+   "title": "Wii Sports Resort",
+   "platform": "Wii",
+   "year": 2009,
+   "genres": [
+    "Deportes",
+    "Party"
+   ],
+   "developer": "Nintendo EAD",
+   "publisher": "Nintendo",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Wii_Sports_Resort_boxart.png",
+   "cover_local": "covers/1-wii-sports-resort.png",
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-23 19:50:09",
+   "updated_at": "2026-11-23 19:50:09",
+   "in_exophase": false
+  }
+ ]
 }
