@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:54:39.148Z",
+ "updated_at": "2026-11-23T22:59:28.114Z",
  "games": [
   {
    "id": 1,
@@ -59,7 +59,7 @@
    "exophase_id": "833402",
    "last_played": "2026-08-19",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:25:56",
+   "updated_at": "2026-11-23 22:59:25",
    "in_exophase": true,
    "exophase_title": "Donkey Kong Bananza",
    "release_eu": "2025-07-17",
