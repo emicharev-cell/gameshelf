@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:06:06.946Z",
+ "updated_at": "2026-11-23T23:08:04.823Z",
  "games": [
   {
    "id": 1,
@@ -4871,12 +4871,12 @@
    "hours_source": "exophase",
    "notes": "Versión de Game Boy Advance (2004) jugada en Nintendo Switch.",
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Pokemon_LeafGreen_box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/165-pokemon-verde-hoja.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/ipvh9a1gz5udfevmquih",
+   "cover_local": "covers/165-mwtvmizz.jpg",
    "exophase_id": "937290",
    "last_played": "2026-03-25",
    "added_at": "2026-11-23 23:06:03",
-   "updated_at": "2026-11-23 23:06:06",
+   "updated_at": "2026-11-23 23:08:04",
    "release_eu": null,
    "exophase_titles": [
     "Pokémon LeafGreen Version (Spanish Ver.)"
