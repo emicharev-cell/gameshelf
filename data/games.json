@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:30:00.326Z",
+ "updated_at": "2026-11-23T22:30:12.254Z",
  "games": [
   {
    "id": 1,
@@ -1590,15 +1590,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/52-super-mario-odyssey.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000127/SQ_NSwitch_SuperMarioOdyssey_HomepageWithOverlay",
+   "cover_local": "covers/52-mwtu9tbq.jpg",
    "exophase_id": "522751",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:30:12",
    "in_exophase": true,
    "exophase_title": "Super Mario Odyssey",
-   "release_eu": "2017-11-28"
+   "release_eu": "2017-11-28",
+   "cover_locked": true
   },
   {
    "id": 53,
