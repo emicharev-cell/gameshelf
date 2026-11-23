@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:38:10.028Z",
+ "updated_at": "2026-11-23T22:38:21.261Z",
  "games": [
   {
    "id": 1,
@@ -1100,12 +1100,12 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://art.gametdb.com/switch/coverHQ/EN/BAMEA.jpg",
-   "cover_local": "covers/36-tdbhq-BAMEA.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/lpwl5kddp8xlvdkrrtcw",
+   "cover_local": "covers/36-mwtuk9xf.jpg",
    "exophase_id": "602941+602940",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:38:21",
    "exophase_titles": [
     "Pikmin 1",
     "Pikmin 2"
@@ -1113,7 +1113,8 @@
    "in_exophase": true,
    "exophase_title": "Pikmin 1 + Pikmin 2",
    "gametdb_id": "BAMEA",
-   "release_eu": "2023-09-22"
+   "release_eu": "2023-09-22",
+   "cover_locked": true
   },
   {
    "id": 37,
