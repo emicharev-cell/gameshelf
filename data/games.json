@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:40:27.011Z",
+ "updated_at": "2026-11-23T22:40:54.494Z",
  "games": [
   {
    "id": 1,
@@ -977,15 +977,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Nintendo_Switch_Sports_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/32-nintendo-switch-sports.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/w1arkiqdxvx5luetd5p6",
+   "cover_local": "covers/32-mwtunkwz.jpg",
    "exophase_id": "523026",
    "last_played": "2026-06-17",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:40:54",
    "in_exophase": true,
    "exophase_title": "Nintendo Switch Sports",
-   "release_eu": "2022-04-29"
+   "release_eu": "2022-04-29",
+   "cover_locked": true
   },
   {
    "id": 33,
