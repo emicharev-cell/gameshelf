@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:45:01.127Z",
+ "updated_at": "2026-11-23T22:45:59.254Z",
  "games": [
   {
    "id": 1,
@@ -827,15 +827,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f5/Mario_%2B_Rabbids_Kingdom_Battle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/27-mario-rabbids-kingdom-battle.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/n78gymauyz4uvrogrr6s",
+   "cover_local": "covers/27-mwtuu44l.jpg",
    "exophase_id": "522888",
    "last_played": "2025-04-15",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:45:59",
    "in_exophase": true,
    "exophase_title": "Mario + Rabbids Kingdom Battle",
-   "release_eu": "2018-01-18"
+   "release_eu": "2018-01-18",
+   "cover_locked": true
   },
   {
    "id": 28,
