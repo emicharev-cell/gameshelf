@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:11:40.713Z",
+ "updated_at": "2026-11-23T23:11:55.898Z",
  "games": [
   {
    "id": 1,
@@ -1081,10 +1081,10 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "completado",
+   "status": "masterizado",
    "rating": null,
    "hours": 44.7667,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000029727/1.1_2000x2000_ProductTile_Switch_PaperMarioTheOrigamiKing_KeyArt_enGB_v1_100q",
@@ -1092,7 +1092,7 @@
    "exophase_id": "522986",
    "last_played": "2024-09-25",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:40:16",
+   "updated_at": "2026-11-23 23:11:54",
    "in_exophase": true,
    "exophase_title": "Paper Mario: The Origami King",
    "release_eu": "2020-07-17",
