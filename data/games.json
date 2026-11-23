@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:25:12.036Z",
+ "updated_at": "2026-11-23T22:25:41.971Z",
  "games": [
   {
    "id": 1,
@@ -175,14 +175,15 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/47/Yoshi_Book.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/6-yoshi-and-mysterious-book.png",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/kudg5wbidbfhomhsddsr",
+   "cover_local": "covers/6-mwtu40wf.jpg",
    "exophase_id": "971711",
    "last_played": "2026-06-26",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:25:41",
    "in_exophase": true,
-   "exophase_title": "Yoshi and the Mysterious Book"
+   "exophase_title": "Yoshi and the Mysterious Book",
+   "cover_locked": true
   },
   {
    "id": 7,
