@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:08:18.207Z",
+ "updated_at": "2026-11-23T23:11:40.713Z",
  "games": [
   {
    "id": 1,
@@ -1622,10 +1622,10 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "completado",
+   "status": "masterizado",
    "rating": null,
    "hours": 108.6667,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000127/SQ_NSwitch_SuperMarioOdyssey_HomepageWithOverlay",
@@ -1633,7 +1633,7 @@
    "exophase_id": "522751",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:30:12",
+   "updated_at": "2026-11-23 23:11:39",
    "in_exophase": true,
    "exophase_title": "Super Mario Odyssey",
    "release_eu": "2017-11-28",
