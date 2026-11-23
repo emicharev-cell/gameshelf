@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:12:20.803Z",
+ "updated_at": "2026-11-23T23:12:27.568Z",
  "games": [
   {
    "id": 1,
@@ -362,10 +362,10 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "completado",
+   "status": "masterizado",
    "rating": null,
    "hours": 26,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000020034/1.1_ProductTile_Switch_TheLegendOfZeldaLinksAwakening",
@@ -373,7 +373,7 @@
    "exophase_id": "522771",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:29:58",
+   "updated_at": "2026-11-23 23:12:26",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Link’s Awakening",
    "release_eu": "2019-09-20",
