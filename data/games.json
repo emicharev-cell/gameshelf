@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:37:56.969Z",
+ "updated_at": "2026-11-23T22:38:10.028Z",
  "games": [
   {
    "id": 1,
@@ -1166,15 +1166,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Pikmin_icon_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/38-pikmin-4.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000005306/1.1_ProductTile_Switch_Pikmin4_KeyArt_EN_NOE",
+   "cover_local": "covers/38-mwtuk1x4.jpg",
    "exophase_id": "608387",
    "last_played": "2025-11-30",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:38:10",
    "in_exophase": true,
    "exophase_title": "Pikmin 4",
-   "release_eu": "2023-07-21"
+   "release_eu": "2023-07-21",
+   "cover_locked": true
   },
   {
    "id": 39,
