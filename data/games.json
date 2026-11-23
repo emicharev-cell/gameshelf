@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:49:36.506Z",
+ "updated_at": "2026-11-23T22:50:19.724Z",
  "games": [
   {
    "id": 1,
@@ -580,15 +580,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/DKC5_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/19-donkey-kong-country-tropical-freeze.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000008622/SQ_NSwitch_DonkeyKongTropicalFreeze(1)",
+   "cover_local": "covers/19-mwtuzp1f.jpg",
    "exophase_id": "522959",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:50:19",
    "in_exophase": true,
    "exophase_title": "Donkey Kong Country: Tropical Freeze",
-   "release_eu": "2018-05-04"
+   "release_eu": "2018-05-04",
+   "cover_locked": true
   },
   {
    "id": 20,
