@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:23:36.223Z",
+ "updated_at": "2026-11-23T22:23:56.311Z",
  "games": [
   {
    "id": 1,
@@ -416,15 +416,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/14-legend-of-zelda-tears-of-kingdom.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/qkuuw7mlmdesi5yr7p4c",
+   "cover_local": "covers/14-mwtu1r9q.jpg",
    "exophase_id": "592580",
    "last_played": "2026-09-15",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:23:56",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Tears of the Kingdom",
-   "release_eu": "2023-05-23"
+   "release_eu": "2023-05-23",
+   "cover_locked": true
   },
   {
    "id": 15,
