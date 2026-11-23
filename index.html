@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d17">
+  <title>GameShelf · Mi colección</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">▮▮▮</span>
+      <div>
+        <h1>GameShelf</h1>
+        <span id="modeBadge" class="mode-badge">Invitado · solo lectura</span>
+      </div>
+    </div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+      <input id="search" type="search" placeholder="Buscar título, desarrolladora, género, notas…  ( / )" autocomplete="off">
+    </label>
+    <nav class="top-actions">
+      <button class="btn ghost" id="btnRandom" title="Elige un juego al azar (R)">🎲 <span class="lbl">Al azar</span></button>
+      <button class="btn ghost" id="btnStats" title="Estadísticas">📊 <span class="lbl">Stats</span></button>
+      <button class="btn ghost editor-only" id="btnImport" title="Importar / editar horas">⏱ <span class="lbl">Horas</span></button>
+      <button class="btn ghost editor-only" id="btnQR" title="Código QR de acceso">▣ <span class="lbl">QR</span></button>
+      <div class="menu editor-only">
+        <button class="btn primary" id="btnAdd">＋ <span class="lbl">Añadir</span></button>
+        <div class="menu-pop" id="addMenu">
+          <button data-add="photo">📷 <b>Foto de un juego</b><small>Carátula, lomo, cartucho o disco</small></button>
+          <button data-add="shelf">📚 <b>Escanear estantería</b><small>Detecta varios juegos por sus lomos</small></button>
+          <button data-add="manual">✍️ <b>A mano</b><small>Con búsqueda de carátula</small></button>
+        </div>
+      </div>
+      <button class="btn ghost" id="btnLogin" title="Entrar como editor" hidden>🔑 <span class="lbl">Editor</span></button>
+      <button class="btn icon" id="btnTheme" title="Cambiar tema">◐</button>
+      <button class="btn icon editor-only" id="btnGuestView" title="Ver como invitado">👁</button>
+    </nav>
+  </header>
+
+  <section class="statstrip" id="statstrip"></section>
+
+  <section class="toolbar">
+    <div class="seg" id="viewSeg">
+      <button data-view="grid" title="Cuadrícula">▦ <span class="lbl">Portadas</span></button>
+      <button data-view="shelf" title="Modo estantería">▥ <span class="lbl">Estantería</span></button>
+      <button data-view="list" title="Lista">☰ <span class="lbl">Lista</span></button>
+    </div>
+    <div class="sortbox">
+      <select id="sortKey" aria-label="Ordenar por"></select>
+      <button class="btn icon" id="sortDir" title="Invertir orden">↓</button>
+    </div>
+    <button class="btn ghost" id="btnFilters">⚲ Filtros <span id="filterCount" class="count"></span></button>
+    <span class="result-count" id="resultCount"></span>
+  </section>
+
+  <section class="filters" id="filters">
+    <div class="filter-row"><span class="filter-title">Consola</span><div class="chips" id="fPlatform"></div></div>
+    <div class="filter-row"><span class="filter-title">Estado</span><div class="chips" id="fStatus"></div></div>
+    <div class="filter-row"><span class="filter-title">Formato</span><div class="chips" id="fFormat"></div></div>
+    <button class="linkbtn" id="clearFilters">Limpiar filtros</button>
+  </section>
+
+  <main id="catalog" class="catalog"></main>
+  <p class="empty" id="empty" hidden>No hay juegos que coincidan. ¿Pruebas a quitar algún filtro?</p>
+
+  <nav class="mobilebar editor-only">
+    <button data-add="photo">📷<span>Foto</span></button>
+    <button data-add="shelf">📚<span>Estantería</span></button>
+    <button id="mbHours">⏱<span>Horas</span></button>
+    <button id="mbRandom">🎲<span>Azar</span></button>
+  </nav>
+
+  <dialog id="modal"><div class="modal-inner" id="modalBody"></div></dialog>
+  <div class="toasts" id="toasts"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
