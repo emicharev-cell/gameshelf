@@ -1,16 +1,15 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:53:56.622Z",
+ "updated_at": "2026-11-23T22:54:39.148Z",
  "games": [
   {
    "id": 1,
-   "title": "Wii Sports + Wii Sports Resort",
+   "title": "Wii Sports Resort",
    "platform": "Wii",
-   "year": 2011,
+   "year": 2009,
    "genres": [
     "Deportes",
-    "Party",
-    "Recopilatorio"
+    "Party"
    ],
    "developer": "Nintendo EAD",
    "publisher": "Nintendo",
@@ -21,18 +20,15 @@
    "rating": null,
    "hours": 0,
    "hours_source": "manual",
-   "notes": "Recopilatorio (disco del pack de Wii): incluye Wii Sports y Wii Sports Resort. La caja que tengo es la de Wii Sports Resort.",
+   "notes": null,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Wii_Sports_Resort_boxart.png",
    "cover_local": "covers/1-wii-sports-resort.png",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 19:50:09",
-   "updated_at": "2026-11-23 22:53:56",
+   "updated_at": "2026-11-23 19:50:09",
    "in_exophase": false,
-   "release_eu": null,
-   "alt_title": "Wii Sports + Wii Sports Resort",
-   "gametdb_id": "SP2P01",
-   "cover_locked": true
+   "release_eu": "2009-07-24"
   },
   {
    "id": 2,
@@ -226,7 +222,7 @@
    "title": "The Legend of Zelda: Ocarina of Time",
    "alt_title": "The Legend of Zelda: Ocarina of Time",
    "platform": "Nintendo Switch 2",
-   "year": null,
+   "year": 2026,
    "genres": [
     "Aventura",
     "Acción"
@@ -239,7 +235,7 @@
    "status": "jugando",
    "rating": null,
    "hours": 22.8167,
-   "hours_source": "exophase",
+   "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/ftmsmdf7sffiu1q2o10z",
@@ -247,10 +243,11 @@
    "exophase_id": "1025383",
    "last_played": "2026-11-19",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:27:29",
+   "updated_at": "2026-11-23 22:54:36",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Ocarina of Time",
-   "cover_locked": true
+   "cover_locked": true,
+   "release_eu": "2026-11-05"
   },
   {
    "id": 9,
