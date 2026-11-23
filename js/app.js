@@ -2,6 +2,7 @@
 import { esc, toast, fileToDataUrl, debounce } from './lib.js';
 import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, REPO } from './backend.js';
 import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js';
+import { parseHours } from './util.js';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -16,11 +17,11 @@ const YEAR = new Date().getFullYear();
 
 const SORTS = {
   title: { label: 'Título (A–Z)', dir: 1, cmp: (a, b) => a.title.localeCompare(b.title, 'es', { sensitivity: 'base' }) },
-  year: { label: 'Año de publicación', dir: -1, cmp: (a, b) => (a.year || 0) - (b.year || 0) },
+  year: { label: 'Fecha de lanzamiento (Europa)', dir: -1, cmp: (a, b) => relKey(a).localeCompare(relKey(b)) },
   hours: { label: 'Horas jugadas', dir: -1, cmp: (a, b) => (a.hours || 0) - (b.hours || 0) },
   platform: { label: 'Plataforma (agrupado)', dir: 1, group: g => g.platform, cmp: (a, b) => platOrder(a.platform) - platOrder(b.platform) || a.platform.localeCompare(b.platform) },
   status: { label: 'Estado de progreso', dir: 1, group: g => STATUS[g.status].label, cmp: (a, b) => STATUS[a.status].order - STATUS[b.status].order },
-  saga: { label: 'Saga / franquicia (agrupado)', dir: 1, group: g => saga(g), cmp: (a, b) => sagaOrder(a, b) || (a.year || 9999) - (b.year || 9999) },
+  saga: { label: 'Saga / franquicia (agrupado)', dir: 1, group: g => saga(g), cmp: (a, b) => sagaOrder(a, b) || (relKey(a) || '9999').localeCompare(relKey(b) || '9999') },
   added: { label: 'Añadidos recientemente', dir: -1, cmp: (a, b) => a.added_at.localeCompare(b.added_at) },
   rating: { label: 'Mi valoración', dir: -1, cmp: (a, b) => (a.rating ?? -1) - (b.rating ?? -1) },
   played: { label: 'Última partida', dir: -1, cmp: (a, b) => (a.last_played || '').localeCompare(b.last_played || '') },
@@ -79,7 +80,15 @@ let platAvg = {};
 const marathon = g => platAvg[g.platform] ? (g.hours || 0) / platAvg[g.platform] : 0;
 const platOrder = p => { const i = Object.keys(PLAT).indexOf(p); return i < 0 ? 999 : i; };
 const ago = d => { const days = Math.round((Date.now() - Date.parse(d.replace(' ', 'T'))) / 864e5); return days > 365 ? `${(days / 365).toFixed(1)} años` : days > 60 ? `${Math.round(days / 30)} meses` : `${days} días`; };
-const fmtH = h => (h || 0) >= 100 ? Math.round(h) + ' h' : (Math.round((h || 0) * 10) / 10).toString().replace('.', ',') + ' h';
+// Horas como "22 h 49 min" (y "h:mm" en los campos de edición)
+const mins = h => Math.round((h || 0) * 60);
+const fmtH = h => { const m = mins(h), H = Math.floor(m / 60), M = m % 60; return H ? `${H.toLocaleString('es')} h${M ? ` ${M} min` : ''}` : `${M} min`; };
+const fmtHM = h => { const m = mins(h); return `${Math.floor(m / 60)}:${String(m % 60).padStart(2, '0')}`; };
+// Fecha de lanzamiento europea: "12/10/2013" o "12 de octubre de 2013"; si solo hay año, el año.
+const relKey = g => g.release_eu || (g.year ? `${g.year}-99` : '');
+const fmtDate = (g, long) => g.release_eu
+  ? new Date(g.release_eu + 'T12:00:00').toLocaleDateString('es-ES', long ? { day: 'numeric', month: 'long', year: 'numeric' } : { day: '2-digit', month: '2-digit', year: 'numeric' })
+  : (g.year || '—');
 
 const saved = JSON.parse(localStorage.getItem('gs_prefs') || '{}');
 const state = {
@@ -91,9 +100,10 @@ const state = {
   sort: saved.sort || 'added',
   dir: saved.dir ?? -1,
   view: saved.view || 'grid',
+  shape: saved.shape || 'rect',
   theme: saved.theme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'),
 };
-const savePrefs = () => localStorage.setItem('gs_prefs', JSON.stringify({ sort: state.sort, dir: state.dir, view: state.view, theme: state.theme }));
+const savePrefs = () => localStorage.setItem('gs_prefs', JSON.stringify({ sort: state.sort, dir: state.dir, view: state.view, theme: state.theme, shape: state.shape }));
 const editor = () => state.me.editor && !state.guestPreview;
 const $ = s => document.querySelector(s);
 
@@ -126,6 +136,11 @@ async function boot() {
   window.addEventListener('beforeunload', e => { if (/sin guardar|guardando/.test($('#modeBadge').textContent)) e.preventDefault(); });
 }
 
+function applyShape() {
+  document.body.classList.toggle('sq', state.shape === 'square');
+  document.querySelectorAll('#shapeSeg button').forEach(b => b.classList.toggle('on', b.dataset.shape === state.shape));
+}
+
 function applyMode() {
   document.body.classList.toggle('is-editor', editor());
   const b = $('#modeBadge');
@@ -148,6 +163,8 @@ function setupUI() {
   $('#sortDir').onclick = () => { state.dir *= -1; savePrefs(); render(); };
   $('#search').oninput = debounce(e => { state.q = e.target.value; render(); }, 80);
   $('#viewSeg').onclick = e => { const v = e.target.closest('button')?.dataset.view; if (v) { state.view = v; savePrefs(); render(); } };
+  $('#shapeSeg').onclick = e => { const v = e.target.closest('button')?.dataset.shape; if (v) { state.shape = v; savePrefs(); applyShape(); } };
+  applyShape();
   $('#btnFilters').onclick = () => $('#filters').classList.toggle('open');
   $('#clearFilters').onclick = () => { Object.values(state.f).forEach(s => s.clear()); render(); };
   $('#btnTheme').onclick = () => { state.theme = state.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = state.theme; savePrefs(); };
@@ -260,7 +277,7 @@ function cardHTML(g, i) {
       ${editor() ? `<div class="quick"><button data-q="-1" title="Restar 1 hora">−1h</button><button data-q="1" title="Sumar 1 hora">+1h</button><button data-q="status" title="Siguiente estado">⟳</button></div>` : ''}
     </div>
     <div class="card-title">${esc(g.title)}</div>
-    <div class="card-sub">${g.year || '—'}${g.developer ? ' · ' + esc(g.developer) : ''}${hint ? ` · <b>${esc(hint)}</b>` : ''}</div>
+    <div class="card-sub">${fmtDate(g)}${g.developer ? ' · ' + esc(g.developer) : ''}${hint ? ` · <b>${esc(hint)}</b>` : ''}</div>
   </article>`;
 }
 
@@ -300,9 +317,9 @@ function renderShelf(list) {
 }
 
 function renderList(list) {
-  return `<table class="list"><thead><tr><th></th><th>Título</th><th>Plataforma</th><th>Año</th><th>Estado</th><th>Formato</th><th class="num">Horas</th></tr></thead><tbody>
+  return `<table class="list"><thead><tr><th></th><th>Título</th><th>Plataforma</th><th>Lanzamiento</th><th>Estado</th><th>Formato</th><th class="num">Horas</th></tr></thead><tbody>
     ${list.map(g => `<tr data-id="${g.id}"><td><img loading="lazy" alt="" ${coverSrc(g)}></td><td><b>${esc(g.title)}</b><br><small style="color:var(--muted)">${esc(g.developer || '')}</small></td>
-      <td>${esc(g.platform)}</td><td>${g.year || '—'}</td><td><span class="status-pill st-${g.status}" style="position:static">${STATUS[g.status].short || STATUS[g.status].label}</span></td>
+      <td>${esc(g.platform)}</td><td>${fmtDate(g)}</td><td><span class="status-pill st-${g.status}" style="position:static">${STATUS[g.status].short || STATUS[g.status].label}</span></td>
       <td>${FORMAT[g.format]}</td><td class="num">${fmtH(g.hours)}</td></tr>`).join('')}
   </tbody></table>`;
 }
@@ -324,7 +341,7 @@ function wireCatalog(root) {
       const g = state.games.find(x => x.id === +sp.dataset.id);
       peek = document.createElement('div');
       peek.className = 'spine-peek';
-      peek.innerHTML = `<img alt="" ${coverSrc(g)}><div><b>${esc(g.title)}</b><br>${g.year || ''} · ${STATUS[g.status].label}${g.hours ? ' · ' + fmtH(g.hours) : ''}</div>`;
+      peek.innerHTML = `<img alt="" ${coverSrc(g)}><div><b>${esc(g.title)}</b><br>${fmtDate(g)} · ${STATUS[g.status].label}${g.hours ? ' · ' + fmtH(g.hours) : ''}</div>`;
       document.body.appendChild(peek);
       wireCovers(peek);
       const r = sp.getBoundingClientRect();
@@ -389,7 +406,7 @@ function openDetail(g) {
         <div class="genres">${(g.genres || []).map(x => `<span class="genre">${esc(x)}</span>`).join('')}</div>
         <div class="meta-grid">
           <div><span>Plataforma</span><b>${esc(g.platform)}</b></div>
-          <div><span>Año</span><b>${g.year || '—'}</b></div>
+          <div><span>Lanzamiento (Europa)</span><b>${fmtDate(g, true)}</b></div>
           <div><span>Desarrolladora</span><b>${esc(g.developer || '—')}</b></div>
           <div><span>Editora</span><b>${esc(g.publisher || '—')}</b></div>
           <div><span>Formato</span><b>${FORMAT[g.format]}${g.edition ? ' · ' + esc(g.edition) : ''}</b></div>
@@ -400,10 +417,10 @@ function openDetail(g) {
         </div>
         <div class="status-seg" id="dStatus">${Object.entries(STATUS).map(([k, s]) => `<button data-s="${k}" class="${g.status === k ? 'on' : ''}" style="${g.status === k ? `background:${s.color}` : ''}" ${ed ? '' : 'disabled'}>${s.label}</button>`).join('')}</div>
         <div class="hours-box">
-          <div><div class="big">${fmtH(g.hours).replace(' h', '')}<small> horas</small></div><div class="src">Fuente: ${SOURCE[g.hours_source] || g.hours_source}</div></div>
+          <div><div class="big">${Math.floor(mins(g.hours) / 60).toLocaleString('es')}<small> h </small>${mins(g.hours) % 60}<small> min</small></div><div class="src">Fuente: ${SOURCE[g.hours_source] || g.hours_source}</div></div>
           ${ed ? `<div class="btns">
             <button class="btn sm" data-h="-1">−1</button><button class="btn sm" data-h="0.5">+½</button><button class="btn sm" data-h="1">+1</button><button class="btn sm" data-h="5">+5</button>
-            <input type="number" id="dHoursSet" step="0.5" min="0" value="${g.hours}" style="width:90px;height:30px;padding:2px 8px">
+            <input type="text" id="dHoursSet" value="${fmtHM(g.hours)}" placeholder="h:mm" title="Ej.: 22:49, 22h 49m o 22,5" style="width:90px;height:30px;padding:2px 8px">
             <button class="btn sm primary" id="dHoursSave">Fijar</button></div>` : ''}
         </div>
         <div class="row"><span style="color:var(--muted);font-size:13px">Mi valoración</span>
@@ -419,7 +436,7 @@ function openDetail(g) {
   body.querySelector('#dStatus').onclick = async e => { const s = e.target.dataset.s; if (s) refresh(await patchGame(g.id, { status: s })); };
   body.querySelector('#dStars').onclick = async e => { const r = +e.target.dataset.r; if (r) refresh(await patchGame(g.id, { rating: r === g.rating ? null : r })); };
   body.querySelectorAll('[data-h]').forEach(b => b.onclick = async () => refresh(await api(`/api/games/${g.id}/hours`, { method: 'POST', body: { delta: +b.dataset.h } })));
-  body.querySelector('#dHoursSave').onclick = async () => refresh(await api(`/api/games/${g.id}/hours`, { method: 'POST', body: { set: +body.querySelector('#dHoursSet').value } }));
+  body.querySelector('#dHoursSave').onclick = async () => refresh(await api(`/api/games/${g.id}/hours`, { method: 'POST', body: { set: parseHours(body.querySelector('#dHoursSet').value) ?? g.hours } }));
   body.querySelector('#dNotesSave').onclick = async () => { await patchGame(g.id, { notes: body.querySelector('#dNotes').value }, 'Notas guardadas'); };
   body.querySelector('#dDelete').onclick = async () => {
     if (!confirm(`¿Borrar "${g.title}" del catálogo?`)) return;
@@ -463,7 +480,7 @@ function formHTML(g = {}) {
   return `<div class="form">
     <label class="full">Título<input type="text" name="title" value="${esc(g.title || '')}" required></label>
     <label>Plataforma<input type="text" name="platform" list="platList" value="${esc(g.platform || '')}"><datalist id="platList">${plats.map(p => `<option value="${esc(p)}">`).join('')}</datalist></label>
-    <label>Año<input type="number" name="year" value="${g.year || ''}" min="1970" max="2100"></label>
+    <label>Lanzamiento (Europa)<input type="date" name="release_eu" value="${g.release_eu || ''}"></label>
     <label>Desarrolladora<input type="text" name="developer" value="${esc(g.developer || '')}"></label>
     <label>Editora<input type="text" name="publisher" value="${esc(g.publisher || '')}"></label>
     <label class="full">Géneros (separados por comas)<input type="text" name="genres" value="${esc((g.genres || []).join(', '))}"></label>
@@ -471,7 +488,7 @@ function formHTML(g = {}) {
     <label>Edición<input type="text" name="edition" value="${esc(g.edition || '')}" placeholder="Coleccionista, Nintendo Selects…"></label>
     <label>Región<select name="region">${['', 'PAL', 'NTSC-U', 'NTSC-J'].map(r => `<option ${g.region === r ? 'selected' : ''}>${r}</option>`).join('')}</select></label>
     <label>Estado<select name="status">${Object.entries(STATUS).map(([k, s]) => `<option value="${k}" ${(g.status || 'pendiente') === k ? 'selected' : ''}>${s.label}</option>`).join('')}</select></label>
-    <label>Horas jugadas<input type="number" name="hours" step="0.5" min="0" value="${g.hours || 0}"></label>
+    <label>Horas jugadas (h:mm)<input type="text" name="hours" value="${fmtHM(g.hours)}" placeholder="h:mm"></label>
     <label>Valoración (0–5)<input type="number" name="rating" min="0" max="5" value="${g.rating ?? ''}"></label>
     <label class="full">Notas<textarea name="notes">${esc(g.notes || '')}</textarea></label>
   </div>`;
@@ -673,9 +690,9 @@ function tabQuick(el) {
     const p = el.querySelector('#qPlat').value, f = el.querySelector('#qFind').value.toLowerCase();
     el.querySelector('#qRows').innerHTML = state.games.filter(g => (!p || g.platform === p) && (!f || g.title.toLowerCase().includes(f)))
       .sort(SORTS.title.cmp)
-      .map(g => `<tr><td>${esc(g.title)}</td><td>${esc(g.platform)}</td><td><small>${SOURCE[g.hours_source]}</small></td><td class="num"><input type="number" step="0.5" min="0" data-id="${g.id}" value="${g.hours}"></td></tr>`).join('');
+      .map(g => `<tr><td>${esc(g.title)}</td><td>${esc(g.platform)}</td><td><small>${SOURCE[g.hours_source]}</small></td><td class="num"><input type="text" placeholder="h:mm" data-id="${g.id}" value="${fmtHM(g.hours)}" style="width:80px"></td></tr>`).join('');
     el.querySelectorAll('input[data-id]').forEach(inp => inp.onchange = async () => {
-      const u = await api(`/api/games/${inp.dataset.id}/hours`, { method: 'POST', body: { set: +inp.value } });
+      const u = await api(`/api/games/${inp.dataset.id}/hours`, { method: 'POST', body: { set: parseHours(inp.value) ?? 0 } });
       const i = state.games.findIndex(x => x.id === u.id); state.games[i] = u;
       inp.style.borderColor = 'var(--good)'; render(true);
     });
@@ -951,7 +968,7 @@ function openRandom() {
       slot.querySelector('.cover').innerHTML = `<img alt="" ${coverSrc(pick)}>`;
       wireCovers(slot);
       body.querySelector('#slotTitle').textContent = pick.title;
-      body.querySelector('#slotSub').textContent = `${pick.platform} · ${pick.year || ''} · ${STATUS[pick.status].label}`;
+      body.querySelector('#slotSub').textContent = `${pick.platform} · ${fmtDate(pick)} · ${STATUS[pick.status].label}`;
       if (++i < 16) { delay *= 1.17; setTimeout(spin, delay); }
       else {
         slot.classList.remove('spinning');

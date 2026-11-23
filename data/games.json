@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T21:42:08.840Z",
+ "updated_at": "2026-11-23T21:59:57.188Z",
  "games": [
   {
    "id": 1,
@@ -27,7 +27,8 @@
    "last_played": null,
    "added_at": "2026-11-23 19:50:09",
    "updated_at": "2026-11-23 19:50:09",
-   "in_exophase": false
+   "in_exophase": false,
+   "release_eu": "2009-07-24"
   },
   {
    "id": 2,
@@ -45,7 +46,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 18.3,
+   "hours": 18.2667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -54,9 +55,10 @@
    "exophase_id": "833402",
    "last_played": "2026-08-19",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Donkey Kong Bananza"
+   "exophase_title": "Donkey Kong Bananza",
+   "release_eu": "2025-07-17"
   },
   {
    "id": 3,
@@ -85,7 +87,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Pokémon Legends: Z-A"
+   "exophase_title": "Pokémon Legends: Z-A",
+   "release_eu": "2025-10-16"
   },
   {
    "id": 4,
@@ -104,7 +107,7 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0.7,
+   "hours": 0.6667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -113,9 +116,10 @@
    "exophase_id": "871603",
    "last_played": "2026-01-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Hyrule Warriors: Age of Imprisonment"
+   "exophase_title": "Hyrule Warriors: Age of Imprisonment",
+   "release_eu": "2025-11-06"
   },
   {
    "id": 5,
@@ -134,7 +138,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 11.8,
+   "hours": 11.7667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -143,9 +147,10 @@
    "exophase_id": "881908",
    "last_played": "2026-09-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Metroid Prime 4: Beyond"
+   "exophase_title": "Metroid Prime 4: Beyond",
+   "release_eu": "2025-12-04"
   },
   {
    "id": 6,
@@ -163,7 +168,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 20,
+   "hours": 19.9667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -172,7 +177,7 @@
    "exophase_id": "971711",
    "last_played": "2026-06-26",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "Yoshi and the Mysterious Book"
   },
@@ -192,7 +197,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 4.7,
+   "hours": 4.7167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -201,9 +206,10 @@
    "exophase_id": "877745",
    "last_played": "2026-07-05",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Kirby Air Riders"
+   "exophase_title": "Kirby Air Riders",
+   "release_eu": "2025-11-20"
   },
   {
    "id": 8,
@@ -222,7 +228,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 22.8,
+   "hours": 22.8167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -231,7 +237,7 @@
    "exophase_id": "1025383",
    "last_played": "2026-11-19",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Ocarina of Time"
   },
@@ -251,7 +257,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 301.4,
+   "hours": 301.3667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -260,9 +266,10 @@
    "exophase_id": "522857",
    "last_played": "2026-06-08",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Super Smash Bros. Ultimate"
+   "exophase_title": "Super Smash Bros. Ultimate",
+   "release_eu": "2018-12-07"
   },
   {
    "id": 10,
@@ -281,7 +288,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 242.4,
+   "hours": 242.3667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -290,9 +297,10 @@
    "exophase_id": "522774",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Breath of the Wild"
+   "exophase_title": "The Legend of Zelda: Breath of the Wild",
+   "release_eu": "2017-03-03"
   },
   {
    "id": 11,
@@ -311,7 +319,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 31.9,
+   "hours": 31.8667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -320,9 +328,10 @@
    "exophase_id": "711528",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Echoes of Wisdom"
+   "exophase_title": "The Legend of Zelda: Echoes of Wisdom",
+   "release_eu": "2024-09-26"
   },
   {
    "id": 12,
@@ -351,7 +360,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Link’s Awakening"
+   "exophase_title": "The Legend of Zelda: Link’s Awakening",
+   "release_eu": "2019-09-20"
   },
   {
    "id": 13,
@@ -380,7 +390,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Skyward Sword HD"
+   "exophase_title": "The Legend of Zelda: Skyward Sword HD",
+   "release_eu": "2021-07-16"
   },
   {
    "id": 14,
@@ -399,7 +410,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 183.4,
+   "hours": 183.3667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -408,9 +419,10 @@
    "exophase_id": "592580",
    "last_played": "2026-09-15",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "The Legend of Zelda: Tears of the Kingdom"
+   "exophase_title": "The Legend of Zelda: Tears of the Kingdom",
+   "release_eu": "2023-05-23"
   },
   {
    "id": 15,
@@ -428,7 +440,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 121.4,
+   "hours": 121.4167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -437,9 +449,10 @@
    "exophase_id": "952185",
    "last_played": "2026-10-23",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Tomodachi Life: Living the Dream"
+   "exophase_title": "Tomodachi Life: Living the Dream",
+   "release_eu": "2026-04-16"
   },
   {
    "id": 16,
@@ -469,7 +482,8 @@
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
    "exophase_title": "Super Mario RPG",
-   "cover_locked": true
+   "cover_locked": true,
+   "release_eu": "2023-11-17"
   },
   {
    "id": 17,
@@ -497,7 +511,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "in_exophase": false
+   "in_exophase": false,
+   "release_eu": "2017-03-03"
   },
   {
    "id": 18,
@@ -515,7 +530,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 39.4,
+   "hours": 39.4167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -524,9 +539,10 @@
    "exophase_id": "527031",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "ARMS"
+   "exophase_title": "ARMS",
+   "release_eu": "2017-06-16"
   },
   {
    "id": 19,
@@ -544,7 +560,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 12.8,
+   "hours": 12.8167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -553,9 +569,10 @@
    "exophase_id": "522959",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Donkey Kong Country: Tropical Freeze"
+   "exophase_title": "Donkey Kong Country: Tropical Freeze",
+   "release_eu": "2018-05-04"
   },
   {
    "id": 20,
@@ -574,7 +591,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 16,
+   "hours": 15.9667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -583,9 +600,10 @@
    "exophase_id": "523703",
    "last_played": "2025-12-29",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Hyrule Warriors: Age of Calamity"
+   "exophase_title": "Hyrule Warriors: Age of Calamity",
+   "release_eu": "2020-11-20"
   },
   {
    "id": 21,
@@ -614,7 +632,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Kirby and the Forgotten Land"
+   "exophase_title": "Kirby and the Forgotten Land",
+   "release_eu": "2022-03-25"
   },
   {
    "id": 22,
@@ -643,7 +662,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Kirby’s Return to Dream Land Deluxe"
+   "exophase_title": "Kirby’s Return to Dream Land Deluxe",
+   "release_eu": "2023-02-24"
   },
   {
    "id": 23,
@@ -661,7 +681,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 41.2,
+   "hours": 41.1667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -670,9 +690,10 @@
    "exophase_id": "523616",
    "last_played": "2026-07-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Kirby Star Allies"
+   "exophase_title": "Kirby Star Allies",
+   "release_eu": "2018-03-16"
   },
   {
    "id": 24,
@@ -690,7 +711,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 30.7,
+   "hours": 30.6667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -699,9 +720,10 @@
    "exophase_id": "522896",
    "last_played": "2025-03-20",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Pokémon Legends: Arceus"
+   "exophase_title": "Pokémon Legends: Arceus",
+   "release_eu": "2022-01-28"
   },
   {
    "id": 25,
@@ -720,7 +742,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 21.2,
+   "hours": 21.1667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -729,9 +751,10 @@
    "exophase_id": "522773",
    "last_played": "2025-03-08",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Luigi’s Mansion 3"
+   "exophase_title": "Luigi’s Mansion 3",
+   "release_eu": "2019-10-31"
   },
   {
    "id": 26,
@@ -760,14 +783,15 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Mario Kart 8 Deluxe"
+   "exophase_title": "Mario Kart 8 Deluxe",
+   "release_eu": "2017-04-28"
   },
   {
    "id": 27,
    "title": "Mario + Rabbids Kingdom Battle",
    "alt_title": "Mario + Rabbids Kingdom Battle",
    "platform": "Nintendo Switch",
-   "year": 2017,
+   "year": 2018,
    "genres": [
     "Estrategia por turnos"
    ],
@@ -778,7 +802,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 19.9,
+   "hours": 19.8667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -787,9 +811,10 @@
    "exophase_id": "522888",
    "last_played": "2025-04-15",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Mario + Rabbids Kingdom Battle"
+   "exophase_title": "Mario + Rabbids Kingdom Battle",
+   "release_eu": "2018-01-18"
   },
   {
    "id": 28,
@@ -807,7 +832,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 18.1,
+   "hours": 18.1167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -816,9 +841,10 @@
    "exophase_id": "736670",
    "last_played": "2025-01-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Mario & Luigi: Brothership"
+   "exophase_title": "Mario & Luigi: Brothership",
+   "release_eu": "2024-11-07"
   },
   {
    "id": 29,
@@ -836,7 +862,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 20.8,
+   "hours": 20.8167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -845,9 +871,10 @@
    "exophase_id": "522738",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Metroid Dread"
+   "exophase_title": "Metroid Dread",
+   "release_eu": "2021-10-08"
   },
   {
    "id": 30,
@@ -878,7 +905,8 @@
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
    "exophase_title": "Metroid Prime Remastered",
-   "gametdb_id": "A3SDA"
+   "gametdb_id": "A3SDA",
+   "release_eu": "2023-02-08"
   },
   {
    "id": 31,
@@ -896,7 +924,7 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0.3,
+   "hours": 0.3167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -905,9 +933,10 @@
    "exophase_id": "522739",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "New Super Mario Bros. U Deluxe"
+   "exophase_title": "New Super Mario Bros. U Deluxe",
+   "release_eu": "2019-01-11"
   },
   {
    "id": 32,
@@ -925,7 +954,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 40.3,
+   "hours": 40.3167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -934,9 +963,10 @@
    "exophase_id": "523026",
    "last_played": "2026-06-17",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Nintendo Switch Sports"
+   "exophase_title": "Nintendo Switch Sports",
+   "release_eu": "2022-04-29"
   },
   {
    "id": 33,
@@ -955,8 +985,8 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
-   "hours_source": "manual",
+   "hours": 0.0167,
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/NintendoWorldChamp_NES_CoverArt.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
@@ -964,9 +994,10 @@
    "exophase_id": "687983",
    "last_played": "2026-01-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Nintendo World Championships: NES Edition"
+   "exophase_title": "Nintendo World Championships: NES Edition",
+   "release_eu": "2024-07-18"
   },
   {
    "id": 34,
@@ -984,7 +1015,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 40.3,
+   "hours": 40.2667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -993,10 +1024,11 @@
    "exophase_id": "677345",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "Paper Mario: The Thousand-Year Door",
-   "gametdb_id": "A9QDA"
+   "gametdb_id": "A9QDA",
+   "release_eu": "2024-05-23"
   },
   {
    "id": 35,
@@ -1014,7 +1046,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 44.8,
+   "hours": 44.7667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1023,9 +1055,10 @@
    "exophase_id": "522986",
    "last_played": "2024-09-25",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Paper Mario: The Origami King"
+   "exophase_title": "Paper Mario: The Origami King",
+   "release_eu": "2020-07-17"
   },
   {
    "id": 36,
@@ -1043,7 +1076,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 1.7,
+   "hours": 1.7333,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1052,14 +1085,15 @@
    "exophase_id": "602941+602940",
    "last_played": "2024-12-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "exophase_titles": [
     "Pikmin 1",
     "Pikmin 2"
    ],
    "in_exophase": true,
    "exophase_title": "Pikmin 1 + Pikmin 2",
-   "gametdb_id": "BAMEA"
+   "gametdb_id": "BAMEA",
+   "release_eu": "2023-09-22"
   },
   {
    "id": 37,
@@ -1077,7 +1111,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 48.2,
+   "hours": 48.2167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1086,9 +1120,10 @@
    "exophase_id": "526981",
    "last_played": "2026-09-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Pikmin 3 Deluxe"
+   "exophase_title": "Pikmin 3 Deluxe",
+   "release_eu": "2020-10-30"
   },
   {
    "id": 38,
@@ -1106,7 +1141,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 38.1,
+   "hours": 38.05,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1115,9 +1150,10 @@
    "exophase_id": "608387",
    "last_played": "2025-11-30",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Pikmin 4"
+   "exophase_title": "Pikmin 4",
+   "release_eu": "2023-07-21"
   },
   {
    "id": 39,
@@ -1135,7 +1171,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 45,
+   "hours": 45.0167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1144,10 +1180,11 @@
    "exophase_id": "522743",
    "last_played": "2025-03-20",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "Pokémon Brilliant Diamond",
-   "gametdb_id": "AX7QA"
+   "gametdb_id": "AX7QA",
+   "release_eu": "2021-11-19"
   },
   {
    "id": 40,
@@ -1177,7 +1214,8 @@
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
    "exophase_title": "Pokémon Sword",
-   "gametdb_id": "ALZAA"
+   "gametdb_id": "ALZAA",
+   "release_eu": "2019-11-15"
   },
   {
    "id": 41,
@@ -1207,7 +1245,8 @@
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
    "exophase_title": "Pokémon: Let’s Go, Pikachu!",
-   "gametdb_id": "ADW2A"
+   "gametdb_id": "ADW2A",
+   "release_eu": "2018-11-16"
   },
   {
    "id": 42,
@@ -1226,7 +1265,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 45.1,
+   "hours": 45.0667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1235,9 +1274,10 @@
    "exophase_id": "533563",
    "last_played": "2026-03-25",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Pokémon Mystery Dungeon Rescue Team DX"
+   "exophase_title": "Pokémon Mystery Dungeon Rescue Team DX",
+   "release_eu": "2020-03-06"
   },
   {
    "id": 43,
@@ -1256,7 +1296,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 114.7,
+   "hours": 114.7167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1265,10 +1305,11 @@
    "exophase_id": "555789",
    "last_played": "2026-09-09",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "Pokémon Violet",
-   "gametdb_id": "ALZYA"
+   "gametdb_id": "ALZYA",
+   "release_eu": "2022-11-18"
   },
   {
    "id": 44,
@@ -1297,7 +1338,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Puyo Puyo Tetris"
+   "exophase_title": "Puyo Puyo Tetris",
+   "release_eu": "2017-04-28"
   },
   {
    "id": 45,
@@ -1315,7 +1357,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 1.1,
+   "hours": 1.1167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1324,7 +1366,7 @@
    "exophase_id": "990525",
    "last_played": "2026-11-16",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
    "exophase_title": "Rhythm Heaven Groove"
   },
@@ -1344,7 +1386,7 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 14.2,
+   "hours": 14.1667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1353,9 +1395,10 @@
    "exophase_id": "526411",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Splatoon 2"
+   "exophase_title": "Splatoon 2",
+   "release_eu": "2017-07-21"
   },
   {
    "id": 47,
@@ -1373,8 +1416,8 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
-   "hours_source": "manual",
+   "hours": 0.0167,
+   "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Splatoon.3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
@@ -1382,9 +1425,10 @@
    "exophase_id": "530908",
    "last_played": "2026-01-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Splatoon 3"
+   "exophase_title": "Splatoon 3",
+   "release_eu": "2022-09-09"
   },
   {
    "id": 48,
@@ -1403,7 +1447,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 79,
+   "hours": 78.9667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1412,9 +1456,10 @@
    "exophase_id": "522970",
    "last_played": "2025-09-17",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Super Mario 3D All-Stars"
+   "exophase_title": "Super Mario 3D All-Stars",
+   "release_eu": "2020-09-18"
   },
   {
    "id": 49,
@@ -1432,7 +1477,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 39,
+   "hours": 39.0167,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1441,9 +1486,10 @@
    "exophase_id": "522997",
    "last_played": "2026-01-03",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Super Mario 3D World + Bowser’s Fury"
+   "exophase_title": "Super Mario 3D World + Bowser’s Fury",
+   "release_eu": "2021-02-12"
   },
   {
    "id": 50,
@@ -1461,7 +1507,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 10.7,
+   "hours": 10.6667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1470,9 +1516,10 @@
    "exophase_id": "625749",
    "last_played": "2026-03-23",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Super Mario Bros. Wonder"
+   "exophase_title": "Super Mario Bros. Wonder",
+   "release_eu": "2023-10-20"
   },
   {
    "id": 51,
@@ -1507,7 +1554,8 @@
    ],
    "in_exophase": true,
    "exophase_title": "Super Mario Galaxy + Super Mario Galaxy 2",
-   "cover_locked": true
+   "cover_locked": true,
+   "release_eu": "2025-10-02"
   },
   {
    "id": 52,
@@ -1525,7 +1573,7 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 108.7,
+   "hours": 108.6667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -1534,9 +1582,10 @@
    "exophase_id": "522751",
    "last_played": "2025-07-01",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Super Mario Odyssey"
+   "exophase_title": "Super Mario Odyssey",
+   "release_eu": "2017-11-28"
   },
   {
    "id": 53,
@@ -1565,7 +1614,8 @@
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 21:23:50",
    "in_exophase": true,
-   "exophase_title": "Super Mario Party"
+   "exophase_title": "Super Mario Party",
+   "release_eu": "2018-10-05"
   },
   {
    "id": 54,
@@ -1593,7 +1643,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "ECLP"
+   "gametdb_id": "ECLP",
+   "release_eu": "2014-11-28"
   },
   {
    "id": 55,
@@ -1621,7 +1672,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "ECRP"
+   "gametdb_id": "ECRP",
+   "release_eu": "2014-11-28"
   },
   {
    "id": 56,
@@ -1649,7 +1701,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "EKJP"
+   "gametdb_id": "EKJP",
+   "release_eu": "2013-10-12"
   },
   {
    "id": 57,
@@ -1677,7 +1730,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "EK2P"
+   "gametdb_id": "EK2P",
+   "release_eu": "2013-10-12"
   },
   {
    "id": 58,
@@ -1705,7 +1759,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BNDP"
+   "gametdb_id": "BNDP",
+   "release_eu": "2016-11-23"
   },
   {
    "id": 59,
@@ -1733,7 +1788,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BNEP"
+   "gametdb_id": "BNEP",
+   "release_eu": "2016-11-23"
   },
   {
    "id": 60,
@@ -1761,14 +1817,15 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "A2AP"
+   "gametdb_id": "A2AP",
+   "release_eu": "2017-11-17"
   },
   {
    "id": 61,
    "title": "Super Pokémon Rumble",
    "alt_title": "Super Pokémon Rumble",
    "platform": "Nintendo 3DS",
-   "year": 2011,
+   "year": 2012,
    "genres": [
     "Acción"
    ],
@@ -1788,7 +1845,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-11-29"
   },
   {
    "id": 62,
@@ -1816,7 +1874,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-05-17"
   },
   {
    "id": 63,
@@ -1844,7 +1903,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-02-19"
   },
   {
    "id": 64,
@@ -1871,7 +1931,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-11-06"
   },
   {
    "id": 65,
@@ -1898,7 +1959,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-06-14"
   },
   {
    "id": 66,
@@ -1926,7 +1988,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-10-12"
   },
   {
    "id": 67,
@@ -1954,7 +2017,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2017-07-28"
   },
   {
    "id": 68,
@@ -1982,7 +2046,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-03-23"
   },
   {
    "id": 69,
@@ -2009,14 +2074,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-10-21"
   },
   {
    "id": 70,
    "title": "Nintendogs + Cats: Golden Retriever y nuevos amigos",
    "alt_title": "Nintendogs + Cats",
    "platform": "Nintendo 3DS",
-   "year": 2011,
+   "year": 2013,
    "genres": [
     "Simulación de mascotas"
    ],
@@ -2037,7 +2103,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "ADAP"
+   "gametdb_id": "ADAP",
+   "release_eu": "2013-12-19"
   },
   {
    "id": 71,
@@ -2064,14 +2131,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-06-06"
   },
   {
    "id": 72,
    "title": "Pilotwings Resort",
    "alt_title": "Pilotwings Resort",
    "platform": "Nintendo 3DS",
-   "year": 2011,
+   "year": 2012,
    "genres": [
     "Simulación de vuelo"
    ],
@@ -2091,7 +2159,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-11-22"
   },
   {
    "id": 73,
@@ -2119,14 +2188,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2018-05-25"
   },
   {
    "id": 74,
    "title": "Super Smash Bros. for Nintendo 3DS",
    "alt_title": "Super Smash Bros. for Nintendo 3DS and Wii U",
    "platform": "Nintendo 3DS",
-   "year": 2014,
+   "year": 2015,
    "genres": [
     "Lucha"
    ],
@@ -2146,7 +2216,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-04-15"
   },
   {
    "id": 75,
@@ -2174,7 +2245,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-05-20"
   },
   {
    "id": 76,
@@ -2202,7 +2274,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-10-26"
   },
   {
    "id": 77,
@@ -2230,7 +2303,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "AD7P"
+   "gametdb_id": "AD7P",
+   "release_eu": "2016-09-16"
   },
   {
    "id": 78,
@@ -2257,7 +2331,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-10-24"
   },
   {
    "id": 79,
@@ -2286,7 +2361,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "AJHP"
+   "gametdb_id": "AJHP",
+   "release_eu": "2016-12-02"
   },
   {
    "id": 80,
@@ -2313,14 +2389,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-08-17"
   },
   {
    "id": 81,
    "title": "Super Mario 3D Land",
    "alt_title": "Super Mario 3D Land",
    "platform": "Nintendo 3DS",
-   "year": 2011,
+   "year": 2012,
    "genres": [
     "Plataformas 3D"
    ],
@@ -2340,7 +2417,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-10-04"
   },
   {
    "id": 82,
@@ -2367,7 +2445,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-12-02"
   },
   {
    "id": 83,
@@ -2394,7 +2473,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-10-07"
   },
   {
    "id": 84,
@@ -2421,7 +2501,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-10-18"
   },
   {
    "id": 85,
@@ -2448,7 +2529,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-12-07"
   },
   {
    "id": 86,
@@ -2476,7 +2558,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BRMP"
+   "gametdb_id": "BRMP",
+   "release_eu": "2017-10-06"
   },
   {
    "id": 87,
@@ -2504,7 +2587,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "A3RP"
+   "gametdb_id": "A3RP",
+   "release_eu": "2019-02-06"
   },
   {
    "id": 88,
@@ -2531,7 +2615,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-07-12"
   },
   {
    "id": 89,
@@ -2558,7 +2643,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-12-04"
   },
   {
    "id": 90,
@@ -2587,7 +2673,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BGNP"
+   "gametdb_id": "BGNP",
+   "release_eu": "2018-10-19"
   },
   {
    "id": 91,
@@ -2615,7 +2702,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-03-28"
   },
   {
    "id": 92,
@@ -2643,7 +2731,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2018-07-27"
   },
   {
    "id": 93,
@@ -2670,7 +2759,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-11-22"
   },
   {
    "id": 94,
@@ -2697,7 +2787,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-06-07"
   },
   {
    "id": 95,
@@ -2724,7 +2815,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-02-13"
   },
   {
    "id": 96,
@@ -2752,7 +2844,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-12-03"
   },
   {
    "id": 97,
@@ -2781,7 +2874,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BZHP"
+   "gametdb_id": "BZHP",
+   "release_eu": "2016-03-24"
   },
   {
    "id": 98,
@@ -2808,7 +2902,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2017-09-15"
   },
   {
    "id": 99,
@@ -2835,7 +2930,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-05-16"
   },
   {
    "id": 100,
@@ -2862,7 +2958,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-06-10"
   },
   {
    "id": 101,
@@ -2889,7 +2986,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-09-09"
   },
   {
    "id": 102,
@@ -2916,7 +3014,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2009-10-09"
   },
   {
    "id": 103,
@@ -2943,7 +3042,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2009-05-22"
   },
   {
    "id": 104,
@@ -2970,7 +3070,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2005-11-24"
   },
   {
    "id": 105,
@@ -2997,7 +3098,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2005-03-11"
   },
   {
    "id": 106,
@@ -3024,7 +3126,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2006-06-30"
   },
   {
    "id": 107,
@@ -3052,7 +3155,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "IRAS"
+   "gametdb_id": "IRAS",
+   "release_eu": "2011-03-04"
   },
   {
    "id": 108,
@@ -3080,7 +3184,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "IRES"
+   "gametdb_id": "IRES",
+   "release_eu": "2012-10-12"
   },
   {
    "id": 109,
@@ -3108,7 +3213,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "IRDS"
+   "gametdb_id": "IRDS",
+   "release_eu": "2012-10-12"
   },
   {
    "id": 110,
@@ -3165,7 +3271,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-10-01"
   },
   {
    "id": 112,
@@ -3193,14 +3300,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-01-28"
   },
   {
    "id": 113,
    "title": "Inazuma Eleven 2: Tormenta de fuego",
    "alt_title": "Inazuma Eleven 2",
    "platform": "Nintendo DS",
-   "year": 2011,
+   "year": 2012,
    "genres": [
     "RPG",
     "Fútbol"
@@ -3221,14 +3329,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-03-16"
   },
   {
    "id": 114,
    "title": "Inazuma Eleven 2: Ventisca eterna",
    "alt_title": "Inazuma Eleven 2",
    "platform": "Nintendo DS",
-   "year": 2011,
+   "year": 2012,
    "genres": [
     "RPG",
     "Fútbol"
@@ -3249,14 +3358,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-03-16"
   },
   {
    "id": 115,
    "title": "Pokémon Ranger: Guardian Signs",
    "alt_title": "Pokémon Ranger: Guardian Signs",
    "platform": "Nintendo DS",
-   "year": 2011,
+   "year": 2010,
    "genres": [
     "Acción",
     "RPG"
@@ -3277,7 +3387,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-11-05"
   },
   {
    "id": 116,
@@ -3305,7 +3416,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2008-11-21"
   },
   {
    "id": 117,
@@ -3333,14 +3445,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2007-04-13"
   },
   {
    "id": 118,
    "title": "Pokémon Mundo misterioso: Exploradores del cielo",
    "alt_title": "Pokémon Mystery Dungeon: Explorers of Sky",
    "platform": "Nintendo DS",
-   "year": 2010,
+   "year": 2009,
    "genres": [
     "Roguelike",
     "RPG"
@@ -3361,7 +3474,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2009-11-20"
   },
   {
    "id": 119,
@@ -3390,7 +3504,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "YFYP"
+   "gametdb_id": "YFYP",
+   "release_eu": "2008-07-04"
   },
   {
    "id": 120,
@@ -3419,7 +3534,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "BDRP"
+   "gametdb_id": "BDRP",
+   "release_eu": "2009-10-16"
   },
   {
    "id": 121,
@@ -3447,7 +3563,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "IPGS"
+   "gametdb_id": "IPGS",
+   "release_eu": "2010-03-26"
   },
   {
    "id": 122,
@@ -3475,7 +3592,8 @@
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
    "updated_at": "2026-11-23 20:59:19",
-   "gametdb_id": "IPKS"
+   "gametdb_id": "IPKS",
+   "release_eu": "2010-03-26"
   },
   {
    "id": 123,
@@ -3504,7 +3622,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-10-14"
   },
   {
    "id": 124,
@@ -3533,7 +3652,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-10-19"
   },
   {
    "id": 125,
@@ -3562,7 +3682,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-10-18"
   },
   {
    "id": 126,
@@ -3590,7 +3711,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-02-05"
   },
   {
    "id": 127,
@@ -3618,7 +3740,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-06-24"
   },
   {
    "id": 128,
@@ -3646,7 +3769,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-11-18"
   },
   {
    "id": 129,
@@ -3674,7 +3798,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-03-01"
   },
   {
    "id": 130,
@@ -3702,14 +3827,15 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-07-09"
   },
   {
    "id": 131,
    "title": "Animal Crossing: Let's Go to the City",
    "alt_title": "Animal Crossing: City Folk",
    "platform": "Wii",
-   "year": 2009,
+   "year": 2008,
    "genres": [
     "Simulación social"
    ],
@@ -3729,7 +3855,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2008-12-05"
   },
   {
    "id": 132,
@@ -3756,7 +3883,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-11-25"
   },
   {
    "id": 133,
@@ -3783,7 +3911,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2011-11-18"
   },
   {
    "id": 134,
@@ -3810,7 +3939,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2006-12-08"
   },
   {
    "id": 135,
@@ -3837,7 +3967,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-12-03"
   },
   {
    "id": 136,
@@ -3865,7 +3996,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2007-09-14"
   },
   {
    "id": 137,
@@ -3892,7 +4024,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2008-04-11"
   },
   {
    "id": 138,
@@ -3919,7 +4052,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2009-11-20"
   },
   {
    "id": 139,
@@ -3946,7 +4080,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2008-06-27"
   },
   {
    "id": 140,
@@ -3973,7 +4108,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2010-06-11"
   },
   {
    "id": 141,
@@ -4000,7 +4136,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2007-11-16"
   },
   {
    "id": 142,
@@ -4027,7 +4164,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2002-10-04"
   },
   {
    "id": 143,
@@ -4055,7 +4193,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-01-02"
   },
   {
    "id": 144,
@@ -4082,7 +4221,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-06-26"
   },
   {
    "id": 145,
@@ -4109,7 +4249,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-02-21"
   },
   {
    "id": 146,
@@ -4136,7 +4277,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-10-25"
   },
   {
    "id": 147,
@@ -4163,7 +4305,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-04-22"
   },
   {
    "id": 148,
@@ -4191,7 +4334,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-11-30"
   },
   {
    "id": 149,
@@ -4218,7 +4362,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-11-20"
   },
   {
    "id": 150,
@@ -4246,7 +4391,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-10-07"
   },
   {
    "id": 151,
@@ -4273,7 +4419,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-10-04"
   },
   {
    "id": 152,
@@ -4300,7 +4447,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2016-03-04"
   },
   {
    "id": 153,
@@ -4328,7 +4476,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-09-19"
   },
   {
    "id": 154,
@@ -4355,7 +4504,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-07-26"
   },
   {
    "id": 155,
@@ -4382,7 +4532,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-11-28"
   },
   {
    "id": 156,
@@ -4409,7 +4560,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-05-29"
   },
   {
    "id": 157,
@@ -4436,7 +4588,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-11-20"
   },
   {
    "id": 158,
@@ -4463,7 +4616,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2014-05-30"
   },
   {
    "id": 159,
@@ -4491,7 +4645,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2015-09-11"
   },
   {
    "id": 160,
@@ -4518,7 +4673,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2012-11-30"
   },
   {
    "id": 161,
@@ -4545,7 +4701,8 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19"
+   "updated_at": "2026-11-23 20:59:19",
+   "release_eu": "2013-11-29"
   },
   {
    "id": 162,
@@ -4563,7 +4720,7 @@
    "region": null,
    "status": "completado",
    "rating": null,
-   "hours": 382.1,
+   "hours": 382.0667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -4573,9 +4730,10 @@
    "exophase_id": "522737",
    "last_played": "2026-10-11",
    "added_at": "2026-11-23 21:42:08",
-   "updated_at": "2026-11-23 21:42:08",
+   "updated_at": "2026-11-23 21:59:57",
    "in_exophase": true,
-   "exophase_title": "Animal Crossing: New Horizons"
+   "exophase_title": "Animal Crossing: New Horizons",
+   "release_eu": "2020-03-20"
   }
  ]
 }

@@ -5,7 +5,7 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1 } from './util.js';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js';
 import { parseCSV, parseRetroArch, parseExophase } from './importers.js';
 import { searchCovers } from './covers.js';
 import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js';
@@ -168,13 +168,14 @@ async function flush() {
 // ---------------------------------------------------------------- Modelo
 function clean(input) {
   const out = {};
-  const F = ['title', 'platform', 'year', 'genres', 'developer', 'publisher', 'format', 'edition', 'region', 'status', 'rating', 'hours', 'hours_source', 'notes', 'cover_url', 'cover_local', 'exophase_id', 'last_played', 'added_at'];
+  const F = ['title', 'platform', 'year', 'release_eu', 'genres', 'developer', 'publisher', 'format', 'edition', 'region', 'status', 'rating', 'hours', 'hours_source', 'notes', 'cover_url', 'cover_local', 'exophase_id', 'last_played', 'added_at'];
   for (const f of F) if (input[f] !== undefined) out[f] = input[f];
   if (out.title !== undefined) out.title = String(out.title).trim();
   if (out.platform !== undefined) out.platform = normalizePlatform(out.platform);
   if (out.genres !== undefined) out.genres = (Array.isArray(out.genres) ? out.genres : String(out.genres || '').split(',')).map(s => String(s).trim()).filter(Boolean);
   if (out.year !== undefined) out.year = out.year ? parseInt(out.year, 10) || null : null;
-  if (out.hours !== undefined) out.hours = Math.max(0, Math.round((parseFloat(out.hours) || 0) * 100) / 100);
+  if (out.hours !== undefined) out.hours = Math.max(0, Math.round((parseHours(out.hours) ?? 0) * 10000) / 10000);
+  if (out.release_eu !== undefined) { out.release_eu = /^\d{4}-\d{2}-\d{2}$/.test(out.release_eu || '') ? out.release_eu : null; if (out.release_eu) out.year = +out.release_eu.slice(0, 4); }
   if (out.rating !== undefined) out.rating = out.rating === null || out.rating === '' ? null : Math.max(0, Math.min(5, parseInt(out.rating, 10) || 0));
   if (out.status !== undefined && !STATUSES.includes(out.status)) out.status = 'pendiente';
   if (out.format !== undefined && !FORMATS.includes(out.format)) out.format = 'fisico';

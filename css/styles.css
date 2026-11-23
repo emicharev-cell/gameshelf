@@ -411,3 +411,8 @@ body:not(.is-editor) .editor-only { display: none !important; }
   .stat { min-width: 128px; padding: 10px 12px; }
   .stat b { font-size: 21px; }
 }
+
+/* Carátulas cuadradas (opción del usuario) */
+body.sq .cover, body.sq .spine-peek img, body.sq .cover-opt img { aspect-ratio: 1 / 1; }
+body.sq .grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+#shapeSeg button { font-size: 15px; padding: 5px 10px; }

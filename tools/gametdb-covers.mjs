@@ -16,6 +16,7 @@ const UA = 'GameShelf/1.0 (catalogo personal; github.com/emicharev-cell/gameshel
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const [dir, ...flags] = process.argv.slice(2);
 const APPLY = flags.includes('--apply');
+const DATES = flags.includes('--dates'); // solo rellena release_eu (fecha de lanzamiento europea) sin tocar carátulas
 const ONLY = flags.includes('--ids') ? new Set(flags[flags.indexOf('--ids') + 1].split(',').map(Number)) : null;
 
 const DB = {
@@ -38,6 +39,7 @@ function load(file) {
       region: /<region>([^<]*)<\/region>/.exec(body)?.[1] || '',
       languages: /<languages>([^<]*)<\/languages>/.exec(body)?.[1] || '',
       titles: [...body.matchAll(/<title>([^<]*)<\/title>/g)].map(t => t[1].replace(/&amp;/g, '&').replace(/&apos;/g, "'")),
+      date: (d => (d && d[1] && d[2] && d[3] ? `${d[1]}-${d[2].padStart(2, '0')}-${d[3].padStart(2, '0')}` : null))(/<date year="(\d*)" month="(\d*)" day="(\d*)"/.exec(body)),
     });
   }
   return (cache[file] = games);
@@ -48,6 +50,7 @@ const clean = t => normTitle(String(t).replace(/[’`´]/g, "'").replace(/\((?:E
 function bestFor(g) {
   const conf = DB[g.platform];
   if (!conf) return null;
+  if (g.gametdb_id) { const e = load(conf[0]).find(x => x.id === g.gametdb_id); if (e) return { e, s: 2, folder: conf[1] }; }
   const typeOk = e => (g.platform === 'GameCube' ? e.type === 'GameCube' : g.platform === 'Wii' ? e.type === 'Wii' || e.type === '' : true)
     && !/demo|kiosk|trial|beta|proto/i.test(e.name);
   let best = null;
@@ -79,12 +82,16 @@ async function fetchCover(folder, id) {
 }
 
 const cat = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));
-const targets = cat.games.filter(g => DB[g.platform] && (!ONLY || ONLY.has(g.id)) && !g.cover_locked);
+const targets = cat.games.filter(g => DB[g.platform] && (!ONLY || ONLY.has(g.id)) && (DATES || !g.cover_locked));
 let changed = 0;
 for (const g of targets) {
   const m = bestFor(g);
   const tag = m ? `${m.e.id} ${m.e.region} "${m.e.titles[0] || m.e.name}" (${m.s.toFixed(2)})${m.weak ? ' ¿DUDOSO?' : ''}` : 'sin coincidencia';
   console.log(`${String(g.id).padStart(3)} ${g.title} → ${tag}`);
+  if (DATES) {
+    if (m && !m.weak && m.e.date && !g.release_eu_manual) { g.release_eu = m.e.date; g.year = +m.e.date.slice(0, 4); changed++; console.log(`     fecha UE: ${m.e.date}`); }
+    continue;
+  }
   if (!APPLY || !m || m.weak) continue;
   const c = await fetchCover(m.folder, m.e.id);
   if (!c) { console.log('     (GameTDB no tiene imagen)'); continue; }
@@ -96,7 +103,7 @@ for (const g of targets) {
   changed++;
   await sleep(250);
 }
-if (APPLY) {
+if (APPLY || DATES) {
   cat.updated_at = new Date().toISOString();
   fs.writeFileSync(CATALOG, JSON.stringify(cat, null, 1));
   console.log(`\nCarátulas actualizadas: ${changed}`);

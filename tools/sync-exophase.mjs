@@ -52,7 +52,7 @@ for (const g of catalog.games) {
   const m = match(g);
   if (!m) { notFound.push(g.title); g.in_exophase = false; continue; }
   const before = { hours: g.hours || 0, status: g.status };
-  const hours = round1(m.reduce((a, e) => a + e.hours, 0));
+  const hours = Math.round(m.reduce((a, e) => a + e.hours, 0) * 10000) / 10000; // exacto al minuto
   const last = m.map(e => e.last_played).filter(Boolean).sort().pop() || null;
   const upd = { in_exophase: true, exophase_id: m.map(e => String(e.id)).join('+'), exophase_title: m.map(e => e.title).join(' + ') };
   if (hours > 0) Object.assign(upd, { hours, hours_source: 'exophase' });
