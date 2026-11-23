@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:35:13.155Z",
+ "updated_at": "2026-11-23T22:35:32.740Z",
  "games": [
   {
    "id": 1,
@@ -729,15 +729,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Pokemon_Legends_Arceus_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/24-leyendas-pokemon-arceus.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/P00045/1.1_ProductTile_Switch_Poke%CC%81monLegendsArceus_KeyArt_ESP_NOE",
+   "cover_local": "covers/24-mwtugot1.jpg",
    "exophase_id": "522896",
    "last_played": "2025-03-20",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:35:32",
    "in_exophase": true,
    "exophase_title": "Pokémon Legends: Arceus",
-   "release_eu": "2022-01-28"
+   "release_eu": "2022-01-28",
+   "cover_locked": true
   },
   {
    "id": 25,
