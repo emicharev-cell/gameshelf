@@ -349,6 +349,7 @@ function openDetail(g) {
           <div><span>Formato</span><b>${FORMAT[g.format]}${g.edition ? ' · ' + esc(g.edition) : ''}</b></div>
           <div><span>Región</span><b>${esc(g.region || '—')}</b></div>
           <div><span>Añadido</span><b>${new Date(g.added_at.replace(' ', 'T') + 'Z').toLocaleDateString('es')}</b></div>
+          <div><span>Exophase</span><b>${g.in_exophase ? '✔ Sincronizado' : g.in_exophase === false ? '✘ No está' : '—'}</b></div>
           <div><span>Última partida</span><b>${g.last_played ? esc(String(g.last_played).slice(0, 10)) : '—'}</b></div>
         </div>
         <div class="status-seg" id="dStatus">${Object.entries(STATUS).map(([k, s]) => `<button data-s="${k}" class="${g.status === k ? 'on' : ''}" style="${g.status === k ? `background:${s.color}` : ''}" ${ed ? '' : 'disabled'}>${s.label}</button>`).join('')}</div>
