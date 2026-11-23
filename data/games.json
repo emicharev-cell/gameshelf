@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:32:43.064Z",
+ "updated_at": "2026-11-23T22:32:56.253Z",
  "games": [
   {
    "id": 1,
@@ -879,15 +879,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/29-metroid-dread.png",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000042925/SQ_NSwitch_MetroidDread",
+   "cover_local": "covers/29-mwtudbtb.jpg",
    "exophase_id": "522738",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:32:56",
    "in_exophase": true,
    "exophase_title": "Metroid Dread",
-   "release_eu": "2021-10-08"
+   "release_eu": "2021-10-08",
+   "cover_locked": true
   },
   {
    "id": 30,
