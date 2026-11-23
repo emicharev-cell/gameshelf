@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:47:10.922Z",
+ "updated_at": "2026-11-23T22:48:38.289Z",
  "games": [
   {
    "id": 1,
@@ -1430,15 +1430,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/49/Splatoon_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/46-splatoon-2.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000151/SQ_NSwitch_Splatoon2",
+   "cover_local": "covers/46-mwtuxiqy.jpg",
    "exophase_id": "526411",
    "last_played": "2024-02-28",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:48:38",
    "in_exophase": true,
    "exophase_title": "Splatoon 2",
-   "release_eu": "2017-07-21"
+   "release_eu": "2017-07-21",
+   "cover_locked": true
   },
   {
    "id": 47,
