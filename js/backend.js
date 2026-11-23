@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232317';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232317';
-import { searchCovers } from './covers.js?v=202611232317';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232317';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611232319';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611232319';
+import { searchCovers } from './covers.js?v=202611232319';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611232319';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -423,7 +423,13 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
   if (id && p.endsWith('/cover')) return setCover(id, body.url);
   if (id && method === 'PATCH') {
     const b = { ...body };
-    if (b.hours !== undefined && b.hours_source === undefined) b.hours_source = 'manual';
+    if (b.hours !== undefined && b.hours_source === undefined) {
+      const cur = get(id);
+      const nh = parseHours(b.hours);
+      // el formulario reenvía las horas aunque no se toquen: solo pasan a "manual" si cambian de verdad
+      if (cur && nh != null && Math.abs(nh - (cur.hours || 0)) < 1 / 120) delete b.hours;
+      else b.hours_source = 'manual';
+    }
     const g = update(id, b);
     scheduleSave(`editado ${g.title}`);
     return g;
