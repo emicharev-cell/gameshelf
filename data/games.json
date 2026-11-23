@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:26:34.687Z",
+ "updated_at": "2026-11-23T22:27:29.560Z",
  "games": [
   {
    "id": 1,
@@ -238,12 +238,12 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/7/7a/OcarinaofTime2026.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/8-mwtu0lx6.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/ftmsmdf7sffiu1q2o10z",
+   "cover_local": "covers/8-mwtu6bzi.jpg",
    "exophase_id": "1025383",
    "last_played": "2026-11-19",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:23:02",
+   "updated_at": "2026-11-23 22:27:29",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Ocarina of Time",
    "cover_locked": true
