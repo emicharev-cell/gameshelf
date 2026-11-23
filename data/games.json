@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:42:22.852Z",
+ "updated_at": "2026-11-23T22:43:11.821Z",
  "games": [
   {
    "id": 1,
@@ -916,16 +916,17 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://art.gametdb.com/switch/coverHQ/ES/A3SDA.jpg",
-   "cover_local": "covers/30-tdbhq-A3SDA.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/P00105/1.1_ProductTile_Switch_MetroidPrimeRemastered_KeyArt_EN_NOE",
+   "cover_local": "covers/30-mwtuqiqs.jpg",
    "exophase_id": "574407",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:23:50",
+   "updated_at": "2026-11-23 22:43:11",
    "in_exophase": true,
    "exophase_title": "Metroid Prime Remastered",
    "gametdb_id": "A3SDA",
-   "release_eu": "2023-02-08"
+   "release_eu": "2023-02-08",
+   "cover_locked": true
   },
   {
    "id": 31,
