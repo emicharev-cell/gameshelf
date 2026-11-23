@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:24:27.878Z",
+ "updated_at": "2026-11-23T23:25:53.890Z",
  "games": [
   {
    "id": 1,
@@ -5022,7 +5022,14 @@
    ],
    "hours": 143.85,
    "last_played": "2026-10-18",
-   "games": [],
+   "games": [
+    {
+     "title": "Super Mario 64",
+     "hours": 4,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwtw9fws.png"
+    }
+   ],
    "exophase_id": "522768+684663+523575",
    "icon": "covers/retro/nso-n64.jpg"
   },
