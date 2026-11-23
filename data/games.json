@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:50:28.808Z",
+ "updated_at": "2026-11-23T22:50:38.480Z",
  "games": [
   {
    "id": 1,
@@ -519,12 +519,12 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000024/1.1_2000x2000_ProductTile_Switch_12Switch_KeyArt_enGB_v1_100q",
-   "cover_local": "covers/17-mwtuyrnr.jpg",
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/21/1-2-Switch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+   "cover_local": "covers/17-mwtv03rs.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 22:49:36",
+   "updated_at": "2026-11-23 22:50:38",
    "in_exophase": false,
    "release_eu": "2017-03-03",
    "cover_locked": true
