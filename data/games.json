@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:45:59.254Z",
+ "updated_at": "2026-11-23T22:46:49.223Z",
  "games": [
   {
    "id": 1,
@@ -858,15 +858,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0f/Mario_%26_Luigi_-_Brothership_%28cover_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/28-mario-and-luigi-brothership.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/pxtjhgeitscahvlsyduk",
+   "cover_local": "covers/28-mwtuv6t7.jpg",
    "exophase_id": "736670",
    "last_played": "2025-01-07",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:46:49",
    "in_exophase": true,
    "exophase_title": "Mario & Luigi: Brothership",
-   "release_eu": "2024-11-07"
+   "release_eu": "2024-11-07",
+   "cover_locked": true
   },
   {
    "id": 29,
