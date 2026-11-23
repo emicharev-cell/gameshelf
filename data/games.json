@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T22:29:27.320Z",
+ "updated_at": "2026-11-23T22:29:43.483Z",
  "games": [
   {
    "id": 1,
@@ -331,15 +331,16 @@
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/The_Legend_of_Zelda_%E2%80%93_Echoes_of_Wisdom.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/11-legend-of-zelda-echoes-of-wisdom.jpg",
+   "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/awkoqneedtzqxgjzf8ti",
+   "cover_local": "covers/11-mwtu97at.jpg",
    "exophase_id": "711528",
    "last_played": "2025-07-04",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 21:59:57",
+   "updated_at": "2026-11-23 22:29:43",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Echoes of Wisdom",
-   "release_eu": "2024-09-26"
+   "release_eu": "2024-09-26",
+   "cover_locked": true
   },
   {
    "id": 12,
