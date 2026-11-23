@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232259';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232259';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232259';
-import { parseHours } from './util.js?v=202611232259';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232304';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232304';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232304';
+import { parseHours } from './util.js?v=202611232304';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -271,16 +271,45 @@ function renderFilters() {
 function renderStatStrip() {
   const g = state.games;
   const hours = g.reduce((a, x) => a + (x.hours || 0), 0);
-  const done = g.filter(x => x.status === 'completado' || x.status === 'masterizado').length;
-  const playing = g.filter(x => x.status === 'jugando');
-  const pct = g.length ? Math.round(done / g.length * 100) : 0;
-  const plats = new Set(g.map(x => x.platform)).size;
+  const done = g.filter(x => x.status === 'completado' || x.status === 'masterizado');
+  const mastered = g.filter(x => x.status === 'masterizado').length;
+  const pending = g.filter(x => x.status === 'pendiente').length;
+  const playing = g.filter(x => x.status === 'jugando').sort((x, y) => (y.last_played || '').localeCompare(x.last_played || ''));
+  const pct = g.length ? Math.round(done.length / g.length * 100) : 0;
+  const byPlat = Object.entries(g.reduce((m, x) => ((m[x.platform] = (m[x.platform] || 0) + 1), m), {})).sort((x, y) => platOrder(x[0]) - platOrder(y[0]));
+  const st = state.f.status;
+  const on = key => (key === 'done' ? st.size === 2 && st.has('completado') && st.has('masterizado') : st.size === 1 && st.has(key)) ? ' on' : '';
   $('#statstrip').innerHTML = `
-    <div class="stat"><b>${g.length}</b><span>juegos · ${plats} sistemas</span></div>
-    <div class="stat"><b>${Math.round(hours).toLocaleString('es')} h</b><span>jugadas en total</span></div>
-    <div class="stat"><b>${pct}%</b><span>completados (${done})</span><div class="bar"><i style="width:${pct}%"></i></div></div>
-    <div class="stat"><b>${g.filter(x => x.status === 'pendiente').length}</b><span>en el backlog</span></div>
-    <div class="stat"><b>${playing.length}</b><span>${playing.length ? esc(playing.slice(0, 2).map(x => x.title.split(':')[0]).join(', ')) : 'jugando ahora'}</span></div>`;
+    <button class="hs hs-games" data-stat="all" title="Ver todos los juegos">
+      <span class="hs-ico">🎮</span>
+      <span class="hs-txt"><b>${g.length}</b><small>juegos · ${byPlat.length} consolas</small>
+        <span class="hs-platbar">${byPlat.map(([p, n]) => `<i style="flex:${n};background:${platStyle(p).c}" title="${esc(p)}: ${n}"></i>`).join('')}</span></span>
+    </button>
+    <div class="hs hs-hours" title="Horas registradas (Exophase + manuales)">
+      <span class="hs-ico">⏱️</span>
+      <span class="hs-txt"><b>${String(Math.round(hours)).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} h</b><small>jugadas · ≈ ${Math.round(hours / 24)} días seguidos</small></span>
+    </div>
+    <button class="hs hs-done${on('done')}" data-stat="done" title="Ver completados">
+      <span class="hs-ring" style="--p:${pct}"><span>${pct}%</span></span>
+      <span class="hs-txt"><b>${done.length}</b><small>completados${mastered ? ` · ${mastered} al 100%` : ''}</small></span>
+    </button>
+    <button class="hs hs-pend${on('pendiente')}" data-stat="pendiente" title="Ver pendientes">
+      <span class="hs-ico">📚</span>
+      <span class="hs-txt"><b>${pending}</b><small>pendientes por jugar</small></span>
+    </button>
+    <button class="hs hs-play${on('jugando')}" data-stat="jugando" title="${esc(playing.map(x => x.title).join(' · ') || 'Nada en curso')}">
+      <span class="hs-minis">${playing.slice(0, 4).map(x => `<img alt="" ${coverSrc(x)}>`).join('') || '<span class="hs-ico">▶️</span>'}</span>
+      <span class="hs-txt"><b>${playing.length}</b><small>jugando ahora</small></span>
+    </button>`;
+  wireCovers($('#statstrip'));
+  $('#statstrip').querySelectorAll('[data-stat]').forEach(el => el.onclick = () => {
+    const k = el.dataset.stat;
+    const wasOn = el.classList.contains('on');
+    Object.values(state.f).forEach(set => set.clear());
+    if (!wasOn && k === 'done') ['completado', 'masterizado'].forEach(x => st.add(x));
+    else if (!wasOn && k !== 'all') st.add(k);
+    render();
+  });
 }
 
 function cardHTML(g, i) {

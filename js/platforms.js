@@ -1,4 +1,4 @@
-import { esc } from './lib.js?v=202611232259';
+import { esc } from './lib.js?v=202611232304';
 
 // Color de marca, abreviatura, color de lomo y altura relativa de la caja (las de 3DS/DS son más bajas).
 export const PLAT = {
