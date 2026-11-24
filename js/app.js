@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241550';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241550';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241550';
-import { parseHours } from './util.js?v=202611241550';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241552';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241552';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241552';
+import { parseHours } from './util.js?v=202611241552';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -1138,14 +1138,33 @@ function topSagas() {
   return `<h3>Sagas más jugadas</h3><ol class="top-list sagas-top">${top.map(r => `<li><i class="saga-dot" style="background:${color[r.s]}"></i><span class="st">${esc(r.s)}<span class="track"><i style="width:${r.h / mx * 100}%;background:${color[r.s]}"></i></span></span><span class="h">${fmtH(r.h)}<small>${pct(r.h)}</small></span></li>`).join('')}</ol>`;
 }
 function sagaStats() {
-  const { byN, byH, mxN, mxH, color, pct, bar, others, total } = sagaData();
-  const sagaH = byH.reduce((a, r) => a + r.h, 0);
-  return `<div class="two-col">
-      <div><h3>Juegos por saga</h3>${byN.map(r => bar(r.s, r.n / mxN * 100, color[r.s], r.n)).join('')}
-        ${others ? `<p class="muted-note">Sin saga: ${others.n} ${others.n === 1 ? 'juego' : 'juegos'}</p>` : ''}</div>
-      <div><h3>Horas por saga <small style="color:var(--muted);font-weight:500">(% del total)</small></h3>${byH.map(r => bar(r.s, r.h / mxH * 100, color[r.s], `${fmtH(r.h)} · ${pct(r.h)}`, r.rh ? `Incluye ${fmtH(r.rh)} de juegos retro` : '')).join('')}
-        <p class="muted-note">Las sagas suman el ${pct(sagaH)} de tus horas${others?.h ? `; el resto (${fmtH(total - sagaH)}) son juegos sin saga y apps retro sin desglosar` : ''}. Incluye las horas que apuntas a cada juego dentro de Retro.</p></div>
-    </div>`;
+  // Diagrama de sectores (anillo) con las horas por saga, igual que el de "Por consola"
+  const { byH, color, total } = sagaData();
+  const TOP = 8;
+  const segsData = byH.slice(0, TOP).map(r => ({ label: r.s, h: r.h, c: color[r.s] }));
+  const restH = byH.slice(TOP).reduce((a, r) => a + r.h, 0);
+  if (restH > 0) segsData.push({ label: 'Otras sagas', h: restH, c: '#94a3b8' });
+  const noSaga = total - byH.reduce((a, r) => a + r.h, 0);
+  if (noSaga > 0.01) segsData.push({ label: 'Sin saga', h: noSaga, c: 'color-mix(in oklab, var(--muted) 35%, var(--panel2))' });
+  const pct = h => (h / total * 100).toFixed(1).replace('.', ',') + ' %';
+  const R = 70, C = 2 * Math.PI * R;
+  let acc = 0;
+  const segs = segsData.map(d => {
+    const len = d.h / total * C, gap = Math.min(2, len * 0.15);
+    const seg = `<circle r="${R}" cx="90" cy="90" fill="none" stroke="${d.c}" stroke-width="28" stroke-dasharray="${Math.max(0, len - gap)} ${C}" stroke-dashoffset="${-acc}" transform="rotate(-90 90 90)"><title>${esc(d.label)}: ${fmtH(d.h)} (${pct(d.h)})</title></circle>`;
+    acc += len;
+    return seg;
+  }).join('');
+  return `<h3>Horas por saga</h3>
+    <div class="cons-head saga-pie">
+      <svg class="cons-donut" viewBox="0 0 180 180" role="img" aria-label="Reparto de horas por saga">
+        <circle r="${R}" cx="90" cy="90" fill="none" stroke="var(--panel2)" stroke-width="28"/>${segs}
+        <text x="90" y="86" text-anchor="middle" class="cons-total">${byH.length}</text>
+        <text x="90" y="106" text-anchor="middle" class="cons-sub">sagas</text>
+      </svg>
+      <div class="cons-chips">${segsData.map(d => `<span title="${esc(fmtH(d.h))}"><i style="background:${d.c}"></i>${esc(d.label)} <b>${pct(d.h)}</b></span>`).join('')}</div>
+    </div>
+    `;
 }
 
 function openStats() {
