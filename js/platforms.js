@@ -1,4 +1,4 @@
-import { esc } from './lib.js?v=202611241114';
+import { esc } from './lib.js?v=202611241120';
 
 // Color de marca, abreviatura, color de lomo y altura relativa de la caja (las de 3DS/DS son más bajas).
 export const PLAT = {
@@ -12,7 +12,7 @@ export const PLAT = {
   'Nintendo 64': { c: '#1b8f3a', short: 'N64', spine: '#3a3a3a', h: 220 },
   'SNES': { c: '#7a6fb5', short: 'SNES', spine: '#cfcfd6', t: '#2a2342', h: 220 },
   'NES': { c: '#b91c1c', short: 'NES', spine: '#202020', h: 220 },
-  'Game Boy Advance': { c: '#4b3fb0', short: 'GBA', h: 175 },
+  'Game Boy Advance': { logo: 'img/consoles/gba.png', c: '#4b3fb0', short: 'GBA', h: 175 },
   'Game Boy': { c: '#7b8b3a', short: 'GB', h: 175 },
   'PlayStation 5': { c: '#0070d1', short: 'PS5', h: 255 },
   'PlayStation 4': { c: '#003791', short: 'PS4', h: 255 },

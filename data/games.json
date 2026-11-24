@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:41:48.176Z",
+ "updated_at": "2026-11-24T11:19:32.334Z",
  "games": [
   {
    "id": 1,
@@ -5011,6 +5011,94 @@
    "updated_at": "2026-11-23 23:06:03",
    "release_eu": "2019-04-18",
    "in_exophase": false
+  },
+  {
+   "id": 170,
+   "title": "Pokémon Edición Rubí",
+   "alt_title": "Pokémon Ruby",
+   "platform": "Game Boy Advance",
+   "year": 2003,
+   "genres": [
+    "RPG"
+   ],
+   "developer": "Game Freak",
+   "publisher": "Nintendo / The Pokémon Company",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "copies": 1,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/be/PokemonRubySapphireBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+   "cover_local": "covers/170-pokemon-rubi.jpg",
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-24 11:19:30",
+   "updated_at": "2026-11-24 11:19:30",
+   "release_eu": "2003-07-25",
+   "cover_locked": true
+  },
+  {
+   "id": 171,
+   "title": "Pokémon Edición Esmeralda",
+   "alt_title": "Pokémon Emerald",
+   "platform": "Game Boy Advance",
+   "year": 2005,
+   "genres": [
+    "RPG"
+   ],
+   "developer": "Game Freak",
+   "publisher": "Nintendo / The Pokémon Company",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "copies": 1,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/PokemonEmeraldBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+   "cover_local": "covers/171-pokemon-esmeralda.jpg",
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-24 11:19:30",
+   "updated_at": "2026-11-24 11:19:30",
+   "release_eu": "2005-10-21",
+   "cover_locked": true
+  },
+  {
+   "id": 172,
+   "title": "Pokémon Mundo Misterioso: Equipo de Rescate Rojo",
+   "alt_title": "Pokémon Mystery Dungeon: Red Rescue Team",
+   "platform": "Game Boy Advance",
+   "year": 2006,
+   "genres": [
+    "Roguelike",
+    "RPG"
+   ],
+   "developer": "Chunsoft",
+   "publisher": "Nintendo / The Pokémon Company",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "copies": 1,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Pok%C3%A9mon_Mystery_Dungeon_Blue_and_Red_Rescue_Team_cover_arts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+   "cover_local": "covers/172-pokemon-mundo-misterioso-equipo-de-rescate-rojo.jpg",
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-24 11:19:30",
+   "updated_at": "2026-11-24 11:19:30",
+   "release_eu": "2006-11-10",
+   "cover_locked": true
   }
  ],
  "retro": [
