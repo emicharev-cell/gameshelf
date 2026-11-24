@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:53:01.136Z",
+ "updated_at": "2026-11-24T12:53:18.458Z",
  "games": [
   {
    "id": 1,
@@ -5217,6 +5217,12 @@
      "hours": 2.4833333333333334,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup3em9.jpg"
+    },
+    {
+     "title": "The Legend of Zelda: Majora's Mask",
+     "hours": 1.4833333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup3rz9.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
