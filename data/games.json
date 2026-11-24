@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:53:32.156Z",
+ "updated_at": "2026-11-24T12:53:44.634Z",
  "games": [
   {
    "id": 1,
@@ -5229,6 +5229,12 @@
      "hours": 1.1,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup4250.png"
+    },
+    {
+     "title": "Dr. Mario 64",
+     "hours": 1.1,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup4c2z.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
