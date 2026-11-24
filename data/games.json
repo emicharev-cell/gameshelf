@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:23:21.944Z",
+ "updated_at": "2026-11-24T12:24:06.860Z",
  "games": [
   {
    "id": 1,
@@ -2250,7 +2250,7 @@
    "title": "Super Smash Bros. for Nintendo 3DS",
    "alt_title": "Super Smash Bros. for Nintendo 3DS and Wii U",
    "platform": "Nintendo 3DS",
-   "year": 2015,
+   "year": 2014,
    "genres": [
     "Lucha"
    ],
@@ -2270,8 +2270,8 @@
    "exophase_id": null,
    "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:47:02",
-   "release_eu": "2015-04-15",
+   "updated_at": "2026-11-24 12:24:04",
+   "release_eu": "2014-10-03",
    "cover_locked": true
   },
   {
