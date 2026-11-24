@@ -551,3 +551,13 @@ body.shape-auto .card-sub { white-space: nowrap; overflow: hidden; text-overflow
 .rg-time label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 12px; }
 .rg-time .rg-min { width: 86px; height: 30px; padding: 3px 8px; text-align: right; }
 @media (max-width: 860px) { .retro-min input { width: 100%; } .rg-time { flex-direction: column; align-items: flex-end; gap: 2px; } }
+
+/* ---------- Sagas más jugadas (Estadísticas) ---------- */
+.muted-note { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+.sagas-top li { cursor: default; gap: 10px; }
+.sagas-top .saga-dot { width: 12px; height: 12px; border-radius: 4px; flex: none; }
+.sagas-top .st { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.sagas-top .track { display: block; height: 6px; border-radius: 4px; background: var(--panel2); overflow: hidden; }
+.sagas-top .track i { display: block; height: 100%; border-radius: 4px; }
+.sagas-top .h { display: flex; flex-direction: column; align-items: flex-end; white-space: nowrap; }
+.sagas-top .h small { color: var(--muted); font-size: 11px; }

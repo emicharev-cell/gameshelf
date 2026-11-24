@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241308';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241308';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241308';
-import { parseHours } from './util.js?v=202611241308';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241550';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241550';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241550';
+import { parseHours } from './util.js?v=202611241550';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -1109,6 +1109,45 @@ async function openQR(kind = 'editor') {
 }
 
 // ---------------------------------------------------------------- Estadísticas
+// Estadísticas por saga: juegos del catálogo + horas (incluye las horas que apuntas a cada juego dentro de Retro)
+const SAGA_COLORS = ['#22c55e', '#ef4444', '#3b82f6', '#f59e0b', '#a855f7', '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16', '#06b6d4', '#e11d48'];
+function sagaData() {
+  const m = {};
+  const row = s => (m[s] ||= { s, n: 0, h: 0, rh: 0 });
+  for (const g of state.games) { const r = row(saga(g)); r.n++; r.h += g.hours || 0; }
+  for (const app of state.retro || []) for (const x of app.games || []) {
+    const s = saga({ title: x.title });
+    if (s !== OTHER_SAGA && x.hours > 0) { const r = row(s); r.h += x.hours; r.rh += x.hours; }
+  }
+  const total = state.games.reduce((a, g) => a + (g.hours || 0), 0) + (state.retro || []).reduce((a, x) => a + (x.hours || 0), 0) || 1;
+  const others = m[OTHER_SAGA];
+  const rows = Object.values(m).filter(r => r.s !== OTHER_SAGA);
+  const color = {};
+  rows.slice().sort((a, b) => b.h - a.h).forEach((r, i) => color[r.s] = SAGA_COLORS[i % SAGA_COLORS.length]);
+  const byN = rows.slice().sort((a, b) => b.n - a.n || b.h - a.h).filter(r => r.n > 0);
+  const byH = rows.filter(r => r.h > 0).sort((a, b) => b.h - a.h);
+  const mxN = Math.max(1, ...byN.map(r => r.n)), mxH = Math.max(1, ...byH.map(r => r.h));
+  const pct = h => (h / total * 100).toFixed(1).replace('.', ',') + '%';
+  const bar = (label, w, c, v, title = '') => `<div class="hbar"${title ? ` title="${esc(title)}"` : ''}><span>${esc(label)}</span><div class="track"><i style="width:${w}%;background:${c}"></i></div><span class="v">${v}</span></div>`;
+  return { byN, byH, mxN, mxH, color, pct, bar, others, total };
+}
+function topSagas() {
+  const { byH, color, pct } = sagaData();
+  const top = byH.slice(0, 8), mx = Math.max(1, ...top.map(r => r.h));
+  if (!top.length) return '';
+  return `<h3>Sagas más jugadas</h3><ol class="top-list sagas-top">${top.map(r => `<li><i class="saga-dot" style="background:${color[r.s]}"></i><span class="st">${esc(r.s)}<span class="track"><i style="width:${r.h / mx * 100}%;background:${color[r.s]}"></i></span></span><span class="h">${fmtH(r.h)}<small>${pct(r.h)}</small></span></li>`).join('')}</ol>`;
+}
+function sagaStats() {
+  const { byN, byH, mxN, mxH, color, pct, bar, others, total } = sagaData();
+  const sagaH = byH.reduce((a, r) => a + r.h, 0);
+  return `<div class="two-col">
+      <div><h3>Juegos por saga</h3>${byN.map(r => bar(r.s, r.n / mxN * 100, color[r.s], r.n)).join('')}
+        ${others ? `<p class="muted-note">Sin saga: ${others.n} ${others.n === 1 ? 'juego' : 'juegos'}</p>` : ''}</div>
+      <div><h3>Horas por saga <small style="color:var(--muted);font-weight:500">(% del total)</small></h3>${byH.map(r => bar(r.s, r.h / mxH * 100, color[r.s], `${fmtH(r.h)} · ${pct(r.h)}`, r.rh ? `Incluye ${fmtH(r.rh)} de juegos retro` : '')).join('')}
+        <p class="muted-note">Las sagas suman el ${pct(sagaH)} de tus horas${others?.h ? `; el resto (${fmtH(total - sagaH)}) son juegos sin saga y apps retro sin desglosar` : ''}. Incluye las horas que apuntas a cada juego dentro de Retro.</p></div>
+    </div>`;
+}
+
 function openStats() {
   const g = state.games;
   const total = g.reduce((a, x) => a + (x.hours || 0), 0);
@@ -1144,10 +1183,12 @@ function openStats() {
       <div><h3>Juegos por consola</h3>${plats.map(([p, v]) => `<div class="hbar"><span>${esc(p)}</span><div class="track"><i style="width:${v.n / maxN * 100}%;background:${platStyle(p).c}"></i></div><span class="v">${v.n}</span></div>`).join('')}</div>
       <div><h3>Horas por consola <small style="color:var(--muted);font-weight:500">(% del total)</small></h3>${(() => { const rows = hoursByConsole().filter(r => r.h > 0); const tot = rows.reduce((a, r) => a + r.h, 0) || 1; const mx = Math.max(...rows.map(r => r.h), 1); return rows.map(r => `<div class="hbar"><span>${esc(r.retro ? 'Retro (NSO)' : r.p)}</span><div class="track"><i style="width:${r.h / mx * 100}%;background:${colorFor(r)}"></i></div><span class="v">${fmtH(r.h)} · ${(r.h / tot * 100).toFixed(1).replace('.', ',')}%</span></div>`).join(''); })()}</div>
     </div>
+    ${sagaStats()}
     <div class="two-col">
       <div><h3>Top por horas</h3><ol class="top-list">${top.map(x => `<li data-id="${x.id}"><img alt="" ${coverSrc(x)}>${esc(x.title)}<span class="h">${fmtH(x.hours)}</span></li>`).join('')}</ol></div>
       <div><h3>Géneros favoritos</h3>${topGenres.map(([ge, n]) => `<div class="hbar"><span>${esc(ge)}</span><div class="track"><i style="width:${n / topGenres[0][1] * 100}%;background:var(--accent)"></i></div><span class="v">${n}</span></div>`).join('')}
-        <h3>Por década</h3>${Object.entries(decades).sort().map(([d, n]) => `<div class="hbar"><span>${d}s</span><div class="track"><i style="width:${n / Math.max(...Object.values(decades)) * 100}%;background:var(--accent2)"></i></div><span class="v">${n}</span></div>`).join('')}</div>
+        <h3>Por década</h3>${Object.entries(decades).sort().map(([d, n]) => `<div class="hbar"><span>${d}s</span><div class="track"><i style="width:${n / Math.max(...Object.values(decades)) * 100}%;background:var(--accent2)"></i></div><span class="v">${n}</span></div>`).join('')}
+        ${topSagas()}</div>
     </div>`, { wide: true });
   body.querySelectorAll('.top-list li').forEach(li => li.onclick = () => openDetail(state.games.find(x => x.id === +li.dataset.id)));
 }

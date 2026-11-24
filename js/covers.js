@@ -2,7 +2,7 @@
 // La API de Wikipedia admite CORS con origin=*, así que no hace falta servidor ni clave.
 // Mejoras: 1) primero la página exacta del título, 2) bonificación si la página es de la misma consola,
 // 3) se ignoran desambiguaciones entre paréntesis al comparar títulos ("Tetris (Game Boy video game)").
-import { normalizePlatform, similarity } from './util.js?v=202611241308';
+import { normalizePlatform, similarity } from './util.js?v=202611241550';
 
 const PLATFORM_WORDS = {
   'Nintendo 64': /nintendo 64|n64/i, 'Game Boy Advance': /game boy advance|gba/i, 'Game Boy': /game boy(?! advance)/i,
