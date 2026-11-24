@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:00:00.035Z",
+ "updated_at": "2026-11-24T12:00:05.350Z",
  "games": [
   {
    "id": 1,
@@ -3172,16 +3172,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 25.0333,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/db/NewSuperMarioBrothers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/106-new-super-mario-bros.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:59:58",
+   "updated_at": "2026-11-24 12:00:04",
    "release_eu": "2006-06-30"
   },
   {
