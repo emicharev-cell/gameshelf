@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:57:41.646Z",
+ "updated_at": "2026-11-24T12:57:54.555Z",
  "games": [
   {
    "id": 1,
@@ -5310,6 +5310,12 @@
      "hours": 1.55,
      "notes": null,
      "cover": "covers/retro/nso-gba-mwup9f23.jpg"
+    },
+    {
+     "title": "Fire Emblem",
+     "hours": 1.3,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup9p87.jpg"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
