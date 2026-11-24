@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:55:26.266Z",
+ "updated_at": "2026-11-24T12:55:41.471Z",
  "games": [
   {
    "id": 1,
@@ -5256,6 +5256,12 @@
      "hours": 11.2,
      "notes": null,
      "cover": "covers/retro/nso-gba-mwup6ikh.jpg"
+    },
+    {
+     "title": "Metroid Fusion",
+     "hours": 8.483333333333333,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup6uf2.jpg"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
