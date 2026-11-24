@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:53:48.549Z",
+ "updated_at": "2026-11-24T11:53:58.203Z",
  "games": [
   {
    "id": 1,
@@ -1947,16 +1947,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 9.9833,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/5c/Pokemon_Super_Mystery_Dungeon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/63-pokemon-mundo-megamisterioso.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:53:56",
    "release_eu": "2016-02-19"
   },
   {
