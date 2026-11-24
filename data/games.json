@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:45:19.935Z",
+ "updated_at": "2026-11-24T11:45:33.427Z",
  "games": [
   {
    "id": 1,
@@ -2918,16 +2918,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 6.45,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/BZHP.jpg",
    "cover_local": "covers/97-tdbhq-BZHP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:45:32",
    "gametdb_id": "BZHP",
    "release_eu": "2016-03-24"
   },
