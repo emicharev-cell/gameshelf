@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:01:39.438Z",
+ "updated_at": "2026-11-24T13:02:21.876Z",
  "games": [
   {
    "id": 1,
@@ -5465,7 +5465,14 @@
    ],
    "hours": 23.7667,
    "last_played": "2026-10-11",
-   "games": [],
+   "games": [
+    {
+     "title": "Super Mario Bros",
+     "hours": 2.5833333333333335,
+     "notes": null,
+     "cover": "covers/retro/nso-nes-mwupff5z.jpg"
+    }
+   ],
    "exophase_id": "522745+574487+574488+523576+523589",
    "icon": "covers/retro/nso-nes.jpg"
   },
