@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:59:52.557Z",
+ "updated_at": "2026-11-24T13:00:06.885Z",
  "games": [
   {
    "id": 1,
@@ -5367,6 +5367,12 @@
      "hours": 1.3666666666666667,
      "notes": null,
      "cover": "covers/retro/nso-snes-mwupc814.jpg"
+    },
+    {
+     "title": "Super Mario World 2: Yoshi's Island",
+     "hours": 1.2333333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-snes-mwupcivu.png"
     }
    ],
    "exophase_id": "522756+574487+574488+523576+523589",
