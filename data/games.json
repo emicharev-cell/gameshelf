@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:53:35.498Z",
+ "updated_at": "2026-11-24T11:53:48.549Z",
  "games": [
   {
    "id": 1,
@@ -1918,16 +1918,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 10.4333,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/55/PMD_MIL_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/62-pokemon-mystery-dungeon-gates-to-infinity.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:53:47",
    "release_eu": "2013-05-17"
   },
   {
