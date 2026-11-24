@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:00:05.350Z",
+ "updated_at": "2026-11-24T12:00:29.454Z",
  "games": [
   {
    "id": 1,
@@ -3551,16 +3551,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 38.8667,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/ds/coverHQ/ES/YFYP.jpg",
    "cover_local": "covers/119-tdbhq-YFYP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 12:00:28",
    "gametdb_id": "YFYP",
    "release_eu": "2008-07-04"
   },
