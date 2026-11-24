@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:51:39.667Z",
+ "updated_at": "2026-11-24T12:52:26.600Z",
  "games": [
   {
    "id": 1,
@@ -5199,6 +5199,12 @@
      "hours": 17.05,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup1nsc.jpg"
+    },
+    {
+     "title": "Mario Kart 64",
+     "hours": 7.533333333333333,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup2nni.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
