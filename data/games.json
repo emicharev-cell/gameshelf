@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:52:48.743Z",
+ "updated_at": "2026-11-24T12:53:01.136Z",
  "games": [
   {
    "id": 1,
@@ -5211,6 +5211,12 @@
      "hours": 2.816666666666667,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup34u8.jpg"
+    },
+    {
+     "title": "Star Fox 64",
+     "hours": 2.4833333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup3em9.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
