@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:05:17.495Z",
+ "updated_at": "2026-11-24T15:32:26.497Z",
  "games": [
   {
    "id": 1,
@@ -3987,16 +3987,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 33.5,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/134-legend-of-zelda-twilight-princess.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 15:32:25",
    "release_eu": "2006-12-08"
   },
   {
