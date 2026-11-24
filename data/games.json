@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:00:57.803Z",
+ "updated_at": "2026-11-24T13:01:07.819Z",
  "games": [
   {
    "id": 1,
@@ -5406,6 +5406,12 @@
      "hours": 4.55,
      "notes": null,
      "cover": "covers/retro/nso-gb-mwupdlyy.jpg"
+    },
+    {
+     "title": "Super Mario Land",
+     "hours": 1.6833333333333333,
+     "notes": null,
+     "cover": "covers/retro/nso-gb-mwupdu5i.png"
     }
    ],
    "exophase_id": "574485+574487+574488+523576+523589",
