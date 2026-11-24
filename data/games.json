@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:41:06.305Z",
+ "updated_at": "2026-11-24T10:41:11.454Z",
  "games": [
   {
    "id": 1,
@@ -4238,16 +4238,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 23.3333,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://mario.wiki.gallery/images/thumb/a/a0/Box_EU_-_Captain_Toad_Treasure_Tracker.png/800px-Box_EU_-_Captain_Toad_Treasure_Tracker.png",
    "cover_local": "covers/143-mwuk3vxy.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 10:41:05",
+   "updated_at": "2026-11-24 10:41:10",
    "release_eu": "2015-01-02",
    "cover_locked": true
   },
