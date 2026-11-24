@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:43:02.629Z",
+ "updated_at": "2026-11-24T11:43:13.788Z",
  "games": [
   {
    "id": 1,
@@ -2659,16 +2659,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 54.3667,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/bc/MarioLuigiDreamTeam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/88-mario-and-luigi-dream-team-bros.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:43:12",
    "release_eu": "2013-07-12"
   },
   {
