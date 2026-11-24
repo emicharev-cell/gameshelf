@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241047';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241047';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241047';
-import { parseHours } from './util.js?v=202611241047';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241114';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241114';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241114';
+import { parseHours } from './util.js?v=202611241114';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -389,7 +389,7 @@ function renderConsoles() {
     </div>
     <div class="cons-list">${rows.map(r => `
       <button class="cons-row" data-plat="${esc(r.p)}" style="--c:${colorFor(r)}">
-        <span class="cons-badge">${r.retro ? '🕹' : esc(platStyle(r.p).short)}</span>
+        ${(r.retro ? 'img/consoles/nso.png' : platStyle(r.p).logo) ? `<span class="cons-logo"><img src="${r.retro ? 'img/consoles/nso.png' : platStyle(r.p).logo}" alt="${esc(r.p)}"></span>` : `<span class="cons-badge">${esc(platStyle(r.p).short)}</span>`}
         <span class="cons-main">
           <span class="cons-name"><b>${esc(r.p)}</b><small>${r.retro ? `${r.n} apps` : `${r.n} ${r.n === 1 ? 'juego' : 'juegos'} · ${r.played} con horas`}${r.top && r.top.hours > 0 ? ` · más jugado: ${esc(r.top.title)}` : ''}</small></span>
           <span class="cons-bar"><i style="width:${(r.h / max * 100).toFixed(1)}%"></i></span>

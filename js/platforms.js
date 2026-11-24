@@ -1,14 +1,14 @@
-import { esc } from './lib.js?v=202611241047';
+import { esc } from './lib.js?v=202611241114';
 
 // Color de marca, abreviatura, color de lomo y altura relativa de la caja (las de 3DS/DS son más bajas).
 export const PLAT = {
-  'Nintendo Switch 2': { c: '#e60012', short: 'Switch 2', spine: '#c4000f', h: 250 },
-  'Nintendo Switch': { c: '#e60012', short: 'Switch', h: 245 },
-  'Nintendo 3DS': { c: '#d0021b', short: '3DS', spine: '#f4f4f4', t: '#1a1a1a', h: 190 },
-  'Nintendo DS': { c: '#6b6b6b', short: 'DS', spine: '#f4f4f4', t: '#1a1a1a', h: 190 },
-  'Wii U': { c: '#009ac7', short: 'Wii U', spine: '#1d8fc4', h: 265 },
-  'Wii': { c: '#8f9aa3', short: 'Wii', spine: '#f6f6f6', t: '#1a1a1a', h: 265 },
-  'GameCube': { c: '#6a4fb6', short: 'GCN', spine: '#2b2b2b', h: 265 },
+  'Nintendo Switch 2': { logo: 'img/consoles/switch2.png', c: '#e60012', short: 'Switch 2', spine: '#c4000f', h: 250 },
+  'Nintendo Switch': { logo: 'img/consoles/switch.png', c: '#e60012', short: 'Switch', h: 245 },
+  'Nintendo 3DS': { logo: 'img/consoles/3ds.png', c: '#d0021b', short: '3DS', spine: '#f4f4f4', t: '#1a1a1a', h: 190 },
+  'Nintendo DS': { logo: 'img/consoles/ds.png', c: '#6b6b6b', short: 'DS', spine: '#f4f4f4', t: '#1a1a1a', h: 190 },
+  'Wii U': { logo: 'img/consoles/wiiu.png', c: '#009ac7', short: 'Wii U', spine: '#1d8fc4', h: 265 },
+  'Wii': { logo: 'img/consoles/wii.png', c: '#8f9aa3', short: 'Wii', spine: '#f6f6f6', t: '#1a1a1a', h: 265 },
+  'GameCube': { logo: 'img/consoles/gamecube.png', c: '#6a4fb6', short: 'GCN', spine: '#2b2b2b', h: 265 },
   'Nintendo 64': { c: '#1b8f3a', short: 'N64', spine: '#3a3a3a', h: 220 },
   'SNES': { c: '#7a6fb5', short: 'SNES', spine: '#cfcfd6', t: '#2a2342', h: 220 },
   'NES': { c: '#b91c1c', short: 'NES', spine: '#202020', h: 220 },
