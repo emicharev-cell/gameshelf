@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T15:32:26.497Z",
+ "updated_at": "2026-11-24T15:35:01.712Z",
  "games": [
   {
    "id": 1,
@@ -3959,16 +3959,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 35.9667,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/99/Legend_of_Zelda_Skyward_Sword_boxart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/133-legend-of-zelda-skyward-sword.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 15:35:00",
    "release_eu": "2011-11-18"
   },
   {
