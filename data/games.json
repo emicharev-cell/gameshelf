@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:36:22.762Z",
+ "updated_at": "2026-11-24T10:36:27.388Z",
  "games": [
   {
    "id": 1,
@@ -4523,16 +4523,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 57.1333,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/Hyrule_Warriors_NA_game_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/153-hyrule-warriors.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 10:36:21",
+   "updated_at": "2026-11-24 10:36:26",
    "release_eu": "2014-09-19"
   },
   {
