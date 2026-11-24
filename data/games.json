@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:01:29.305Z",
+ "updated_at": "2026-11-24T13:01:39.438Z",
  "games": [
   {
    "id": 1,
@@ -5424,6 +5424,12 @@
      "hours": 1.2833333333333334,
      "notes": null,
      "cover": "covers/retro/nso-gb-mwupeajx.jpg"
+    },
+    {
+     "title": "Alleyway",
+     "hours": 1.2166666666666666,
+     "notes": null,
+     "cover": "covers/retro/nso-gb-mwupei9w.png"
     }
    ],
    "exophase_id": "574485+574487+574488+523576+523589",
