@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:50:39.747Z",
+ "updated_at": "2026-11-24T12:50:55.299Z",
  "games": [
   {
    "id": 1,
@@ -5187,6 +5187,12 @@
      "hours": 26.4,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup0djn.jpg"
+    },
+    {
+     "title": "Mario Tennis",
+     "hours": 24.516666666666666,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup0pcz.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
