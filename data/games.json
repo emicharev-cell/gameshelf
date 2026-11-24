@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:45:45.067Z",
+ "updated_at": "2026-11-24T11:45:55.069Z",
  "games": [
   {
    "id": 1,
@@ -2947,16 +2947,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 6.1,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/16/Metroid_Samus_Returns.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/98-metroid-samus-returns.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:45:53",
    "release_eu": "2017-09-15"
   },
   {
