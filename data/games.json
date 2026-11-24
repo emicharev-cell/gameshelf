@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:39:08.805Z",
+ "updated_at": "2026-11-24T10:39:21.530Z",
  "games": [
   {
    "id": 1,
@@ -4324,16 +4324,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 5.95,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Wii_Party_U_Box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/146-wii-party-u.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 10:39:20",
    "release_eu": "2013-10-25"
   },
   {
