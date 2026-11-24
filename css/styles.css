@@ -543,3 +543,11 @@ body.shape-auto .card.sqbox .cover, body.shape-auto .cover.sqbox { aspect-ratio:
 body.shape-auto .grid { align-items: end; }
 body.shape-auto .card-title { min-height: 2.5em; }
 body.shape-auto .card-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Retro: tiempo en minutos */
+.retro-min { display: flex; flex-direction: column; gap: 3px; }
+.retro-min input { width: 190px; }
+.retro-conv { color: var(--accent2); font-size: 12px; font-weight: 700; min-height: 1em; padding-left: 4px; }
+.rg-time { display: inline-flex; align-items: center; gap: 10px; justify-content: flex-end; }
+.rg-time label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 12px; }
+.rg-time .rg-min { width: 86px; height: 30px; padding: 3px 8px; text-align: right; }
+@media (max-width: 860px) { .retro-min input { width: 100%; } .rg-time { flex-direction: column; align-items: flex-end; gap: 2px; } }

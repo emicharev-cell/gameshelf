@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241212';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241212';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241212';
-import { parseHours } from './util.js?v=202611241212';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241248';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241248';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241248';
+import { parseHours } from './util.js?v=202611241248';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -428,11 +428,11 @@ function renderRetro() {
           <span class="retro-chev">▾</span>
         </summary>
         <div class="retro-body">
-          ${games.length ? `<table class="tbl retro-tbl"><thead><tr><th>Juego</th><th class="num">Horas</th>${ed ? '<th></th>' : ''}</tr></thead><tbody>
-            ${games.map(x => `<tr><td class="rg-game">${ed ? `<label class="rg-thumb" title="Cambiar imagen"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}><input type="file" accept="image/*" hidden class="rg-file" data-i="${x.i}"><span>📷</span></label>` : `<span class="rg-thumb"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}></span>`}<span>${esc(x.title)}</span></td><td class="num">${ed ? `<input type="text" class="rg-h" data-i="${x.i}" value="${fmtHM(x.hours)}" placeholder="h:mm">` : fmtH(x.hours)}</td>${ed ? `<td class="num"><button class="btn sm ghost danger rg-del" data-i="${x.i}" title="Quitar">✕</button></td>` : ''}</tr>`).join('')}
+          ${games.length ? `<table class="tbl retro-tbl"><thead><tr><th>Juego</th><th class="num">Tiempo jugado</th>${ed ? '<th></th>' : ''}</tr></thead><tbody>
+            ${games.map(x => `<tr><td class="rg-game">${ed ? `<label class="rg-thumb" title="Cambiar imagen"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}><input type="file" accept="image/*" hidden class="rg-file" data-i="${x.i}"><span>📷</span></label>` : `<span class="rg-thumb"><img alt="" loading="lazy" ${coverSrc({ cover_local: x.cover, title: x.title, platform: r.platform })}></span>`}<span>${esc(x.title)}</span></td><td class="num">${ed ? `<span class="rg-time"><b>${fmtH(x.hours)}</b><label><input type="number" class="rg-min" data-i="${x.i}" value="${mins(x.hours)}" min="0" step="1" title="Minutos jugados"> min</label></span>` : `<b>${fmtH(x.hours)}</b>`}</td>${ed ? `<td class="num"><button class="btn sm ghost danger rg-del" data-i="${x.i}" title="Quitar">✕</button></td>` : ''}</tr>`).join('')}
             </tbody></table>` : '<p class="retro-empty">Todavía no has detallado ningún juego de esta consola.</p>'}
           ${r.hours > detailed + 0.01 ? `<p class="retro-rest">Sin asignar a ningún juego: <b>${fmtH(r.hours - detailed)}</b></p>` : ''}
-          ${ed ? `<form class="retro-add"><input type="text" name="title" placeholder="Juego (p. ej. Super Mario 64)" required><input type="text" name="hours" placeholder="h:mm"><button class="btn sm primary">＋ Añadir</button></form>` : ''}
+          ${ed ? `<form class="retro-add"><input type="text" name="title" placeholder="Juego (p. ej. Super Mario 64)" required><span class="retro-min"><input type="number" name="minutes" min="0" step="1" inputmode="numeric" placeholder="Minutos (p. ej. 1500)"><small class="retro-conv"></small></span><button class="btn sm primary">＋ Añadir</button></form>` : ''}
         </div>
       </details>`;
     }).join('')}
@@ -454,13 +454,22 @@ function wireRetro(root) {
         if (msg) toast(msg, 'ok');
       } catch (e) { toast(e.message, 'err'); }
     };
-    d.querySelector('.retro-add')?.addEventListener('submit', e => {
-      e.preventDefault();
-      const f = e.target;
-      const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Buscando imagen…';
-      call('', 'POST', { title: f.title.value, hours: f.hours.value || '0' }, `✔ ${f.title.value} añadido`);
+    // Tiempo en MINUTOS: se convierte a horas al guardar y se muestra como "X h Y min"
+    const toHours = v => Math.max(0, Math.round(Number(String(v).replace(',', '.')) || 0)) / 60;
+    const form = d.querySelector('.retro-add');
+    if (form) {
+      const conv = form.querySelector('.retro-conv');
+      form.minutes.addEventListener('input', () => { conv.textContent = form.minutes.value ? `= ${fmtH(toHours(form.minutes.value))}` : ''; });
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Buscando portada…';
+        call('', 'POST', { title: form.title.value, hours: toHours(form.minutes.value) }, `✔ ${form.title.value} añadido (${fmtH(toHours(form.minutes.value))})`);
+      });
+    }
+    d.querySelectorAll('.rg-min').forEach(inp => {
+      inp.addEventListener('input', () => { inp.closest('.rg-time').querySelector('b').textContent = fmtH(toHours(inp.value)); });
+      inp.addEventListener('change', () => call(`/${inp.dataset.i}`, 'PATCH', { hours: toHours(inp.value) }, `Guardado: ${fmtH(toHours(inp.value))}`));
     });
-    d.querySelectorAll('.rg-h').forEach(inp => inp.addEventListener('change', () => call(`/${inp.dataset.i}`, 'PATCH', { hours: inp.value }, 'Horas guardadas')));
     d.querySelectorAll('.rg-file').forEach(inp => inp.addEventListener('change', async () => {
       const f = inp.files[0];
       if (!f) return;
