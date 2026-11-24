@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:00:17.792Z",
+ "updated_at": "2026-11-24T13:00:45.988Z",
  "games": [
   {
    "id": 1,
@@ -5394,7 +5394,14 @@
    ],
    "hours": 28.5167,
    "last_played": "2026-10-27",
-   "games": [],
+   "games": [
+    {
+     "title": "Dr. Mario",
+     "hours": 5.016666666666667,
+     "notes": null,
+     "cover": "covers/retro/nso-gb-mwupddc1.jpg"
+    }
+   ],
    "exophase_id": "574485+574487+574488+523576+523589",
    "icon": "covers/retro/nso-gb.jpg"
   },
