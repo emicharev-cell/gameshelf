@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:48:20.319Z",
+ "updated_at": "2026-11-24T11:48:39.827Z",
  "games": [
   {
    "id": 1,
@@ -1744,16 +1744,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 333.6833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/EKJP.jpg",
    "cover_local": "covers/56-tdbhq-EKJP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:48:38",
    "gametdb_id": "EKJP",
    "release_eu": "2013-10-12"
   },
