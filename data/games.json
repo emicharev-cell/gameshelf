@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:57:54.555Z",
+ "updated_at": "2026-11-24T12:58:48.175Z",
  "games": [
   {
    "id": 1,
@@ -5331,7 +5331,14 @@
    ],
    "hours": 60.1667,
    "last_played": "2026-11-15",
-   "games": [],
+   "games": [
+    {
+     "title": "Super Mario All Stars",
+     "hours": 12.216666666666667,
+     "notes": null,
+     "cover": "covers/retro/nso-snes-mwupau8v.jpg"
+    }
+   ],
    "exophase_id": "522756+574487+574488+523576+523589",
    "icon": "covers/retro/nso-snes.jpg"
   },
