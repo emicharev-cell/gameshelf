@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:00:06.885Z",
+ "updated_at": "2026-11-24T13:00:17.792Z",
  "games": [
   {
    "id": 1,
@@ -5373,6 +5373,12 @@
      "hours": 1.2333333333333334,
      "notes": null,
      "cover": "covers/retro/nso-snes-mwupcivu.png"
+    },
+    {
+     "title": "Earthbound",
+     "hours": 1.2333333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-snes-mwupcrnt.jpg"
     }
    ],
    "exophase_id": "522756+574487+574488+523576+523589",
