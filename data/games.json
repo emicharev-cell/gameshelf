@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:39:21.530Z",
+ "updated_at": "2026-11-24T10:39:37.535Z",
  "games": [
   {
    "id": 1,
@@ -4494,16 +4494,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 20.55,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/ae/Twilight_Princess_HD.jpg",
    "cover_local": "covers/152-fix.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 10:39:36",
    "release_eu": "2016-03-04"
   },
   {
