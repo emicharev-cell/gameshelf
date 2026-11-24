@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:46:17.601Z",
+ "updated_at": "2026-11-24T11:46:22.152Z",
  "games": [
   {
    "id": 1,
@@ -2003,16 +2003,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 242.7667,
    "hours_source": "manual",
    "notes": "Tengo 3 copias.",
    "copies": 3,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/04/AnimalCrossingNewLeafNABoxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/65-animal-crossing-new-leaf.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:46:16",
+   "updated_at": "2026-11-24 11:46:20",
    "release_eu": "2013-06-14"
   },
   {
