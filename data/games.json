@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:42:56.864Z",
+ "updated_at": "2026-11-24T11:43:02.629Z",
  "games": [
   {
    "id": 1,
@@ -2746,16 +2746,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 37.7667,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Luigi%27s_Mansion_Dark_Moon_%28Boxart%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/91-luigi-s-mansion-2.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:42:55",
+   "updated_at": "2026-11-24 11:43:01",
    "release_eu": "2013-03-28"
   },
   {
