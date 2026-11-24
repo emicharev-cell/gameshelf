@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:44:37.146Z",
+ "updated_at": "2026-11-24T11:45:05.639Z",
  "games": [
   {
    "id": 1,
@@ -2264,13 +2264,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/74-super-smash-bros-for-nintendo-3ds.png",
+   "cover_url": "https://mario.wiki.gallery/images/8/86/SSB4_3DS_European_Boxart.jpg",
+   "cover_local": "covers/74-mwumo1w4.jpg",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
-   "release_eu": "2015-04-15"
+   "updated_at": "2026-11-24 11:45:05",
+   "release_eu": "2015-04-15",
+   "cover_locked": true
   },
   {
    "id": 75,
