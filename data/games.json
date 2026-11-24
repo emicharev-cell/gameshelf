@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:58:58.242Z",
+ "updated_at": "2026-11-24T12:59:13.213Z",
  "games": [
   {
    "id": 1,
@@ -5343,6 +5343,12 @@
      "hours": 11.616666666666667,
      "notes": null,
      "cover": "covers/retro/nso-snes-mwupb23f.jpg"
+    },
+    {
+     "title": "The Legend of Zelda: A Link to the Past",
+     "hours": 8.466666666666667,
+     "notes": null,
+     "cover": "covers/retro/nso-snes-mwupbdnk.jpg"
     }
    ],
    "exophase_id": "522756+574487+574488+523576+523589",
