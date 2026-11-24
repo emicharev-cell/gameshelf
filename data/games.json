@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-23T23:26:05.755Z",
+ "updated_at": "2026-11-24T10:31:06.824Z",
  "games": [
   {
    "id": 1,
@@ -4270,13 +4270,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b9/UK_box_art_of_Yoshi%27s_Woolly_World.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/144-yoshi-s-woolly-world.jpg",
+   "cover_url": "https://static.wikia.nocookie.net/nintendo/images/f/f5/Yoshi%27sWoolyWorld_%28EU%29.jpg/revision/latest?cb=20150408132420&path-prefix=en",
+   "cover_local": "covers/144-mwuk0wpz.webp",
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
-   "release_eu": "2015-06-26"
+   "updated_at": "2026-11-24 10:31:06",
+   "release_eu": "2015-06-26",
+   "cover_locked": true
   },
   {
    "id": 145,
