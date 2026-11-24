@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:57:16.274Z",
+ "updated_at": "2026-11-24T12:57:31.230Z",
  "games": [
   {
    "id": 1,
@@ -5298,6 +5298,12 @@
      "hours": 1.6333333333333333,
      "notes": null,
      "cover": "covers/retro/nso-gba-mwup8vfp.png"
+    },
+    {
+     "title": "Mario Kart Super Circuit",
+     "hours": 1.55,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup977e.jpg"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
