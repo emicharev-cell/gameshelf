@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:20:01.875Z",
+ "updated_at": "2026-11-24T12:23:21.944Z",
  "games": [
   {
    "id": 1,
@@ -5132,6 +5132,35 @@
    "last_played": null,
    "added_at": "2026-11-24 11:23:02",
    "updated_at": "2026-11-24 11:23:02"
+  },
+  {
+   "id": 174,
+   "title": "Pokémon Edición Diamante",
+   "alt_title": "Pokémon Diamond",
+   "platform": "Nintendo DS",
+   "year": 2007,
+   "release_eu": "2007-07-27",
+   "genres": [
+    "RPG"
+   ],
+   "developer": "Game Freak",
+   "publisher": "Nintendo / The Pokémon Company",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "copies": 1,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/2e/PokemonDiamondPearlBoxArt.jpg",
+   "cover_local": "covers/174-pokemon-edicion-diamante.jpg",
+   "cover_locked": true,
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-24 12:23:21",
+   "updated_at": "2026-11-24 12:23:21"
   }
  ],
  "retro": [
