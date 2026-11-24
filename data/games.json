@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:52:51.327Z",
+ "updated_at": "2026-11-24T11:53:05.432Z",
  "games": [
   {
    "id": 1,
@@ -1800,18 +1800,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 108.05,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/BNDP.jpg",
    "cover_local": "covers/58-tdbhq-BNDP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:53:04",
    "gametdb_id": "BNDP",
    "release_eu": "2016-11-23"
   },
