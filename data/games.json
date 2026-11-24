@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:00:45.988Z",
+ "updated_at": "2026-11-24T13:00:57.803Z",
  "games": [
   {
    "id": 1,
@@ -5400,6 +5400,12 @@
      "hours": 5.016666666666667,
      "notes": null,
      "cover": "covers/retro/nso-gb-mwupddc1.jpg"
+    },
+    {
+     "title": "Tetris",
+     "hours": 4.55,
+     "notes": null,
+     "cover": "covers/retro/nso-gb-mwupdlyy.jpg"
     }
    ],
    "exophase_id": "574485+574487+574488+523576+523589",
