@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:46:56.348Z",
+ "updated_at": "2026-11-24T11:47:04.178Z",
  "games": [
   {
    "id": 1,
@@ -2258,18 +2258,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 41.6833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://mario.wiki.gallery/images/8/86/SSB4_3DS_European_Boxart.jpg",
    "cover_local": "covers/74-mwumo1w4.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:45:05",
+   "updated_at": "2026-11-24 11:47:02",
    "release_eu": "2015-04-15",
    "cover_locked": true
   },
