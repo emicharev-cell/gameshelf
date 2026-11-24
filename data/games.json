@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:47:37.083Z",
+ "updated_at": "2026-11-24T11:48:20.319Z",
  "games": [
   {
    "id": 1,
@@ -2179,13 +2179,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Tomodachi_Life_series_logo_2026.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/71-tomodachi-life.png",
+   "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPS_m4BN159rVPLJh3ksMcboblDeOqYEgj0IwJ0Y8PyMQIf1p7mQtRVU&s=10",
+   "cover_local": "covers/71-mwums7zt.jpg",
    "exophase_id": null,
    "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:47:35",
-   "release_eu": "2014-06-06"
+   "updated_at": "2026-11-24 11:48:20",
+   "release_eu": "2014-06-06",
+   "cover_locked": true
   },
   {
    "id": 72,
