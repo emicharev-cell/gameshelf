@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:46:41.113Z",
+ "updated_at": "2026-11-24T11:46:56.348Z",
  "games": [
   {
    "id": 1,
@@ -2116,18 +2116,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 15.5833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Rhythm_Heaven_Megamix_Cover_Art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/69-rhythm-paradise-megamix.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:46:55",
    "release_eu": "2016-10-21"
   },
   {
