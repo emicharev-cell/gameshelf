@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:52:26.600Z",
+ "updated_at": "2026-11-24T12:52:48.743Z",
  "games": [
   {
    "id": 1,
@@ -5205,6 +5205,12 @@
      "hours": 7.533333333333333,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup2nni.jpg"
+    },
+    {
+     "title": "Mario Golf",
+     "hours": 2.816666666666667,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup34u8.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
