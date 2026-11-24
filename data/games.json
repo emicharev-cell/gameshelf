@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:50:15.869Z",
+ "updated_at": "2026-11-24T12:50:39.747Z",
  "games": [
   {
    "id": 1,
@@ -5181,6 +5181,12 @@
      "hours": 32.38333333333333,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwuozuz7.png"
+    },
+    {
+     "title": "The Legend of Zelda: Ocarina of Time",
+     "hours": 26.4,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup0djn.jpg"
     }
    ],
    "exophase_id": "522768+684663+523575",
