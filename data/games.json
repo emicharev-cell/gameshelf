@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:53:05.432Z",
+ "updated_at": "2026-11-24T11:53:12.797Z",
  "games": [
   {
    "id": 1,
@@ -1831,16 +1831,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 0.7833,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/BNEP.jpg",
    "cover_local": "covers/59-tdbhq-BNEP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:53:11",
    "gametdb_id": "BNEP",
    "release_eu": "2016-11-23"
   },
