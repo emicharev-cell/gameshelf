@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:56:52.010Z",
+ "updated_at": "2026-11-24T12:57:04.375Z",
  "games": [
   {
    "id": 1,
@@ -5286,6 +5286,12 @@
      "hours": 3.816666666666667,
      "notes": null,
      "cover": null
+    },
+    {
+     "title": "Kuru Kuru Kururin",
+     "hours": 2.55,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup8m6s.jpg"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
