@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:41:40.467Z",
+ "updated_at": "2026-11-24T11:41:46.131Z",
  "games": [
   {
    "id": 1,
@@ -2489,16 +2489,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 68.3,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/Mario_Kart_7_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/82-mario-kart-7.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:41:39",
+   "updated_at": "2026-11-24 11:41:44",
    "release_eu": "2011-12-02"
   },
   {
