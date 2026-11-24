@@ -1,6 +1,6 @@
 // Búsqueda de carátulas desde el navegador: Wikipedia (imagen del infobox ≈ carátula de la caja).
 // La API de Wikipedia admite CORS con origin=*, así que no hace falta servidor ni clave.
-import { normalizePlatform, similarity } from './util.js?v=202611241120';
+import { normalizePlatform, similarity } from './util.js?v=202611241212';
 
 async function searchWikipedia(title, platform, lang = 'en') {
   const out = [];

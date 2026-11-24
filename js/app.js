@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241120';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241120';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241120';
-import { parseHours } from './util.js?v=202611241120';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241212';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241212';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241212';
+import { parseHours } from './util.js?v=202611241212';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -156,8 +156,12 @@ async function boot() {
   window.addEventListener('beforeunload', e => { if (/sin guardar|guardando/.test($('#modeBadge').textContent)) e.preventDefault(); });
 }
 
+// Forma "automática": cada caja con su proporción real (portátiles y Switch cuadradas; Wii, Wii U y GameCube rectangulares)
+const SQUARE_PLATFORMS = new Set(['Nintendo Switch', 'Nintendo Switch 2', 'Nintendo 3DS', 'Nintendo DS', 'Game Boy Advance', 'Game Boy']);
+const sqCls = g => (SQUARE_PLATFORMS.has(g.platform) ? ' sqbox' : '');
 function applyShape() {
   document.body.classList.toggle('sq', state.shape === 'square');
+  document.body.classList.toggle('shape-auto', state.shape === 'auto');
   document.querySelectorAll('#shapeSeg button').forEach(b => b.classList.toggle('on', b.dataset.shape === state.shape));
 }
 
@@ -470,7 +474,7 @@ function wireRetro(root) {
 function cardHTML(g, i) {
   const ps = platStyle(g.platform);
   const hint = SORTS[state.sort].hint?.(g);
-  return `<article class="card" data-id="${g.id}" style="animation-delay:${Math.min(i, 30) * 18}ms" tabindex="0">
+  return `<article class="card${sqCls(g)}" data-id="${g.id}" style="animation-delay:${Math.min(i, 30) * 18}ms" tabindex="0">
     <div class="cover">
       <div class="plat-band" style="background:${ps.c};color:${ps.t || '#fff'}">${esc(ps.short)}</div>
       <img loading="lazy" alt="" ${coverSrc(g)}>
@@ -584,7 +588,7 @@ function openDetail(g) {
   const body = openModal(`
     <div class="detail">
       <div>
-        <div class="cover"><div class="plat-band" style="background:${ps.c};color:${ps.t || '#fff'}">${esc(g.platform)}</div><img alt="" ${coverSrc(g)}></div>
+        <div class="cover${sqCls(g)}"><div class="plat-band" style="background:${ps.c};color:${ps.t || '#fff'}">${esc(g.platform)}</div><img alt="" ${coverSrc(g)}></div>
         ${ed ? `<div class="row" style="margin-top:12px"><button class="btn sm" id="dCover">🖼 Cambiar carátula</button><button class="btn sm" id="dEdit">✎ Editar ficha</button></div>` : ''}
       </div>
       <div>
