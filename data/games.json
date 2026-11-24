@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:42:27.773Z",
+ "updated_at": "2026-11-24T11:42:37.470Z",
  "games": [
   {
    "id": 1,
@@ -2404,16 +2404,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 0.25,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/AJHP.jpg",
    "cover_local": "covers/79-tdbhq-AJHP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:42:36",
    "gametdb_id": "AJHP",
    "release_eu": "2016-12-02"
   },
