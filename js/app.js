@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241552';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241552';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241552';
-import { parseHours } from './util.js?v=202611241552';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241555';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241555';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241555';
+import { parseHours } from './util.js?v=202611241555';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -21,7 +21,7 @@ const SORTS = {
   hours: { label: 'Horas jugadas', dir: -1, cmp: (a, b) => (a.hours || 0) - (b.hours || 0) },
   platform: { label: 'Plataforma (agrupado)', dir: 1, group: g => g.platform, cmp: (a, b) => platOrder(a.platform) - platOrder(b.platform) || a.platform.localeCompare(b.platform) },
   status: { label: 'Estado de progreso', dir: 1, group: g => STATUS[g.status].label, cmp: (a, b) => STATUS[a.status].order - STATUS[b.status].order },
-  saga: { label: 'Saga / franquicia (agrupado)', dir: 1, group: g => saga(g), cmp: (a, b) => sagaOrder(a, b) || (relKey(a) || '9999').localeCompare(relKey(b) || '9999') },
+  saga: { label: 'Franquicia (agrupado)', dir: 1, group: g => saga(g), cmp: (a, b) => sagaOrder(a, b) || (relKey(a) || '9999').localeCompare(relKey(b) || '9999') },
   added: { label: 'Añadidos recientemente', dir: -1, cmp: (a, b) => a.added_at.localeCompare(b.added_at) },
   rating: { label: 'Mi valoración', dir: -1, cmp: (a, b) => (a.rating ?? -1) - (b.rating ?? -1) },
   played: { label: 'Última partida', dir: -1, cmp: (a, b) => (a.last_played || '').localeCompare(b.last_played || '') },
@@ -1135,7 +1135,7 @@ function topSagas() {
   const { byH, color, pct } = sagaData();
   const top = byH.slice(0, 8), mx = Math.max(1, ...top.map(r => r.h));
   if (!top.length) return '';
-  return `<h3>Sagas más jugadas</h3><ol class="top-list sagas-top">${top.map(r => `<li><i class="saga-dot" style="background:${color[r.s]}"></i><span class="st">${esc(r.s)}<span class="track"><i style="width:${r.h / mx * 100}%;background:${color[r.s]}"></i></span></span><span class="h">${fmtH(r.h)}<small>${pct(r.h)}</small></span></li>`).join('')}</ol>`;
+  return `<h3>Franquicias más jugadas</h3><ol class="top-list sagas-top">${top.map(r => `<li><i class="saga-dot" style="background:${color[r.s]}"></i><span class="st">${esc(r.s)}<span class="track"><i style="width:${r.h / mx * 100}%;background:${color[r.s]}"></i></span></span><span class="h">${fmtH(r.h)}<small>${pct(r.h)}</small></span></li>`).join('')}</ol>`;
 }
 function sagaStats() {
   // Diagrama de sectores (anillo) con las horas por saga, igual que el de "Por consola"
@@ -1143,9 +1143,9 @@ function sagaStats() {
   const TOP = 8;
   const segsData = byH.slice(0, TOP).map(r => ({ label: r.s, h: r.h, c: color[r.s] }));
   const restH = byH.slice(TOP).reduce((a, r) => a + r.h, 0);
-  if (restH > 0) segsData.push({ label: 'Otras sagas', h: restH, c: '#94a3b8' });
+  if (restH > 0) segsData.push({ label: 'Otras franquicias', h: restH, c: '#94a3b8' });
   const noSaga = total - byH.reduce((a, r) => a + r.h, 0);
-  if (noSaga > 0.01) segsData.push({ label: 'Sin saga', h: noSaga, c: 'color-mix(in oklab, var(--muted) 35%, var(--panel2))' });
+  if (noSaga > 0.01) segsData.push({ label: 'Sin franquicia', h: noSaga, c: 'color-mix(in oklab, var(--muted) 35%, var(--panel2))' });
   const pct = h => (h / total * 100).toFixed(1).replace('.', ',') + ' %';
   const R = 70, C = 2 * Math.PI * R;
   let acc = 0;
@@ -1155,12 +1155,12 @@ function sagaStats() {
     acc += len;
     return seg;
   }).join('');
-  return `<h3>Horas por saga</h3>
+  return `<h3>Horas por franquicia</h3>
     <div class="cons-head saga-pie">
-      <svg class="cons-donut" viewBox="0 0 180 180" role="img" aria-label="Reparto de horas por saga">
+      <svg class="cons-donut" viewBox="0 0 180 180" role="img" aria-label="Reparto de horas por franquicia">
         <circle r="${R}" cx="90" cy="90" fill="none" stroke="var(--panel2)" stroke-width="28"/>${segs}
         <text x="90" y="86" text-anchor="middle" class="cons-total">${byH.length}</text>
-        <text x="90" y="106" text-anchor="middle" class="cons-sub">sagas</text>
+        <text x="90" y="106" text-anchor="middle" class="cons-sub">franquicias</text>
       </svg>
       <div class="cons-chips">${segsData.map(d => `<span title="${esc(fmtH(d.h))}"><i style="background:${d.c}"></i>${esc(d.label)} <b>${pct(d.h)}</b></span>`).join('')}</div>
     </div>
@@ -1176,7 +1176,7 @@ function openStats() {
   const plats = Object.entries(byPlat).sort((a, b) => b[1].n - a[1].n);
   const maxN = Math.max(...plats.map(p => p[1].n));
   const maxH = Math.max(...plats.map(p => p[1].h), 1);
-  const top = [...g].sort((a, b) => b.hours - a.hours).slice(0, 8);
+  const top = [...g].sort((a, b) => b.hours - a.hours).slice(0, 12);
   const genres = {};
   g.forEach(x => (x.genres || []).forEach(ge => genres[ge] = (genres[ge] || 0) + 1));
   const topGenres = Object.entries(genres).sort((a, b) => b[1] - a[1]).slice(0, 8);

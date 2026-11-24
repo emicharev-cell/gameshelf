@@ -1,6 +1,6 @@
 // Importadores de horas de juego → filas normalizadas { title, platform, hours, last_played, source, external_id }.
 // Fuentes: Exophase (JSON del bookmarklet o export), RetroArch (.lrtl), CSV genérico (3DS / Wii U / cualquier otra).
-import { normalizePlatform, parseHours, round1 } from './util.js?v=202611241552';
+import { normalizePlatform, parseHours, round1 } from './util.js?v=202611241555';
 
 // ---------- CSV genérico ----------
 function splitCSVLine(line, sep) {
