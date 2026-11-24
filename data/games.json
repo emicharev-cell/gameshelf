@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:59:28.669Z",
+ "updated_at": "2026-11-24T11:59:49.583Z",
  "games": [
   {
    "id": 1,
@@ -3227,18 +3227,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 72.9,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/ds/coverHQ/EN/IRES.jpg",
    "cover_local": "covers/108-tdbhq-IRES.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:59:48",
    "gametdb_id": "IRES",
    "release_eu": "2012-10-12"
   },
