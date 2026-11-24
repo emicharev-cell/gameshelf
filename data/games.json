@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:48:53.753Z",
+ "updated_at": "2026-11-24T11:50:14.243Z",
  "games": [
   {
    "id": 1,
@@ -1713,18 +1713,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 100.6833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/ECRP.jpg",
    "cover_local": "covers/55-tdbhq-ECRP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:50:13",
    "gametdb_id": "ECRP",
    "release_eu": "2014-11-28"
   },
