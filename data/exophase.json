@@ -1,628 +1,806 @@
 {
- "synced_at": "2026-11-23T23:18:30.238Z",
+ "synced_at": "2026-11-24T10:45:13.762Z",
  "games": [
   {
    "id": 1025383,
    "title": "The Legend of Zelda: Ocarina of Time",
+   "platform": "Switch 2",
    "playtime": "22h 49m",
    "last_played": "2026-11-19",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 1031965,
    "title": "Splatoon Raiders Demo Version",
+   "platform": "Switch 2",
    "playtime": "6m",
    "last_played": "2026-11-17",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 990525,
    "title": "Rhythm Heaven Groove",
+   "platform": "Switch",
    "playtime": "1h 7m",
    "last_played": "2026-11-16",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 574486,
    "title": "Game Boy Advance - Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "67h 7m",
    "last_played": "2026-11-15",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522756,
    "title": "Super Nintendo Entertainment System - Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "60h 4m",
    "last_played": "2026-11-15",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 864961,
    "title": "Pokémon Legends: Z-A",
+   "platform": "Switch/Switch 2",
    "playtime": "77h 42m",
    "last_played": "2026-11-15",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522755,
    "title": "Pokémon HOME",
+   "platform": "Switch",
    "playtime": "49h 45m",
    "last_played": "2026-11-03",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 574485,
    "title": "Game Boy - Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "28h 25m",
    "last_played": "2026-10-27",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 952185,
    "title": "Tomodachi Life: Living the Dream",
+   "platform": "Switch",
    "playtime": "121h 25m",
    "last_played": "2026-10-23",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522768,
    "title": "Nintendo 64 – Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "143h 40m",
    "last_played": "2026-10-18",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522737,
    "title": "Animal Crossing: New Horizons",
+   "platform": "Switch/Switch 2",
    "playtime": "382h 4m",
    "last_played": "2026-10-11",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522745,
    "title": "Nintendo Entertainment System - Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "23h 40m",
    "last_played": "2026-10-11",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 881908,
    "title": "Metroid Prime 4: Beyond",
+   "platform": "Switch/Switch 2",
    "playtime": "11h 46m",
    "last_played": "2026-09-29",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 851441,
    "title": "Hollow Knight: Silksong",
+   "platform": "Switch/Switch 2",
    "playtime": "60h 6m",
    "last_played": "2026-09-16",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 592580,
    "title": "The Legend of Zelda: Tears of the Kingdom",
+   "platform": "Switch/Switch 2",
    "playtime": "183h 22m",
    "last_played": "2026-09-15",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 817353,
    "title": "Mario Kart World",
+   "platform": "Switch 2",
    "playtime": "34h 25m",
    "last_played": "2026-09-12",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 817351,
    "title": "Nintendo GameCube – Nintendo Classics",
+   "platform": "Switch 2",
    "playtime": "25h 22m",
    "last_played": "2026-09-12",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 555789,
    "title": "Pokémon Violet",
+   "platform": "Switch",
    "playtime": "114h 43m",
    "last_played": "2026-09-09",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 522744,
    "title": "Mario Kart 8 Deluxe",
+   "platform": "Switch",
    "playtime": "184h 42m",
    "last_played": "2026-09-02",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522900,
    "title": "Pokémon Sword",
+   "platform": "Switch",
    "playtime": "169h 42m",
    "last_played": "2026-09-01",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 526981,
    "title": "Pikmin 3 Deluxe",
+   "platform": "Switch",
    "playtime": "48h 13m",
    "last_played": "2026-09-01",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 536425,
    "title": "No Man's Sky",
+   "platform": "Switch",
    "playtime": "46m",
    "last_played": "2026-08-20",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 833402,
    "title": "Donkey Kong Bananza",
+   "platform": "Switch 2",
    "playtime": "18h 16m",
    "last_played": "2026-08-19",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522931,
    "title": "Tetris 99",
+   "platform": "Switch",
    "playtime": "17h 7m",
    "last_played": "2026-07-30",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 523029,
    "title": "Kirby and the Forgotten Land",
+   "platform": "Switch/Switch 2",
    "playtime": "39h 18m",
    "last_played": "2026-07-30",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 523616,
    "title": "Kirby Star Allies",
+   "platform": "Switch",
    "playtime": "41h 10m",
    "last_played": "2026-07-28",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 577681,
    "title": "Kirby’s Return to Dream Land Deluxe",
+   "platform": "Switch",
    "playtime": "20h 36m",
    "last_played": "2026-07-23",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 877745,
    "title": "Kirby Air Riders",
+   "platform": "Switch 2",
    "playtime": "4h 43m",
    "last_played": "2026-07-05",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 971711,
    "title": "Yoshi and the Mysterious Book",
+   "platform": "Switch 2",
    "playtime": "19h 58m",
    "last_played": "2026-06-26",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 523026,
    "title": "Nintendo Switch Sports",
+   "platform": "Switch",
    "playtime": "40h 19m",
    "last_played": "2026-06-17",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 535922,
    "title": "Spyro Reignited Trilogy",
+   "platform": "Switch",
    "playtime": "28m",
    "last_played": "2026-06-13",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522857,
    "title": "Super Smash Bros. Ultimate",
+   "platform": "Switch",
    "playtime": "301h 22m",
    "last_played": "2026-06-08",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 910281,
    "title": "Virtual Boy – Nintendo Classics",
+   "platform": "Switch",
    "playtime": "3m",
    "last_played": "2026-05-25",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 684663,
    "title": "Nintendo 64 – Nintendo Switch Online: MATURE 17+",
+   "platform": "Switch",
    "playtime": "7m",
    "last_played": "2026-05-14",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 860957,
    "title": "Super Mario Galaxy 2",
+   "platform": "Switch",
    "playtime": "26h 30m",
    "last_played": "2026-04-30",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 533563,
    "title": "Pokémon Mystery Dungeon Rescue Team DX",
+   "platform": "Switch",
    "playtime": "45h 4m",
    "last_played": "2026-03-25",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 937290,
    "title": "Pokémon LeafGreen Version (Spanish Ver.)",
+   "platform": "Switch",
    "playtime": "26h 52m",
    "last_played": "2026-03-25",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 625749,
    "title": "Super Mario Bros. Wonder",
+   "platform": "Switch/Switch 2",
    "playtime": "10h 40m",
    "last_played": "2026-03-23",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 860760,
    "title": "Super Mario Galaxy",
+   "platform": "Switch",
    "playtime": "5h 12m",
    "last_played": "2026-03-16",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522969,
    "title": "Hollow Knight",
+   "platform": "Switch",
    "playtime": "26h 25m",
    "last_played": "2026-02-06",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 550103,
    "title": "Mario + Rabbids Sparks of Hope",
+   "platform": "Switch",
    "playtime": "",
    "last_played": "2026-01-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 530908,
    "title": "Splatoon 3",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2026-01-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 871603,
    "title": "Hyrule Warriors: Age of Imprisonment",
+   "platform": "Switch 2",
    "playtime": "40m",
    "last_played": "2026-01-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 687983,
    "title": "Nintendo World Championships: NES Edition",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2026-01-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522997,
    "title": "Super Mario 3D World + Bowser’s Fury",
+   "platform": "Switch",
    "playtime": "39h 1m",
    "last_played": "2026-01-03",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 522901,
    "title": "Pokémon: Let’s Go, Pikachu!",
+   "platform": "Switch",
    "playtime": "60h 54m",
    "last_played": "2025-12-29",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 523703,
    "title": "Hyrule Warriors: Age of Calamity",
+   "platform": "Switch",
    "playtime": "15h 58m",
    "last_played": "2025-12-29",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522959,
    "title": "Donkey Kong Country: Tropical Freeze",
+   "platform": "Switch",
    "playtime": "12h 49m",
    "last_played": "2025-12-29",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 608387,
    "title": "Pikmin 4",
+   "platform": "Switch",
    "playtime": "38h 3m",
    "last_played": "2025-11-30",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 538089,
    "title": "Hyrule Warriors: Definitive Edition",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2025-09-18",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522970,
    "title": "Super Mario 3D All-Stars",
+   "platform": "Switch",
    "playtime": "78h 58m",
    "last_played": "2025-09-17",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 537147,
    "title": "Little Nightmares II",
+   "platform": "Switch",
    "playtime": "4h 4m",
    "last_played": "2025-08-04",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 677796,
    "title": "Bread & Fred",
+   "platform": "Switch",
    "playtime": "25m",
    "last_played": "2025-08-01",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 574407,
    "title": "Metroid Prime Remastered",
+   "platform": "Switch",
    "playtime": "25h 12m",
    "last_played": "2025-07-04",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522738,
    "title": "Metroid Dread",
+   "platform": "Switch",
    "playtime": "20h 49m",
    "last_played": "2025-07-04",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 524323,
    "title": "The Legend of Zelda: Skyward Sword HD",
+   "platform": "Switch",
    "playtime": "38h 42m",
    "last_played": "2025-07-04",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 711528,
    "title": "The Legend of Zelda: Echoes of Wisdom",
+   "platform": "Switch",
    "playtime": "31h 52m",
    "last_played": "2025-07-04",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 522771,
    "title": "The Legend of Zelda: Link’s Awakening",
+   "platform": "Switch",
    "playtime": "26h",
    "last_played": "2025-07-04",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 522751,
    "title": "Super Mario Odyssey",
+   "platform": "Switch",
    "playtime": "108h 40m",
    "last_played": "2025-07-01",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 522739,
    "title": "New Super Mario Bros. U Deluxe",
+   "platform": "Switch",
    "playtime": "19m",
    "last_played": "2025-07-01",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522774,
    "title": "The Legend of Zelda: Breath of the Wild",
+   "platform": "Switch/Switch 2",
    "playtime": "242h 22m",
    "last_played": "2025-07-01",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522888,
    "title": "Mario + Rabbids Kingdom Battle",
+   "platform": "Switch",
    "playtime": "19h 52m",
    "last_played": "2025-04-15",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522743,
    "title": "Pokémon Brilliant Diamond",
+   "platform": "Switch",
    "playtime": "45h 1m",
    "last_played": "2025-03-20",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522896,
    "title": "Pokémon Legends: Arceus",
+   "platform": "Switch",
    "playtime": "30h 40m",
    "last_played": "2025-03-20",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 522773,
    "title": "Luigi’s Mansion 3",
+   "platform": "Switch",
    "playtime": "21h 10m",
    "last_played": "2025-03-08",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 777100,
    "title": "Donkey Kong Country Returns HD DEMO",
+   "platform": "Switch",
    "playtime": "36m",
    "last_played": "2025-02-10",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 537614,
    "title": "Typoman",
+   "platform": "Switch",
    "playtime": "31m",
    "last_played": "2025-01-18",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522985,
    "title": "SEGA Genesis – Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "39m",
    "last_played": "2025-01-14",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 736670,
    "title": "Mario & Luigi: Brothership",
+   "platform": "Switch",
    "playtime": "18h 7m",
    "last_played": "2025-01-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 677345,
    "title": "Paper Mario: The Thousand-Year Door",
+   "platform": "Switch",
    "playtime": "40h 16m",
    "last_played": "2024-12-07",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 602940,
    "title": "Pikmin 2",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2024-12-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 602941,
    "title": "Pikmin 1",
+   "platform": "Switch",
    "playtime": "1h 43m",
    "last_played": "2024-12-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 631856,
    "title": "Super Mario RPG",
+   "platform": "Switch",
    "playtime": "12m",
    "last_played": "2024-12-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 554719,
    "title": "A Little to the Left",
+   "platform": "Switch",
    "playtime": "2h 55m",
    "last_played": "2024-10-27",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522986,
    "title": "Paper Mario: The Origami King",
+   "platform": "Switch",
    "playtime": "44h 46m",
    "last_played": "2024-09-25",
-   "status": "complete"
+   "status": "complete",
+   "percent": 100
   },
   {
    "id": 542246,
    "title": "Yoshi's Crafted World Demo Version",
+   "platform": "Switch",
    "playtime": "19m",
    "last_played": "2024-09-12",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 726219,
    "title": "Emio – The Smiling Man: Famicom Detective Club (DEMO)",
+   "platform": "Switch",
    "playtime": "",
    "last_played": "2024-08-31",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 523575,
    "title": "NINTENDO 64 Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "4m",
    "last_played": "2024-04-25",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 574487,
    "title": "ゲームボーイアドバンス Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "4m",
    "last_played": "2024-04-23",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 574488,
    "title": "ゲームボーイ Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "",
    "last_played": "2024-04-23",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 523576,
    "title": "スーパーファミコン Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2024-04-23",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 523589,
    "title": "ファミリーコンピュータ Nintendo Switch Online",
+   "platform": "Switch",
    "playtime": "1m",
    "last_played": "2024-04-23",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522893,
    "title": "Minecraft",
+   "platform": "Switch",
    "playtime": "14h 37m",
    "last_played": "2024-03-29",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 657138,
    "title": "Princess Peach: Showtime! Demo",
+   "platform": "Switch",
    "playtime": "7m",
    "last_played": "2024-03-07",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522769,
    "title": "Super Mario Party",
+   "platform": "Switch",
    "playtime": "6h 54m",
    "last_played": "2024-02-28",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 527031,
    "title": "ARMS",
+   "platform": "Switch",
    "playtime": "39h 25m",
    "last_played": "2024-02-28",
-   "status": "complete"
+   "status": "complete",
+   "percent": 0
   },
   {
    "id": 526411,
    "title": "Splatoon 2",
+   "platform": "Switch",
    "playtime": "14h 10m",
    "last_played": "2024-02-28",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 528461,
    "title": "Puyo Puyo Tetris",
+   "platform": "Switch",
    "playtime": "14h 48m",
    "last_played": "2024-02-28",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   },
   {
    "id": 522932,
    "title": "Super Kirby Clash",
+   "platform": "Switch",
    "playtime": "22m",
    "last_played": "2024-01-15",
-   "status": "partial"
+   "status": "partial",
+   "percent": 0
   }
  ]
 }
