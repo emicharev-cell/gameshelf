@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:56:27.979Z",
+ "updated_at": "2026-11-24T12:56:52.010Z",
  "games": [
   {
    "id": 1,
@@ -5280,6 +5280,12 @@
      "hours": 5.7,
      "notes": null,
      "cover": "covers/retro/nso-gba-mwup7u68.png"
+    },
+    {
+     "title": "Pokémon Mundo Misterioso: Equipo de Rescate Rojo",
+     "hours": 3.816666666666667,
+     "notes": null,
+     "cover": null
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
