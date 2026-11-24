@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:33:26.433Z",
+ "updated_at": "2026-11-24T10:35:17.449Z",
  "games": [
   {
    "id": 1,
@@ -4579,16 +4579,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 382.3667,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://images.launchbox-app.com/72ee5a89-d746-4386-b4b5-703577bb56c1.jpg",
    "cover_local": null,
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 10:33:04",
+   "updated_at": "2026-11-24 10:35:16",
    "release_eu": "2014-11-28",
    "cover_locked": true
   },
