@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611232323';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611232323';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611232323';
-import { parseHours } from './util.js?v=202611232323';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241047';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241047';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241047';
+import { parseHours } from './util.js?v=202611241047';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -82,7 +82,7 @@ const platOrder = p => { const i = Object.keys(PLAT).indexOf(p); return i < 0 ? 
 const ago = d => { const days = Math.round((Date.now() - Date.parse(d.replace(' ', 'T'))) / 864e5); return days > 365 ? `${(days / 365).toFixed(1)} años` : days > 60 ? `${Math.round(days / 30)} meses` : `${days} días`; };
 // Horas como "22 h 49 min" (y "h:mm" en los campos de edición)
 const mins = h => Math.round((h || 0) * 60);
-const fmtH = h => { const m = mins(h), H = Math.floor(m / 60), M = m % 60; return H ? `${H.toLocaleString('es')} h${M ? ` ${M} min` : ''}` : `${M} min`; };
+const fmtH = h => { const m = mins(h), H = Math.floor(m / 60), M = m % 60; return H ? `${String(H).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} h${M ? ` ${M} min` : ''}` : `${M} min`; };
 const fmtHM = h => { const m = mins(h); return `${Math.floor(m / 60)}:${String(m % 60).padStart(2, '0')}`; };
 // Fecha de lanzamiento europea: "12/10/2013" o "12 de octubre de 2013"; si solo hay año, el año.
 const relKey = g => g.release_eu || (g.year ? `${g.year}-99` : '');
@@ -245,7 +245,22 @@ function render(soft = false) {
   $('#empty').hidden = list.length > 0;
   const root = $('#catalog');
   const scroll = window.scrollY;
-  document.body.classList.toggle('view-retro', state.view === 'retro');
+  document.body.classList.toggle('view-retro', state.view === 'retro' || state.view === 'consoles');
+  if (state.view === 'consoles') {
+    root.innerHTML = renderConsoles();
+    $('#empty').hidden = true;
+    const rows = hoursByConsole();
+    $('#resultCount').textContent = `${rows.length} consolas · ${fmtH(rows.reduce((a, r) => a + r.h, 0))}`;
+    wireCovers(root);
+    root.querySelectorAll('[data-plat]').forEach(el => el.onclick = () => {
+      const p = el.dataset.plat;
+      Object.values(state.f).forEach(s => s.clear());
+      if (p === RETRO_ROW) state.view = 'retro';
+      else { state.view = 'grid'; state.f.platform.add(p); state.sort = 'hours'; state.dir = -1; }
+      savePrefs(); render(); window.scrollTo(0, 0);
+    });
+    return;
+  }
   if (state.view === 'retro') {
     root.innerHTML = renderRetro();
     $('#empty').hidden = true;
@@ -322,6 +337,68 @@ function renderStatStrip() {
     else if (!wasOn && k !== 'all') st.add(k);
     render();
   });
+}
+
+// ---------------------------------------------------------------- Horas por consola
+const RETRO_ROW = 'Retro (Nintendo Switch Online)';
+function hoursByConsole() {
+  const m = {};
+  for (const g of state.games) {
+    const r = (m[g.platform] ||= { p: g.platform, h: 0, n: 0, played: 0, top: null });
+    r.h += g.hours || 0; r.n++;
+    if (g.hours > 0) r.played++;
+    if (!r.top || (g.hours || 0) > (r.top.hours || 0)) r.top = g;
+  }
+  const retroH = (state.retro || []).reduce((a, x) => a + (x.hours || 0), 0);
+  if (retroH > 0) {
+    const topR = [...state.retro].sort((a, b) => b.hours - a.hours)[0];
+    m[RETRO_ROW] = { p: RETRO_ROW, h: retroH, n: state.retro.length, played: state.retro.filter(x => x.hours > 0).length, top: { title: topR.title.split(' – ')[0], hours: topR.hours }, retro: true };
+  }
+  return Object.values(m).sort((a, b) => b.h - a.h || b.n - a.n);
+}
+// colores distinguibles en el gráfico (Switch y Switch 2 comparten rojo de marca)
+const colorFor = r => (r.retro ? '#f59e0b' : r.p === 'Nintendo Switch 2' ? '#be185d' : platStyle(r.p).c);
+
+function renderConsoles() {
+  const rows = hoursByConsole();
+  const total = rows.reduce((a, r) => a + r.h, 0) || 1;
+  const withH = rows.filter(r => r.h > 0);
+  // Gráfico circular (anillo): segmentos con stroke-dasharray, empezando arriba
+  const R = 70, C = 2 * Math.PI * R;
+  let acc = 0;
+  const segs = withH.map(r => {
+    const len = r.h / total * C, gap = withH.length > 1 ? Math.min(2, len * 0.15) : 0;
+    const seg = `<circle r="${R}" cx="90" cy="90" fill="none" stroke="${colorFor(r)}" stroke-width="28" stroke-dasharray="${Math.max(0, len - gap)} ${C}" stroke-dashoffset="${-acc}" transform="rotate(-90 90 90)"><title>${esc(r.p)}: ${fmtH(r.h)} (${(r.h / total * 100).toFixed(1).replace('.', ',')} %)</title></circle>`;
+    acc += len;
+    return seg;
+  }).join('');
+  const pct = h => (h / total * 100).toFixed(1).replace('.', ',') + ' %';
+  const max = Math.max(...rows.map(r => r.h), 1);
+  return `<section class="consoles">
+    <div class="cons-head">
+      <svg class="cons-donut" viewBox="0 0 180 180" role="img" aria-label="Reparto de horas por consola">
+        <circle r="${R}" cx="90" cy="90" fill="none" stroke="var(--panel2)" stroke-width="28"/>${segs}
+        <text x="90" y="86" text-anchor="middle" class="cons-total">${String(Math.round(total)).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} h</text>
+        <text x="90" y="106" text-anchor="middle" class="cons-sub">en total</text>
+      </svg>
+      <div class="cons-legend">
+        <h2>Horas por consola</h2>
+        <p>Cuánto de tu tiempo total corresponde a cada consola. Pulsa una para ver sus juegos.</p>
+        <div class="cons-chips">${withH.slice(0, 6).map(r => `<span><i style="background:${colorFor(r)}"></i>${esc(r.retro ? 'Retro (NSO)' : r.p)} <b>${pct(r.h)}</b></span>`).join('')}</div>
+      </div>
+    </div>
+    <div class="cons-list">${rows.map(r => `
+      <button class="cons-row" data-plat="${esc(r.p)}" style="--c:${colorFor(r)}">
+        <span class="cons-badge">${r.retro ? '🕹' : esc(platStyle(r.p).short)}</span>
+        <span class="cons-main">
+          <span class="cons-name"><b>${esc(r.p)}</b><small>${r.retro ? `${r.n} apps` : `${r.n} ${r.n === 1 ? 'juego' : 'juegos'} · ${r.played} con horas`}${r.top && r.top.hours > 0 ? ` · más jugado: ${esc(r.top.title)}` : ''}</small></span>
+          <span class="cons-bar"><i style="width:${(r.h / max * 100).toFixed(1)}%"></i></span>
+        </span>
+        <span class="cons-num"><b>${r.h > 0 ? fmtH(r.h) : '—'}</b><small>${r.h > 0 ? pct(r.h) + ' del total' : 'sin horas registradas'}</small></span>
+      </button>`).join('')}
+    </div>
+    <p class="cons-note">Las horas de cada juego cuentan para su consola. Las apps de Nintendo Switch Online (Retro) van aparte aunque se jueguen en Switch.</p>
+  </section>`;
 }
 
 // ---------------------------------------------------------------- Retro (apps de Nintendo Switch Online)
@@ -1052,7 +1129,7 @@ function openStats() {
     <div class="legend">${Object.entries(STATUS).map(([k, s]) => `<span><i style="background:${s.color}"></i>${s.label} · ${g.filter(x => x.status === k).length}</span>`).join('')}</div>
     <div class="two-col">
       <div><h3>Juegos por consola</h3>${plats.map(([p, v]) => `<div class="hbar"><span>${esc(p)}</span><div class="track"><i style="width:${v.n / maxN * 100}%;background:${platStyle(p).c}"></i></div><span class="v">${v.n}</span></div>`).join('')}</div>
-      <div><h3>Horas por consola</h3>${plats.slice().sort((a, b) => b[1].h - a[1].h).map(([p, v]) => `<div class="hbar"><span>${esc(p)}</span><div class="track"><i style="width:${v.h / maxH * 100}%;background:${platStyle(p).c}"></i></div><span class="v">${fmtH(v.h)}</span></div>`).join('')}</div>
+      <div><h3>Horas por consola <small style="color:var(--muted);font-weight:500">(% del total)</small></h3>${(() => { const rows = hoursByConsole().filter(r => r.h > 0); const tot = rows.reduce((a, r) => a + r.h, 0) || 1; const mx = Math.max(...rows.map(r => r.h), 1); return rows.map(r => `<div class="hbar"><span>${esc(r.retro ? 'Retro (NSO)' : r.p)}</span><div class="track"><i style="width:${r.h / mx * 100}%;background:${colorFor(r)}"></i></div><span class="v">${fmtH(r.h)} · ${(r.h / tot * 100).toFixed(1).replace('.', ',')}%</span></div>`).join(''); })()}</div>
     </div>
     <div class="two-col">
       <div><h3>Top por horas</h3><ol class="top-list">${top.map(x => `<li data-id="${x.id}"><img alt="" ${coverSrc(x)}>${esc(x.title)}<span class="h">${fmtH(x.hours)}</span></li>`).join('')}</ol></div>
