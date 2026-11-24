@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:46:22.152Z",
+ "updated_at": "2026-11-24T11:46:30.952Z",
  "games": [
   {
    "id": 1,
@@ -2032,16 +2032,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 5.5167,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0c/AnimalCrossing_HappyHomeDJapan3DS.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/66-animal-crossing-happy-home-designer.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:46:29",
    "release_eu": "2015-10-12"
   },
   {
