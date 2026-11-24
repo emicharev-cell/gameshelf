@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:57:04.375Z",
+ "updated_at": "2026-11-24T12:57:16.274Z",
  "games": [
   {
    "id": 1,
@@ -5292,6 +5292,12 @@
      "hours": 2.55,
      "notes": null,
      "cover": "covers/retro/nso-gba-mwup8m6s.jpg"
+    },
+    {
+     "title": "Wario Ware Inc",
+     "hours": 1.6333333333333333,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup8vfp.png"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
