@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:59:40.644Z",
+ "updated_at": "2026-11-24T12:59:52.557Z",
  "games": [
   {
    "id": 1,
@@ -5361,6 +5361,12 @@
      "hours": 2.2333333333333334,
      "notes": null,
      "cover": "covers/retro/nso-snes-mwupbyna.png"
+    },
+    {
+     "title": "Super Mario Kart",
+     "hours": 1.3666666666666667,
+     "notes": null,
+     "cover": "covers/retro/nso-snes-mwupc814.jpg"
     }
    ],
    "exophase_id": "522756+574487+574488+523576+523589",
