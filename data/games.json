@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:53:18.458Z",
+ "updated_at": "2026-11-24T12:53:32.156Z",
  "games": [
   {
    "id": 1,
@@ -5223,6 +5223,12 @@
      "hours": 1.4833333333333334,
      "notes": null,
      "cover": "covers/retro/nso-n64-mwup3rz9.jpg"
+    },
+    {
+     "title": "Pokémon Stadium 2",
+     "hours": 1.1,
+     "notes": null,
+     "cover": "covers/retro/nso-n64-mwup4250.png"
     }
    ],
    "exophase_id": "522768+684663+523575",
