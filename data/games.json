@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:24:06.860Z",
+ "updated_at": "2026-11-24T12:45:16.845Z",
  "games": [
   {
    "id": 1,
@@ -5230,7 +5230,14 @@
    ],
    "hours": 25.3667,
    "last_played": "2026-09-12",
-   "games": [],
+   "games": [
+    {
+     "title": "The Legend of Zelda: The Wind Waker",
+     "hours": 22.983333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-gc-mwuotg8a.jpg"
+    }
+   ],
    "exophase_id": "817351",
    "icon": "covers/retro/nso-gc.jpg"
   },
