@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:31:06.824Z",
+ "updated_at": "2026-11-24T10:32:34.049Z",
  "games": [
   {
    "id": 1,
@@ -4582,13 +4582,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/155-super-smash-bros-for-wii-u.png",
+   "cover_url": "https://images.launchbox-app.com/72ee5a89-d746-4386-b4b5-703577bb56c1.jpg",
+   "cover_local": null,
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
-   "release_eu": "2014-11-28"
+   "updated_at": "2026-11-24 10:32:34",
+   "release_eu": "2014-11-28",
+   "cover_locked": true
   },
   {
    "id": 156,
