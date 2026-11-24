@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T15:43:03.962Z",
+ "updated_at": "2026-11-24T15:43:05.780Z",
  "games": [
   {
    "id": 1,
@@ -3844,7 +3844,7 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
    "hours": 0,
    "hours_source": "manual",
@@ -3855,7 +3855,7 @@
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 15:43:05",
    "release_eu": "2011-03-01"
   },
   {
