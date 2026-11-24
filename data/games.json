@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T12:55:56.703Z",
+ "updated_at": "2026-11-24T12:56:10.490Z",
  "games": [
   {
    "id": 1,
@@ -5268,6 +5268,12 @@
      "hours": 7.55,
      "notes": null,
      "cover": null
+    },
+    {
+     "title": "Metroid Zero Mission",
+     "hours": 5.933333333333334,
+     "notes": null,
+     "cover": "covers/retro/nso-gba-mwup7gsx.jpg"
     }
    ],
    "exophase_id": "574486+574487+574488+523576+523589",
