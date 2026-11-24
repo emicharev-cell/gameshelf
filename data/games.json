@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:38:34.989Z",
+ "updated_at": "2026-11-24T10:38:39.133Z",
  "games": [
   {
    "id": 1,
@@ -4551,16 +4551,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 77.8833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/53/Pikmin_3_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/154-pikmin-3.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 10:38:33",
+   "updated_at": "2026-11-24 10:38:37",
    "release_eu": "2013-07-26"
   },
   {
