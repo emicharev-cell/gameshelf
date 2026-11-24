@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:43:36.882Z",
+ "updated_at": "2026-11-24T11:43:45.423Z",
  "games": [
   {
    "id": 1,
@@ -2630,16 +2630,16 @@
    "region": "PAL",
    "status": "pendiente",
    "rating": null,
-   "hours": 0,
+   "hours": 23.6167,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/ES/A3RP.jpg",
    "cover_local": "covers/87-tdbhq-A3RP.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:43:44",
    "gametdb_id": "A3RP",
    "release_eu": "2019-02-06"
   },
