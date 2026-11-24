@@ -5,10 +5,10 @@
 // · El token llega en el fragmento (#k=...) del QR: el fragmento nunca se envía a ningún servidor,
 //   se guarda en localStorage del dispositivo y se borra de la barra de direcciones.
 // Expone api(url, {method, body}) con las mismas rutas que tenía el servidor Node, para que la UI no cambie.
-import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611241248';
-import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611241248';
-import { searchCovers } from './covers.js?v=202611241248';
-import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611241248';
+import { normalizePlatform, normTitle, bestMatch, round1, parseHours } from './util.js?v=202611241308';
+import { parseCSV, parseRetroArch, parseExophase } from './importers.js?v=202611241308';
+import { searchCovers } from './covers.js?v=202611241308';
+import { identifyItem, identifyShelf, setVisionKey, visionAvailable } from './vision.js?v=202611241308';
 
 // ---------------------------------------------------------------- Configuración del repo
 const DEFAULT = { owner: 'emicharev-cell', repo: 'gameshelf', branch: 'main' };
@@ -200,7 +200,7 @@ async function flush() {
   const message = msgs.length === 1 ? msgs[0] : `${msgs.length} cambios: ${msgs.slice(0, 3).join(' · ')}${msgs.length > 3 ? '…' : ''}`;
   const body = () => ({
     message: `GameShelf: ${message}`.slice(0, 200),
-    content: b64encode(JSON.stringify({ version: 1, updated_at: new Date().toISOString(), games, retro }, null, 1)),
+    content: b64encode(JSON.stringify({ version: 1, updated_at: new Date().toISOString(), games, retro }, (k, v) => (k === 'cover_preview' ? undefined : v), 1)),
     sha, branch: REPO.branch,
   });
   onSaveState('saving');
@@ -385,13 +385,15 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
       const path = `covers/retro/${emu.id}-${Date.now().toString(36)}.${m[1] === 'jpeg' ? 'jpg' : m[1]}`;
       await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: imagen de ${emu.games[idx].title}`, content: m[2], branch: REPO.branch } });
       emu.games[idx].cover = path;
+      emu.games[idx].cover_preview = body.image; // solo en memoria (no se guarda): se ve al instante hasta que Pages publique la copia
     } else if (method === 'POST' && idx === null) {
       const title = String(body.title || '').trim();
       if (!title) throw err('Falta el nombre del juego');
       const game = { title, hours: Math.max(0, parseHours(body.hours) ?? 0), notes: body.notes || null, cover: null };
       try { // miniatura automática (Wikipedia), copiada al repo para que no se rompa
         const found = await searchCovers(title, emu.platform);
-        const best = found.find(c => c.score >= 0.6);
+        // la mejor coincidencia; si el título está en español y nada supera el umbral, el primer resultado de la búsqueda
+        const best = found.find(c => c.score >= 0.6) || found[0];
         if (best) {
           const r = await fetch(best.thumb || best.cover);
           const type = r.headers.get('content-type') || '';
@@ -400,6 +402,7 @@ export async function api(url, { method = 'GET', body = {} } = {}) {
             const path = `covers/retro/${emu.id}-${Date.now().toString(36)}.${ext}`;
             await gh(`/contents/${path}`, { method: 'PUT', body: { message: `GameShelf: imagen de ${title}`, content: await blobToB64(await r.blob()), branch: REPO.branch } });
             game.cover = path;
+            game.cover_url = best.cover;
           }
         }
       } catch (e) { console.warn('Sin miniatura automática para', title, e.message); }

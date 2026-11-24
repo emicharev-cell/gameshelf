@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T13:02:33.712Z",
+ "updated_at": "2026-11-24T13:05:17.495Z",
  "games": [
   {
    "id": 1,
@@ -3410,7 +3410,7 @@
    "notes": null,
    "copies": 1,
    "cover_url": "https://uvejuegos.com/img/caratulas/37176/Captura.JPG",
-   "cover_local": null,
+   "cover_local": "covers/114-user-mwupj7fg.jpg",
    "exophase_id": null,
    "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
@@ -4587,7 +4587,7 @@
    "notes": null,
    "copies": 1,
    "cover_url": "https://images.launchbox-app.com/72ee5a89-d746-4386-b4b5-703577bb56c1.jpg",
-   "cover_local": null,
+   "cover_local": "covers/155-user-mwupj7y1.jpg",
    "exophase_id": null,
    "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
@@ -5186,7 +5186,8 @@
      "title": "The Legend of Zelda: Ocarina of Time",
      "hours": 26.4,
      "notes": null,
-     "cover": "covers/retro/nso-n64-mwup0djn.jpg"
+     "cover": "covers/retro/nso-n64-ocarina-of-time-n64.jpg",
+     "cover_url": null
     },
     {
      "title": "Mario Tennis",
@@ -5267,7 +5268,8 @@
      "title": "Kirby y el Laberinto de los Espejos",
      "hours": 7.55,
      "notes": null,
-     "cover": null
+     "cover": "covers/retro/nso-gba-kirby-the-amazing-mirror.jpg",
+     "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Kirby_%26_the_Amazing_Mirror.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
     },
     {
      "title": "Metroid Zero Mission",
@@ -5285,7 +5287,8 @@
      "title": "Pokémon Mundo Misterioso: Equipo de Rescate Rojo",
      "hours": 3.816666666666667,
      "notes": null,
-     "cover": null
+     "cover": "covers/retro/nso-gba-pmd-red-rescue-team.jpg",
+     "cover_url": null
     },
     {
      "title": "Kuru Kuru Kururin",
@@ -5297,7 +5300,8 @@
      "title": "Wario Ware Inc",
      "hours": 1.6333333333333333,
      "notes": null,
-     "cover": "covers/retro/nso-gba-mwup8vfp.png"
+     "cover": "covers/retro/nso-gba-warioware-inc-mega-microgames.jpg",
+     "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/84/Warioware1box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
     },
     {
      "title": "Mario Kart Super Circuit",
@@ -5372,7 +5376,8 @@
      "title": "Super Mario World 2: Yoshi's Island",
      "hours": 1.2333333333333334,
      "notes": null,
-     "cover": "covers/retro/nso-snes-mwupcivu.png"
+     "cover": "covers/retro/nso-snes-super-mario-world-2-yoshi-s-island.jpg",
+     "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Yoshi%27s_Island_%28Super_Mario_World_2%29_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
     },
     {
      "title": "Earthbound",
@@ -5405,7 +5410,8 @@
      "title": "Tetris",
      "hours": 4.55,
      "notes": null,
-     "cover": "covers/retro/nso-gb-mwupdlyy.jpg"
+     "cover": "covers/retro/nso-gb-tetris-game-boy-video-game.jpg",
+     "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4a/Tetris_Boxshot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
     },
     {
      "title": "Super Mario Land",
@@ -5470,7 +5476,8 @@
      "title": "Super Mario Bros",
      "hours": 2.5833333333333335,
      "notes": null,
-     "cover": "covers/retro/nso-nes-mwupff5z.jpg"
+     "cover": "covers/retro/nso-nes-super-mario-bros.png",
+     "cover_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
     },
     {
      "title": "The Legend of Zelda",
