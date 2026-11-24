@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T10:36:05.581Z",
+ "updated_at": "2026-11-24T10:36:13.503Z",
  "games": [
   {
    "id": 1,
@@ -4466,16 +4466,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 88.4167,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/it/3/32/Wind_waker_hd.png",
    "cover_local": "covers/151-fix.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 10:36:04",
+   "updated_at": "2026-11-24 10:36:12",
    "release_eu": "2013-10-04"
   },
   {
