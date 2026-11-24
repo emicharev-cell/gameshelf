@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:59:03.110Z",
+ "updated_at": "2026-11-24T11:59:28.669Z",
  "games": [
   {
    "id": 1,
@@ -3198,18 +3198,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 103.5333,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://art.gametdb.com/ds/coverM/ES/IRAS.jpg",
    "cover_local": "covers/107-tdb-IRAS.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:59:27",
    "gametdb_id": "IRAS",
    "release_eu": "2011-03-04"
   },
