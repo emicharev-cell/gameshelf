@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:19:32.334Z",
+ "updated_at": "2026-11-24T11:23:02.532Z",
  "games": [
   {
    "id": 1,
@@ -5099,6 +5099,36 @@
    "updated_at": "2026-11-24 11:19:30",
    "release_eu": "2006-11-10",
    "cover_locked": true
+  },
+  {
+   "id": 173,
+   "title": "Pokémon Mundo Misterioso: Equipo de Rescate Azul",
+   "alt_title": "Pokémon Mystery Dungeon: Blue Rescue Team",
+   "platform": "Nintendo DS",
+   "year": 2006,
+   "release_eu": "2006-11-10",
+   "genres": [
+    "Roguelike",
+    "RPG"
+   ],
+   "developer": "Chunsoft",
+   "publisher": "Nintendo / The Pokémon Company",
+   "format": "fisico",
+   "edition": null,
+   "region": "PAL",
+   "status": "pendiente",
+   "rating": null,
+   "hours": 0,
+   "hours_source": "manual",
+   "notes": null,
+   "copies": 1,
+   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Pok%C3%A9mon_Mystery_Dungeon_Blue_and_Red_Rescue_Team_cover_arts.jpg",
+   "cover_local": "covers/173-pokemon-mundo-misterioso-equipo-de-rescate-azul.jpg",
+   "cover_locked": true,
+   "exophase_id": null,
+   "last_played": null,
+   "added_at": "2026-11-24 11:23:02",
+   "updated_at": "2026-11-24 11:23:02"
   }
  ],
  "retro": [
