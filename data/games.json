@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T15:41:25.542Z",
+ "updated_at": "2026-11-24T15:42:43.227Z",
  "games": [
   {
    "id": 1,
@@ -3935,13 +3935,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Kirbys_return_to_dreamland_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/132-kirby-s-adventure-wii.jpg",
+   "cover_url": "https://i.3djuegos.com/juegos/7150/kirby_wii/fotos/ficha/kirby_wii-1856578.webp",
+   "cover_local": null,
    "exophase_id": null,
    "last_played": null,
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
-   "release_eu": "2011-11-25"
+   "updated_at": "2026-11-24 15:42:43",
+   "release_eu": "2011-11-25",
+   "cover_locked": true
   },
   {
    "id": 133,
