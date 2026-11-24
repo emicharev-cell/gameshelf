@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:41:05.543Z",
+ "updated_at": "2026-11-24T11:41:22.858Z",
  "games": [
   {
    "id": 1,
@@ -2459,18 +2459,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 50.6333,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/42/Super-Mario-3D-Land-Logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/81-super-mario-3d-land.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:41:21",
    "release_eu": "2012-10-04"
   },
   {
