@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:48:41.553Z",
+ "updated_at": "2026-11-24T11:48:53.753Z",
  "games": [
   {
    "id": 1,
@@ -1771,18 +1771,18 @@
    "format": "fisico",
    "edition": null,
    "region": "PAL",
-   "status": "pendiente",
+   "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 37.4833,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://art.gametdb.com/3ds/coverHQ/EN/EK2P.jpg",
    "cover_local": "covers/57-tdbhq-EK2P.jpg",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 20:59:19",
+   "updated_at": "2026-11-24 11:48:52",
    "gametdb_id": "EK2P",
    "release_eu": "2013-10-12"
   },
