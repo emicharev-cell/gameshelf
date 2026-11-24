@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T11:58:44.730Z",
+ "updated_at": "2026-11-24T11:59:03.110Z",
  "games": [
   {
    "id": 1,
@@ -3409,13 +3409,14 @@
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
-   "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Inazuma2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-   "cover_local": "covers/114-inazuma-eleven-2-ventisca-eterna.jpg",
+   "cover_url": "https://uvejuegos.com/img/caratulas/37176/Captura.JPG",
+   "cover_local": null,
    "exophase_id": null,
    "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:58:43",
-   "release_eu": "2012-03-16"
+   "updated_at": "2026-11-24 11:59:03",
+   "release_eu": "2012-03-16",
+   "cover_locked": true
   },
   {
    "id": 115,
