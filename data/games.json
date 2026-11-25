@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-24T16:13:52.613Z",
+ "updated_at": "2026-11-25T11:03:28.659Z",
  "games": [
   {
    "id": 1,
@@ -238,16 +238,16 @@
    "region": "PAL",
    "status": "jugando",
    "rating": null,
-   "hours": 22.8167,
+   "hours": 23.95,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
    "cover_url": "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_992,q_auto:low/ftmsmdf7sffiu1q2o10z",
    "cover_local": "covers/8-mwtu6bzi.jpg",
    "exophase_id": "1025383",
-   "last_played": "2026-11-19",
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-23 23:06:06",
+   "updated_at": "2026-11-25 11:03:28",
    "in_exophase": true,
    "exophase_title": "The Legend of Zelda: Ocarina of Time",
    "cover_locked": true,
@@ -4781,7 +4781,7 @@
    "region": null,
    "status": "completado",
    "rating": null,
-   "hours": 382.0667,
+   "hours": 382.2667,
    "hours_source": "exophase",
    "notes": null,
    "copies": 1,
@@ -4789,9 +4789,9 @@
    "cover_local": "covers/162-mwtu55ky.jpg",
    "cover_locked": true,
    "exophase_id": "522737",
-   "last_played": "2026-10-11",
+   "last_played": "2026-11-24",
    "added_at": "2026-11-23 21:42:08",
-   "updated_at": "2026-11-23 22:26:34",
+   "updated_at": "2026-11-25 11:03:28",
    "in_exophase": true,
    "exophase_title": "Animal Crossing: New Horizons",
    "release_eu": "2020-03-20"
@@ -5174,8 +5174,8 @@
     "NINTENDO 64 Nintendo Switch Online",
     "Nintendo 64 – Nintendo Switch Online: MATURE 17+"
    ],
-   "hours": 143.85,
-   "last_played": "2026-10-18",
+   "hours": 144,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "Super Mario 64",
@@ -5250,8 +5250,8 @@
     "Game Boy Advance - Nintendo Switch Online",
     "ゲームボーイアドバンス Nintendo Switch Online"
    ],
-   "hours": 67.2167,
-   "last_played": "2026-11-15",
+   "hours": 67.3,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "Mario & Luigi: Superstar Saga",
@@ -5334,8 +5334,8 @@
     "Super Nintendo Entertainment System - Nintendo Switch Online",
     "スーパーファミコン Nintendo Switch Online"
    ],
-   "hours": 60.1667,
-   "last_played": "2026-11-15",
+   "hours": 60.2,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "Super Mario All Stars",
@@ -5398,8 +5398,8 @@
     "Game Boy - Nintendo Switch Online",
     "ゲームボーイ Nintendo Switch Online"
    ],
-   "hours": 28.5167,
-   "last_played": "2026-10-27",
+   "hours": 28.55,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "Dr. Mario",
@@ -5449,8 +5449,8 @@
    "exophase_titles": [
     "Nintendo GameCube – Nintendo Classics"
    ],
-   "hours": 25.3667,
-   "last_played": "2026-09-12",
+   "hours": 25.4,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "The Legend of Zelda: The Wind Waker",
@@ -5470,8 +5470,8 @@
     "Nintendo Entertainment System - Nintendo Switch Online",
     "ファミリーコンピュータ Nintendo Switch Online"
    ],
-   "hours": 23.7667,
-   "last_played": "2026-10-11",
+   "hours": 23.8,
+   "last_played": "2026-11-24",
    "games": [
     {
      "title": "Super Mario Bros",

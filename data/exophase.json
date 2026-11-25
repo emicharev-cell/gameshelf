@@ -1,12 +1,75 @@
 {
- "synced_at": "2026-11-24T10:45:13.762Z",
+ "synced_at": "2026-11-25T11:03:28.658Z",
  "games": [
   {
    "id": 1025383,
    "title": "The Legend of Zelda: Ocarina of Time",
    "platform": "Switch 2",
-   "playtime": "22h 49m",
-   "last_played": "2026-11-19",
+   "playtime": "23h 57m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 522737,
+   "title": "Animal Crossing: New Horizons",
+   "platform": "Switch/Switch 2",
+   "playtime": "382h 16m",
+   "last_played": "2026-11-24",
+   "status": "complete",
+   "percent": 0
+  },
+  {
+   "id": 522745,
+   "title": "Nintendo Entertainment System - Nintendo Switch Online",
+   "platform": "Switch",
+   "playtime": "23h 42m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 574485,
+   "title": "Game Boy - Nintendo Switch Online",
+   "platform": "Switch",
+   "playtime": "28h 27m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 522756,
+   "title": "Super Nintendo Entertainment System - Nintendo Switch Online",
+   "platform": "Switch",
+   "playtime": "60h 6m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 574486,
+   "title": "Game Boy Advance - Nintendo Switch Online",
+   "platform": "Switch",
+   "playtime": "67h 12m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 522768,
+   "title": "Nintendo 64 – Nintendo Switch Online",
+   "platform": "Switch",
+   "playtime": "143h 49m",
+   "last_played": "2026-11-24",
+   "status": "partial",
+   "percent": 0
+  },
+  {
+   "id": 817351,
+   "title": "Nintendo GameCube – Nintendo Classics",
+   "platform": "Switch 2",
+   "playtime": "25h 24m",
+   "last_played": "2026-11-24",
    "status": "partial",
    "percent": 0
   },
@@ -29,24 +92,6 @@
    "percent": 0
   },
   {
-   "id": 574486,
-   "title": "Game Boy Advance - Nintendo Switch Online",
-   "platform": "Switch",
-   "playtime": "67h 7m",
-   "last_played": "2026-11-15",
-   "status": "partial",
-   "percent": 0
-  },
-  {
-   "id": 522756,
-   "title": "Super Nintendo Entertainment System - Nintendo Switch Online",
-   "platform": "Switch",
-   "playtime": "60h 4m",
-   "last_played": "2026-11-15",
-   "status": "partial",
-   "percent": 0
-  },
-  {
    "id": 864961,
    "title": "Pokémon Legends: Z-A",
    "platform": "Switch/Switch 2",
@@ -65,48 +110,12 @@
    "percent": 0
   },
   {
-   "id": 574485,
-   "title": "Game Boy - Nintendo Switch Online",
-   "platform": "Switch",
-   "playtime": "28h 25m",
-   "last_played": "2026-10-27",
-   "status": "partial",
-   "percent": 0
-  },
-  {
    "id": 952185,
    "title": "Tomodachi Life: Living the Dream",
    "platform": "Switch",
    "playtime": "121h 25m",
    "last_played": "2026-10-23",
    "status": "complete",
-   "percent": 0
-  },
-  {
-   "id": 522768,
-   "title": "Nintendo 64 – Nintendo Switch Online",
-   "platform": "Switch",
-   "playtime": "143h 40m",
-   "last_played": "2026-10-18",
-   "status": "partial",
-   "percent": 0
-  },
-  {
-   "id": 522737,
-   "title": "Animal Crossing: New Horizons",
-   "platform": "Switch/Switch 2",
-   "playtime": "382h 4m",
-   "last_played": "2026-10-11",
-   "status": "complete",
-   "percent": 0
-  },
-  {
-   "id": 522745,
-   "title": "Nintendo Entertainment System - Nintendo Switch Online",
-   "platform": "Switch",
-   "playtime": "23h 40m",
-   "last_played": "2026-10-11",
-   "status": "partial",
    "percent": 0
   },
   {
@@ -141,15 +150,6 @@
    "title": "Mario Kart World",
    "platform": "Switch 2",
    "playtime": "34h 25m",
-   "last_played": "2026-09-12",
-   "status": "partial",
-   "percent": 0
-  },
-  {
-   "id": 817351,
-   "title": "Nintendo GameCube – Nintendo Classics",
-   "platform": "Switch 2",
-   "playtime": "25h 22m",
    "last_played": "2026-09-12",
    "status": "partial",
    "percent": 0
