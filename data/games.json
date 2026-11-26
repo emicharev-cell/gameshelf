@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-26T10:34:57.026Z",
+ "updated_at": "2026-11-26T20:03:54.999Z",
  "games": [
   {
    "id": 1,
@@ -3088,16 +3088,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 0,
+   "hours": 113.4333,
    "hours_source": "manual",
    "notes": null,
    "copies": 1,
    "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Pokemon_Platinum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
    "cover_local": "covers/103-pokemon-platino.png",
    "exophase_id": null,
-   "last_played": null,
+   "last_played": "2026-11-26",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 12:01:04",
+   "updated_at": "2026-11-26 20:03:53",
    "release_eu": "2009-05-22"
   },
   {
