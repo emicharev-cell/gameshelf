@@ -1,8 +1,8 @@
 // GameShelf — frontend (vanilla JS, sin build).
-import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611241555';
-import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611241555';
-import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611241555';
-import { parseHours } from './util.js?v=202611241555';
+import { esc, toast, fileToDataUrl, debounce } from './lib.js?v=202611262005';
+import { api, load, claimFromHash, saveCreds, clearCreds, getCreds, hasCreds, editorLink, publicUrl, exportJSON, setSaveListener, checkWrite, REPO } from './backend.js?v=202611262005';
+import { PLAT, platStyle, coverSrc, fallbackCover, wireCovers } from './platforms.js?v=202611262005';
+import { parseHours } from './util.js?v=202611262005';
 
 // ---------------------------------------------------------------- Estado
 const STATUS = {
@@ -33,7 +33,8 @@ const SORTS = {
 // (p. ej. "Mario & Sonic" → Mario, "Hyrule Warriors" → Zelda). Dentro de cada saga, por año de lanzamiento.
 const SAGAS = [
   ['The Legend of Zelda', /zelda|hyrule warriors/],
-  ['Pokémon', /pok[eé]mon|pok[eé]park/],
+  ['Pokémon (spin-offs)', /pok[eé]park|mundo (mega)?misterioso|mystery dungeon|pok[eé]mon (ranger|rumble|stadium|snap|pinball|trozei|dash|picross|caf[eé]|conquest|colosseum|xd|unite|sleep|puzzle|battle revolution|go)|super pok[eé]mon rumble|pokk[eé]n|detective pikachu/],
+  ['Pokémon (principal)', /pok[eé]mon/],
   ['Super Smash Bros.', /smash bros/],
   ['Mario Kart', /mario ?kart/],
   ['Mario Party', /mario party|super mario party/],
