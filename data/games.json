@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-26T20:03:54.999Z",
+ "updated_at": "2026-11-27T10:00:52.918Z",
  "games": [
   {
    "id": 1,
@@ -3200,16 +3200,16 @@
    "region": "PAL",
    "status": "completado",
    "rating": null,
-   "hours": 103.5333,
+   "hours": 203.5333,
    "hours_source": "manual",
    "notes": "Tengo 2 copias.",
    "copies": 2,
    "cover_url": "https://art.gametdb.com/ds/coverM/ES/IRAS.jpg",
    "cover_local": "covers/107-tdb-IRAS.jpg",
    "exophase_id": null,
-   "last_played": "2026-11-24",
+   "last_played": "2026-11-27",
    "added_at": "2026-11-23 20:59:19",
-   "updated_at": "2026-11-24 11:59:27",
+   "updated_at": "2026-11-27 10:00:51",
    "gametdb_id": "IRAS",
    "release_eu": "2011-03-04"
   },
